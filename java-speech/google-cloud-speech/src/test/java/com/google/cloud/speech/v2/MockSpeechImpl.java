@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.google.cloud.certificatemanager.v1;
+package com.google.cloud.speech.v2;
 
 import com.google.api.core.BetaApi;
-import com.google.cloud.certificatemanager.v1.CertificateManagerGrpc.CertificateManagerImplBase;
+import com.google.cloud.speech.v2.SpeechGrpc.SpeechImplBase;
 import com.google.longrunning.Operation;
 import com.google.protobuf.AbstractMessage;
 import io.grpc.stub.StreamObserver;
@@ -29,11 +29,11 @@ import javax.annotation.Generated;
 
 @BetaApi
 @Generated("by gapic-generator-java")
-public class MockCertificateManagerImpl extends CertificateManagerImplBase {
+public class MockSpeechImpl extends SpeechImplBase {
   private List<AbstractMessage> requests;
   private Queue<Object> responses;
 
-  public MockCertificateManagerImpl() {
+  public MockSpeechImpl() {
     requests = new ArrayList<>();
     responses = new LinkedList<>();
   }
@@ -60,50 +60,8 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
   }
 
   @Override
-  public void listCertificates(
-      ListCertificatesRequest request, StreamObserver<ListCertificatesResponse> responseObserver) {
-    Object response = responses.poll();
-    if (response instanceof ListCertificatesResponse) {
-      requests.add(request);
-      responseObserver.onNext(((ListCertificatesResponse) response));
-      responseObserver.onCompleted();
-    } else if (response instanceof Exception) {
-      responseObserver.onError(((Exception) response));
-    } else {
-      responseObserver.onError(
-          new IllegalArgumentException(
-              String.format(
-                  "Unrecognized response type %s for method ListCertificates, expected %s or %s",
-                  response == null ? "null" : response.getClass().getName(),
-                  ListCertificatesResponse.class.getName(),
-                  Exception.class.getName())));
-    }
-  }
-
-  @Override
-  public void getCertificate(
-      GetCertificateRequest request, StreamObserver<Certificate> responseObserver) {
-    Object response = responses.poll();
-    if (response instanceof Certificate) {
-      requests.add(request);
-      responseObserver.onNext(((Certificate) response));
-      responseObserver.onCompleted();
-    } else if (response instanceof Exception) {
-      responseObserver.onError(((Exception) response));
-    } else {
-      responseObserver.onError(
-          new IllegalArgumentException(
-              String.format(
-                  "Unrecognized response type %s for method GetCertificate, expected %s or %s",
-                  response == null ? "null" : response.getClass().getName(),
-                  Certificate.class.getName(),
-                  Exception.class.getName())));
-    }
-  }
-
-  @Override
-  public void createCertificate(
-      CreateCertificateRequest request, StreamObserver<Operation> responseObserver) {
+  public void createRecognizer(
+      CreateRecognizerRequest request, StreamObserver<Operation> responseObserver) {
     Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
@@ -115,7 +73,7 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method CreateCertificate, expected %s or %s",
+                  "Unrecognized response type %s for method CreateRecognizer, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
@@ -123,8 +81,50 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
   }
 
   @Override
-  public void updateCertificate(
-      UpdateCertificateRequest request, StreamObserver<Operation> responseObserver) {
+  public void listRecognizers(
+      ListRecognizersRequest request, StreamObserver<ListRecognizersResponse> responseObserver) {
+    Object response = responses.poll();
+    if (response instanceof ListRecognizersResponse) {
+      requests.add(request);
+      responseObserver.onNext(((ListRecognizersResponse) response));
+      responseObserver.onCompleted();
+    } else if (response instanceof Exception) {
+      responseObserver.onError(((Exception) response));
+    } else {
+      responseObserver.onError(
+          new IllegalArgumentException(
+              String.format(
+                  "Unrecognized response type %s for method ListRecognizers, expected %s or %s",
+                  response == null ? "null" : response.getClass().getName(),
+                  ListRecognizersResponse.class.getName(),
+                  Exception.class.getName())));
+    }
+  }
+
+  @Override
+  public void getRecognizer(
+      GetRecognizerRequest request, StreamObserver<Recognizer> responseObserver) {
+    Object response = responses.poll();
+    if (response instanceof Recognizer) {
+      requests.add(request);
+      responseObserver.onNext(((Recognizer) response));
+      responseObserver.onCompleted();
+    } else if (response instanceof Exception) {
+      responseObserver.onError(((Exception) response));
+    } else {
+      responseObserver.onError(
+          new IllegalArgumentException(
+              String.format(
+                  "Unrecognized response type %s for method GetRecognizer, expected %s or %s",
+                  response == null ? "null" : response.getClass().getName(),
+                  Recognizer.class.getName(),
+                  Exception.class.getName())));
+    }
+  }
+
+  @Override
+  public void updateRecognizer(
+      UpdateRecognizerRequest request, StreamObserver<Operation> responseObserver) {
     Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
@@ -136,7 +136,7 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method UpdateCertificate, expected %s or %s",
+                  "Unrecognized response type %s for method UpdateRecognizer, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
@@ -144,8 +144,8 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
   }
 
   @Override
-  public void deleteCertificate(
-      DeleteCertificateRequest request, StreamObserver<Operation> responseObserver) {
+  public void deleteRecognizer(
+      DeleteRecognizerRequest request, StreamObserver<Operation> responseObserver) {
     Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
@@ -157,7 +157,7 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method DeleteCertificate, expected %s or %s",
+                  "Unrecognized response type %s for method DeleteRecognizer, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
@@ -165,51 +165,8 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
   }
 
   @Override
-  public void listCertificateMaps(
-      ListCertificateMapsRequest request,
-      StreamObserver<ListCertificateMapsResponse> responseObserver) {
-    Object response = responses.poll();
-    if (response instanceof ListCertificateMapsResponse) {
-      requests.add(request);
-      responseObserver.onNext(((ListCertificateMapsResponse) response));
-      responseObserver.onCompleted();
-    } else if (response instanceof Exception) {
-      responseObserver.onError(((Exception) response));
-    } else {
-      responseObserver.onError(
-          new IllegalArgumentException(
-              String.format(
-                  "Unrecognized response type %s for method ListCertificateMaps, expected %s or %s",
-                  response == null ? "null" : response.getClass().getName(),
-                  ListCertificateMapsResponse.class.getName(),
-                  Exception.class.getName())));
-    }
-  }
-
-  @Override
-  public void getCertificateMap(
-      GetCertificateMapRequest request, StreamObserver<CertificateMap> responseObserver) {
-    Object response = responses.poll();
-    if (response instanceof CertificateMap) {
-      requests.add(request);
-      responseObserver.onNext(((CertificateMap) response));
-      responseObserver.onCompleted();
-    } else if (response instanceof Exception) {
-      responseObserver.onError(((Exception) response));
-    } else {
-      responseObserver.onError(
-          new IllegalArgumentException(
-              String.format(
-                  "Unrecognized response type %s for method GetCertificateMap, expected %s or %s",
-                  response == null ? "null" : response.getClass().getName(),
-                  CertificateMap.class.getName(),
-                  Exception.class.getName())));
-    }
-  }
-
-  @Override
-  public void createCertificateMap(
-      CreateCertificateMapRequest request, StreamObserver<Operation> responseObserver) {
+  public void undeleteRecognizer(
+      UndeleteRecognizerRequest request, StreamObserver<Operation> responseObserver) {
     Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
@@ -221,7 +178,7 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method CreateCertificateMap, expected %s or %s",
+                  "Unrecognized response type %s for method UndeleteRecognizer, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
@@ -229,8 +186,66 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
   }
 
   @Override
-  public void updateCertificateMap(
-      UpdateCertificateMapRequest request, StreamObserver<Operation> responseObserver) {
+  public void recognize(
+      RecognizeRequest request, StreamObserver<RecognizeResponse> responseObserver) {
+    Object response = responses.poll();
+    if (response instanceof RecognizeResponse) {
+      requests.add(request);
+      responseObserver.onNext(((RecognizeResponse) response));
+      responseObserver.onCompleted();
+    } else if (response instanceof Exception) {
+      responseObserver.onError(((Exception) response));
+    } else {
+      responseObserver.onError(
+          new IllegalArgumentException(
+              String.format(
+                  "Unrecognized response type %s for method Recognize, expected %s or %s",
+                  response == null ? "null" : response.getClass().getName(),
+                  RecognizeResponse.class.getName(),
+                  Exception.class.getName())));
+    }
+  }
+
+  @Override
+  public StreamObserver<StreamingRecognizeRequest> streamingRecognize(
+      final StreamObserver<StreamingRecognizeResponse> responseObserver) {
+    StreamObserver<StreamingRecognizeRequest> requestObserver =
+        new StreamObserver<StreamingRecognizeRequest>() {
+          @Override
+          public void onNext(StreamingRecognizeRequest value) {
+            requests.add(value);
+            final Object response = responses.remove();
+            if (response instanceof StreamingRecognizeResponse) {
+              responseObserver.onNext(((StreamingRecognizeResponse) response));
+            } else if (response instanceof Exception) {
+              responseObserver.onError(((Exception) response));
+            } else {
+              responseObserver.onError(
+                  new IllegalArgumentException(
+                      String.format(
+                          "Unrecognized response type %s for method StreamingRecognize, expected %s or %s",
+                          response == null ? "null" : response.getClass().getName(),
+                          StreamingRecognizeResponse.class.getName(),
+                          Exception.class.getName())));
+            }
+          }
+
+          @Override
+          public void onError(Throwable t) {
+            responseObserver.onError(t);
+          }
+
+          @Override
+          public void onCompleted() {
+            responseObserver.onCompleted();
+          }
+        };
+    return requestObserver;
+  }
+
+  @Override
+  public void batchRecognize(
+      BatchRecognizeRequest request, StreamObserver<Operation> responseObserver) {
     Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
@@ -242,7 +257,7 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method UpdateCertificateMap, expected %s or %s",
+                  "Unrecognized response type %s for method BatchRecognize, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
@@ -250,8 +265,48 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
   }
 
   @Override
-  public void deleteCertificateMap(
-      DeleteCertificateMapRequest request, StreamObserver<Operation> responseObserver) {
+  public void getConfig(GetConfigRequest request, StreamObserver<Config> responseObserver) {
+    Object response = responses.poll();
+    if (response instanceof Config) {
+      requests.add(request);
+      responseObserver.onNext(((Config) response));
+      responseObserver.onCompleted();
+    } else if (response instanceof Exception) {
+      responseObserver.onError(((Exception) response));
+    } else {
+      responseObserver.onError(
+          new IllegalArgumentException(
+              String.format(
+                  "Unrecognized response type %s for method GetConfig, expected %s or %s",
+                  response == null ? "null" : response.getClass().getName(),
+                  Config.class.getName(),
+                  Exception.class.getName())));
+    }
+  }
+
+  @Override
+  public void updateConfig(UpdateConfigRequest request, StreamObserver<Config> responseObserver) {
+    Object response = responses.poll();
+    if (response instanceof Config) {
+      requests.add(request);
+      responseObserver.onNext(((Config) response));
+      responseObserver.onCompleted();
+    } else if (response instanceof Exception) {
+      responseObserver.onError(((Exception) response));
+    } else {
+      responseObserver.onError(
+          new IllegalArgumentException(
+              String.format(
+                  "Unrecognized response type %s for method UpdateConfig, expected %s or %s",
+                  response == null ? "null" : response.getClass().getName(),
+                  Config.class.getName(),
+                  Exception.class.getName())));
+    }
+  }
+
+  @Override
+  public void createCustomClass(
+      CreateCustomClassRequest request, StreamObserver<Operation> responseObserver) {
     Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
@@ -263,7 +318,7 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method DeleteCertificateMap, expected %s or %s",
+                  "Unrecognized response type %s for method CreateCustomClass, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
@@ -271,13 +326,13 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
   }
 
   @Override
-  public void listCertificateMapEntries(
-      ListCertificateMapEntriesRequest request,
-      StreamObserver<ListCertificateMapEntriesResponse> responseObserver) {
+  public void listCustomClasses(
+      ListCustomClassesRequest request,
+      StreamObserver<ListCustomClassesResponse> responseObserver) {
     Object response = responses.poll();
-    if (response instanceof ListCertificateMapEntriesResponse) {
+    if (response instanceof ListCustomClassesResponse) {
       requests.add(request);
-      responseObserver.onNext(((ListCertificateMapEntriesResponse) response));
+      responseObserver.onNext(((ListCustomClassesResponse) response));
       responseObserver.onCompleted();
     } else if (response instanceof Exception) {
       responseObserver.onError(((Exception) response));
@@ -285,20 +340,20 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method ListCertificateMapEntries, expected %s or %s",
+                  "Unrecognized response type %s for method ListCustomClasses, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
-                  ListCertificateMapEntriesResponse.class.getName(),
+                  ListCustomClassesResponse.class.getName(),
                   Exception.class.getName())));
     }
   }
 
   @Override
-  public void getCertificateMapEntry(
-      GetCertificateMapEntryRequest request, StreamObserver<CertificateMapEntry> responseObserver) {
+  public void getCustomClass(
+      GetCustomClassRequest request, StreamObserver<CustomClass> responseObserver) {
     Object response = responses.poll();
-    if (response instanceof CertificateMapEntry) {
+    if (response instanceof CustomClass) {
       requests.add(request);
-      responseObserver.onNext(((CertificateMapEntry) response));
+      responseObserver.onNext(((CustomClass) response));
       responseObserver.onCompleted();
     } else if (response instanceof Exception) {
       responseObserver.onError(((Exception) response));
@@ -306,16 +361,16 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method GetCertificateMapEntry, expected %s or %s",
+                  "Unrecognized response type %s for method GetCustomClass, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
-                  CertificateMapEntry.class.getName(),
+                  CustomClass.class.getName(),
                   Exception.class.getName())));
     }
   }
 
   @Override
-  public void createCertificateMapEntry(
-      CreateCertificateMapEntryRequest request, StreamObserver<Operation> responseObserver) {
+  public void updateCustomClass(
+      UpdateCustomClassRequest request, StreamObserver<Operation> responseObserver) {
     Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
@@ -327,7 +382,7 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method CreateCertificateMapEntry, expected %s or %s",
+                  "Unrecognized response type %s for method UpdateCustomClass, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
@@ -335,8 +390,8 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
   }
 
   @Override
-  public void updateCertificateMapEntry(
-      UpdateCertificateMapEntryRequest request, StreamObserver<Operation> responseObserver) {
+  public void deleteCustomClass(
+      DeleteCustomClassRequest request, StreamObserver<Operation> responseObserver) {
     Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
@@ -348,7 +403,7 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method UpdateCertificateMapEntry, expected %s or %s",
+                  "Unrecognized response type %s for method DeleteCustomClass, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
@@ -356,8 +411,8 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
   }
 
   @Override
-  public void deleteCertificateMapEntry(
-      DeleteCertificateMapEntryRequest request, StreamObserver<Operation> responseObserver) {
+  public void undeleteCustomClass(
+      UndeleteCustomClassRequest request, StreamObserver<Operation> responseObserver) {
     Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
@@ -369,7 +424,7 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method DeleteCertificateMapEntry, expected %s or %s",
+                  "Unrecognized response type %s for method UndeleteCustomClass, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
@@ -377,51 +432,8 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
   }
 
   @Override
-  public void listDnsAuthorizations(
-      ListDnsAuthorizationsRequest request,
-      StreamObserver<ListDnsAuthorizationsResponse> responseObserver) {
-    Object response = responses.poll();
-    if (response instanceof ListDnsAuthorizationsResponse) {
-      requests.add(request);
-      responseObserver.onNext(((ListDnsAuthorizationsResponse) response));
-      responseObserver.onCompleted();
-    } else if (response instanceof Exception) {
-      responseObserver.onError(((Exception) response));
-    } else {
-      responseObserver.onError(
-          new IllegalArgumentException(
-              String.format(
-                  "Unrecognized response type %s for method ListDnsAuthorizations, expected %s or %s",
-                  response == null ? "null" : response.getClass().getName(),
-                  ListDnsAuthorizationsResponse.class.getName(),
-                  Exception.class.getName())));
-    }
-  }
-
-  @Override
-  public void getDnsAuthorization(
-      GetDnsAuthorizationRequest request, StreamObserver<DnsAuthorization> responseObserver) {
-    Object response = responses.poll();
-    if (response instanceof DnsAuthorization) {
-      requests.add(request);
-      responseObserver.onNext(((DnsAuthorization) response));
-      responseObserver.onCompleted();
-    } else if (response instanceof Exception) {
-      responseObserver.onError(((Exception) response));
-    } else {
-      responseObserver.onError(
-          new IllegalArgumentException(
-              String.format(
-                  "Unrecognized response type %s for method GetDnsAuthorization, expected %s or %s",
-                  response == null ? "null" : response.getClass().getName(),
-                  DnsAuthorization.class.getName(),
-                  Exception.class.getName())));
-    }
-  }
-
-  @Override
-  public void createDnsAuthorization(
-      CreateDnsAuthorizationRequest request, StreamObserver<Operation> responseObserver) {
+  public void createPhraseSet(
+      CreatePhraseSetRequest request, StreamObserver<Operation> responseObserver) {
     Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
@@ -433,7 +445,7 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method CreateDnsAuthorization, expected %s or %s",
+                  "Unrecognized response type %s for method CreatePhraseSet, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
@@ -441,8 +453,50 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
   }
 
   @Override
-  public void updateDnsAuthorization(
-      UpdateDnsAuthorizationRequest request, StreamObserver<Operation> responseObserver) {
+  public void listPhraseSets(
+      ListPhraseSetsRequest request, StreamObserver<ListPhraseSetsResponse> responseObserver) {
+    Object response = responses.poll();
+    if (response instanceof ListPhraseSetsResponse) {
+      requests.add(request);
+      responseObserver.onNext(((ListPhraseSetsResponse) response));
+      responseObserver.onCompleted();
+    } else if (response instanceof Exception) {
+      responseObserver.onError(((Exception) response));
+    } else {
+      responseObserver.onError(
+          new IllegalArgumentException(
+              String.format(
+                  "Unrecognized response type %s for method ListPhraseSets, expected %s or %s",
+                  response == null ? "null" : response.getClass().getName(),
+                  ListPhraseSetsResponse.class.getName(),
+                  Exception.class.getName())));
+    }
+  }
+
+  @Override
+  public void getPhraseSet(
+      GetPhraseSetRequest request, StreamObserver<PhraseSet> responseObserver) {
+    Object response = responses.poll();
+    if (response instanceof PhraseSet) {
+      requests.add(request);
+      responseObserver.onNext(((PhraseSet) response));
+      responseObserver.onCompleted();
+    } else if (response instanceof Exception) {
+      responseObserver.onError(((Exception) response));
+    } else {
+      responseObserver.onError(
+          new IllegalArgumentException(
+              String.format(
+                  "Unrecognized response type %s for method GetPhraseSet, expected %s or %s",
+                  response == null ? "null" : response.getClass().getName(),
+                  PhraseSet.class.getName(),
+                  Exception.class.getName())));
+    }
+  }
+
+  @Override
+  public void updatePhraseSet(
+      UpdatePhraseSetRequest request, StreamObserver<Operation> responseObserver) {
     Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
@@ -454,7 +508,7 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method UpdateDnsAuthorization, expected %s or %s",
+                  "Unrecognized response type %s for method UpdatePhraseSet, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
@@ -462,8 +516,8 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
   }
 
   @Override
-  public void deleteDnsAuthorization(
-      DeleteDnsAuthorizationRequest request, StreamObserver<Operation> responseObserver) {
+  public void deletePhraseSet(
+      DeletePhraseSetRequest request, StreamObserver<Operation> responseObserver) {
     Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
@@ -475,7 +529,7 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method DeleteDnsAuthorization, expected %s or %s",
+                  "Unrecognized response type %s for method DeletePhraseSet, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
@@ -483,52 +537,8 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
   }
 
   @Override
-  public void listCertificateIssuanceConfigs(
-      ListCertificateIssuanceConfigsRequest request,
-      StreamObserver<ListCertificateIssuanceConfigsResponse> responseObserver) {
-    Object response = responses.poll();
-    if (response instanceof ListCertificateIssuanceConfigsResponse) {
-      requests.add(request);
-      responseObserver.onNext(((ListCertificateIssuanceConfigsResponse) response));
-      responseObserver.onCompleted();
-    } else if (response instanceof Exception) {
-      responseObserver.onError(((Exception) response));
-    } else {
-      responseObserver.onError(
-          new IllegalArgumentException(
-              String.format(
-                  "Unrecognized response type %s for method ListCertificateIssuanceConfigs, expected %s or %s",
-                  response == null ? "null" : response.getClass().getName(),
-                  ListCertificateIssuanceConfigsResponse.class.getName(),
-                  Exception.class.getName())));
-    }
-  }
-
-  @Override
-  public void getCertificateIssuanceConfig(
-      GetCertificateIssuanceConfigRequest request,
-      StreamObserver<CertificateIssuanceConfig> responseObserver) {
-    Object response = responses.poll();
-    if (response instanceof CertificateIssuanceConfig) {
-      requests.add(request);
-      responseObserver.onNext(((CertificateIssuanceConfig) response));
-      responseObserver.onCompleted();
-    } else if (response instanceof Exception) {
-      responseObserver.onError(((Exception) response));
-    } else {
-      responseObserver.onError(
-          new IllegalArgumentException(
-              String.format(
-                  "Unrecognized response type %s for method GetCertificateIssuanceConfig, expected %s or %s",
-                  response == null ? "null" : response.getClass().getName(),
-                  CertificateIssuanceConfig.class.getName(),
-                  Exception.class.getName())));
-    }
-  }
-
-  @Override
-  public void createCertificateIssuanceConfig(
-      CreateCertificateIssuanceConfigRequest request, StreamObserver<Operation> responseObserver) {
+  public void undeletePhraseSet(
+      UndeletePhraseSetRequest request, StreamObserver<Operation> responseObserver) {
     Object response = responses.poll();
     if (response instanceof Operation) {
       requests.add(request);
@@ -540,28 +550,7 @@ public class MockCertificateManagerImpl extends CertificateManagerImplBase {
       responseObserver.onError(
           new IllegalArgumentException(
               String.format(
-                  "Unrecognized response type %s for method CreateCertificateIssuanceConfig, expected %s or %s",
-                  response == null ? "null" : response.getClass().getName(),
-                  Operation.class.getName(),
-                  Exception.class.getName())));
-    }
-  }
-
-  @Override
-  public void deleteCertificateIssuanceConfig(
-      DeleteCertificateIssuanceConfigRequest request, StreamObserver<Operation> responseObserver) {
-    Object response = responses.poll();
-    if (response instanceof Operation) {
-      requests.add(request);
-      responseObserver.onNext(((Operation) response));
-      responseObserver.onCompleted();
-    } else if (response instanceof Exception) {
-      responseObserver.onError(((Exception) response));
-    } else {
-      responseObserver.onError(
-          new IllegalArgumentException(
-              String.format(
-                  "Unrecognized response type %s for method DeleteCertificateIssuanceConfig, expected %s or %s",
+                  "Unrecognized response type %s for method UndeletePhraseSet, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Operation.class.getName(),
                   Exception.class.getName())));
