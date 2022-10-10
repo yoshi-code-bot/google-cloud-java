@@ -91,8 +91,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
      *
      * <pre>
      * An IAM Policy Analysis query, which could be used in
-     * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-     * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+     * the
+     * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+     * rpc or the
+     * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+     * rpc.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -105,8 +108,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
      *
      * <pre>
      * An IAM Policy Analysis query, which could be used in
-     * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-     * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+     * the
+     * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+     * rpc or the
+     * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+     * rpc.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -119,8 +125,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
      *
      * <pre>
      * An IAM Policy Analysis query, which could be used in
-     * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-     * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+     * the
+     * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+     * rpc or the
+     * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+     * rpc.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -226,8 +235,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
      *
      * <pre>
      * An IAM Policy Analysis query, which could be used in
-     * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-     * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+     * the
+     * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+     * rpc or the
+     * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+     * rpc.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -243,8 +255,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
      *
      * <pre>
      * An IAM Policy Analysis query, which could be used in
-     * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-     * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+     * the
+     * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+     * rpc or the
+     * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+     * rpc.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -263,8 +278,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
      *
      * <pre>
      * An IAM Policy Analysis query, which could be used in
-     * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-     * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+     * the
+     * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+     * rpc or the
+     * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+     * rpc.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -669,8 +687,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
        *
        * <pre>
        * An IAM Policy Analysis query, which could be used in
-       * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-       * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+       * the
+       * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+       * rpc or the
+       * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+       * rpc.
        * </pre>
        *
        * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -686,8 +707,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
        *
        * <pre>
        * An IAM Policy Analysis query, which could be used in
-       * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-       * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+       * the
+       * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+       * rpc or the
+       * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+       * rpc.
        * </pre>
        *
        * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -713,8 +737,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
        *
        * <pre>
        * An IAM Policy Analysis query, which could be used in
-       * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-       * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+       * the
+       * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+       * rpc or the
+       * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+       * rpc.
        * </pre>
        *
        * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -738,8 +765,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
        *
        * <pre>
        * An IAM Policy Analysis query, which could be used in
-       * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-       * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+       * the
+       * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+       * rpc or the
+       * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+       * rpc.
        * </pre>
        *
        * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -760,8 +790,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
        *
        * <pre>
        * An IAM Policy Analysis query, which could be used in
-       * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-       * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+       * the
+       * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+       * rpc or the
+       * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+       * rpc.
        * </pre>
        *
        * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -796,8 +829,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
        *
        * <pre>
        * An IAM Policy Analysis query, which could be used in
-       * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-       * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+       * the
+       * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+       * rpc or the
+       * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+       * rpc.
        * </pre>
        *
        * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -823,8 +859,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
        *
        * <pre>
        * An IAM Policy Analysis query, which could be used in
-       * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-       * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+       * the
+       * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+       * rpc or the
+       * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+       * rpc.
        * </pre>
        *
        * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -838,8 +877,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
        *
        * <pre>
        * An IAM Policy Analysis query, which could be used in
-       * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-       * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+       * the
+       * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+       * rpc or the
+       * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+       * rpc.
        * </pre>
        *
        * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -861,8 +903,11 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
        *
        * <pre>
        * An IAM Policy Analysis query, which could be used in
-       * the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] rpc or
-       * the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] rpc.
+       * the
+       * [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy]
+       * rpc or the
+       * [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning]
+       * rpc.
        * </pre>
        *
        * <code>.google.cloud.asset.v1.IamPolicyAnalysisQuery iam_policy_analysis_query = 1;</code>
@@ -1220,7 +1265,8 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. The account's email address who has updated this saved query most recently.
+   * Output only. The account's email address who has updated this saved query
+   * most recently.
    * </pre>
    *
    * <code>string last_updater = 6 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
@@ -1243,7 +1289,8 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. The account's email address who has updated this saved query most recently.
+   * Output only. The account's email address who has updated this saved query
+   * most recently.
    * </pre>
    *
    * <code>string last_updater = 6 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
@@ -2713,7 +2760,8 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The account's email address who has updated this saved query most recently.
+     * Output only. The account's email address who has updated this saved query
+     * most recently.
      * </pre>
      *
      * <code>string last_updater = 6 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
@@ -2735,7 +2783,8 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The account's email address who has updated this saved query most recently.
+     * Output only. The account's email address who has updated this saved query
+     * most recently.
      * </pre>
      *
      * <code>string last_updater = 6 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
@@ -2757,7 +2806,8 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The account's email address who has updated this saved query most recently.
+     * Output only. The account's email address who has updated this saved query
+     * most recently.
      * </pre>
      *
      * <code>string last_updater = 6 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
@@ -2778,7 +2828,8 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The account's email address who has updated this saved query most recently.
+     * Output only. The account's email address who has updated this saved query
+     * most recently.
      * </pre>
      *
      * <code>string last_updater = 6 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
@@ -2795,7 +2846,8 @@ public final class SavedQuery extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The account's email address who has updated this saved query most recently.
+     * Output only. The account's email address who has updated this saved query
+     * most recently.
      * </pre>
      *
      * <code>string last_updater = 6 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>

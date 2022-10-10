@@ -15,9 +15,7 @@
  */
 
 /**
- * A client to Google Analytics Data API
- *
- * <p>The interfaces provided are listed below, along with usage samples.
+ * The interfaces provided are listed below, along with usage samples.
  *
  * <p>======================= BetaAnalyticsDataClient =======================
  *

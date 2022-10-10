@@ -27,11 +27,8 @@ public interface FilterOrBuilder
    *
    *
    * <pre>
-   * The dimension name or metric name.
-   * In most methods, dimensions &amp; metrics can be used for the first time in
-   * this field. However in a RunPivotReportRequest, this field must be
-   * additionally specified by name in the RunPivotReportRequest's dimensions or
-   * metrics.
+   * The dimension name or metric name. Must be a name defined in dimensions
+   * or metrics.
    * </pre>
    *
    * <code>string field_name = 1;</code>
@@ -43,11 +40,8 @@ public interface FilterOrBuilder
    *
    *
    * <pre>
-   * The dimension name or metric name.
-   * In most methods, dimensions &amp; metrics can be used for the first time in
-   * this field. However in a RunPivotReportRequest, this field must be
-   * additionally specified by name in the RunPivotReportRequest's dimensions or
-   * metrics.
+   * The dimension name or metric name. Must be a name defined in dimensions
+   * or metrics.
    * </pre>
    *
    * <code>string field_name = 1;</code>

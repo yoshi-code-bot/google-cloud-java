@@ -669,13 +669,13 @@ message SuggestionFeature {
     // Unspecified feature type.
     TYPE_UNSPECIFIED = 0;
 
-    // Run article suggestion model for chat.
+    // Run article suggestion model.
     ARTICLE_SUGGESTION = 1;
 
-    // Run FAQ model for chat.
+    // Run FAQ model.
     FAQ = 2;
 
-    // Run smart reply model for chat.
+    // Run smart reply model.
     SMART_REPLY = 3;
   }
 

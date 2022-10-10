@@ -33,8 +33,8 @@ public interface ResourceSearchResultOrBuilder
    * Format](https://cloud.google.com/asset-inventory/docs/resource-name-format)
    * for more information.
    * To search against the `name`:
-   * * Use a field query. Example: `name:instance1`
-   * * Use a free text query. Example: `instance1`
+   * * use a field query. Example: `name:instance1`
+   * * use a free text query. Example: `instance1`
    * </pre>
    *
    * <code>string name = 1;</code>
@@ -52,8 +52,8 @@ public interface ResourceSearchResultOrBuilder
    * Format](https://cloud.google.com/asset-inventory/docs/resource-name-format)
    * for more information.
    * To search against the `name`:
-   * * Use a field query. Example: `name:instance1`
-   * * Use a free text query. Example: `instance1`
+   * * use a field query. Example: `name:instance1`
+   * * use a free text query. Example: `instance1`
    * </pre>
    *
    * <code>string name = 1;</code>
@@ -68,7 +68,7 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * The type of this resource. Example: `compute.googleapis.com/Disk`.
    * To search against the `asset_type`:
-   * * Specify the `asset_type` field in your search request.
+   * * specify the `asset_type` field in your search request.
    * </pre>
    *
    * <code>string asset_type = 2;</code>
@@ -82,7 +82,7 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * The type of this resource. Example: `compute.googleapis.com/Disk`.
    * To search against the `asset_type`:
-   * * Specify the `asset_type` field in your search request.
+   * * specify the `asset_type` field in your search request.
    * </pre>
    *
    * <code>string asset_type = 2;</code>
@@ -99,9 +99,9 @@ public interface ResourceSearchResultOrBuilder
    * projects/{PROJECT_NUMBER}. This field is available when the resource
    * belongs to a project.
    * To search against `project`:
-   * * Use a field query. Example: `project:12345`
-   * * Use a free text query. Example: `12345`
-   * * Specify the `scope` field as this project in your search request.
+   * * use a field query. Example: `project:12345`
+   * * use a free text query. Example: `12345`
+   * * specify the `scope` field as this project in your search request.
    * </pre>
    *
    * <code>string project = 3;</code>
@@ -117,9 +117,9 @@ public interface ResourceSearchResultOrBuilder
    * projects/{PROJECT_NUMBER}. This field is available when the resource
    * belongs to a project.
    * To search against `project`:
-   * * Use a field query. Example: `project:12345`
-   * * Use a free text query. Example: `12345`
-   * * Specify the `scope` field as this project in your search request.
+   * * use a field query. Example: `project:12345`
+   * * use a free text query. Example: `12345`
+   * * specify the `scope` field as this project in your search request.
    * </pre>
    *
    * <code>string project = 3;</code>
@@ -136,9 +136,9 @@ public interface ResourceSearchResultOrBuilder
    * folders/{FOLDER_NUMBER}. This field is available when the resource
    * belongs to one or more folders.
    * To search against `folders`:
-   * * Use a field query. Example: `folders:(123 OR 456)`
-   * * Use a free text query. Example: `123`
-   * * Specify the `scope` field as this folder in your search request.
+   * * use a field query. Example: `folders:(123 OR 456)`
+   * * use a free text query. Example: `123`
+   * * specify the `scope` field as this folder in your search request.
    * </pre>
    *
    * <code>repeated string folders = 17;</code>
@@ -154,9 +154,9 @@ public interface ResourceSearchResultOrBuilder
    * folders/{FOLDER_NUMBER}. This field is available when the resource
    * belongs to one or more folders.
    * To search against `folders`:
-   * * Use a field query. Example: `folders:(123 OR 456)`
-   * * Use a free text query. Example: `123`
-   * * Specify the `scope` field as this folder in your search request.
+   * * use a field query. Example: `folders:(123 OR 456)`
+   * * use a free text query. Example: `123`
+   * * specify the `scope` field as this folder in your search request.
    * </pre>
    *
    * <code>repeated string folders = 17;</code>
@@ -172,9 +172,9 @@ public interface ResourceSearchResultOrBuilder
    * folders/{FOLDER_NUMBER}. This field is available when the resource
    * belongs to one or more folders.
    * To search against `folders`:
-   * * Use a field query. Example: `folders:(123 OR 456)`
-   * * Use a free text query. Example: `123`
-   * * Specify the `scope` field as this folder in your search request.
+   * * use a field query. Example: `folders:(123 OR 456)`
+   * * use a free text query. Example: `123`
+   * * specify the `scope` field as this folder in your search request.
    * </pre>
    *
    * <code>repeated string folders = 17;</code>
@@ -191,9 +191,9 @@ public interface ResourceSearchResultOrBuilder
    * folders/{FOLDER_NUMBER}. This field is available when the resource
    * belongs to one or more folders.
    * To search against `folders`:
-   * * Use a field query. Example: `folders:(123 OR 456)`
-   * * Use a free text query. Example: `123`
-   * * Specify the `scope` field as this folder in your search request.
+   * * use a field query. Example: `folders:(123 OR 456)`
+   * * use a free text query. Example: `123`
+   * * specify the `scope` field as this folder in your search request.
    * </pre>
    *
    * <code>repeated string folders = 17;</code>
@@ -211,9 +211,9 @@ public interface ResourceSearchResultOrBuilder
    * organizations/{ORGANIZATION_NUMBER}. This field is available when the
    * resource belongs to an organization.
    * To search against `organization`:
-   * * Use a field query. Example: `organization:123`
-   * * Use a free text query. Example: `123`
-   * * Specify the `scope` field as this organization in your search request.
+   * * use a field query. Example: `organization:123`
+   * * use a free text query. Example: `123`
+   * * specify the `scope` field as this organization in your search request.
    * </pre>
    *
    * <code>string organization = 18;</code>
@@ -229,9 +229,9 @@ public interface ResourceSearchResultOrBuilder
    * organizations/{ORGANIZATION_NUMBER}. This field is available when the
    * resource belongs to an organization.
    * To search against `organization`:
-   * * Use a field query. Example: `organization:123`
-   * * Use a free text query. Example: `123`
-   * * Specify the `scope` field as this organization in your search request.
+   * * use a field query. Example: `organization:123`
+   * * use a free text query. Example: `123`
+   * * specify the `scope` field as this organization in your search request.
    * </pre>
    *
    * <code>string organization = 18;</code>
@@ -247,8 +247,8 @@ public interface ResourceSearchResultOrBuilder
    * The display name of this resource. This field is available only when the
    * resource's Protobuf contains it.
    * To search against the `display_name`:
-   * * Use a field query. Example: `displayName:"My Instance"`
-   * * Use a free text query. Example: `"My Instance"`
+   * * use a field query. Example: `displayName:"My Instance"`
+   * * use a free text query. Example: `"My Instance"`
    * </pre>
    *
    * <code>string display_name = 4;</code>
@@ -263,8 +263,8 @@ public interface ResourceSearchResultOrBuilder
    * The display name of this resource. This field is available only when the
    * resource's Protobuf contains it.
    * To search against the `display_name`:
-   * * Use a field query. Example: `displayName:"My Instance"`
-   * * Use a free text query. Example: `"My Instance"`
+   * * use a field query. Example: `displayName:"My Instance"`
+   * * use a free text query. Example: `"My Instance"`
    * </pre>
    *
    * <code>string display_name = 4;</code>
@@ -281,8 +281,8 @@ public interface ResourceSearchResultOrBuilder
    * could be up to 1M bytes. This field is available only when the resource's
    * Protobuf contains it.
    * To search against the `description`:
-   * * Use a field query. Example: `description:"important instance"`
-   * * Use a free text query. Example: `"important instance"`
+   * * use a field query. Example: `description:"important instance"`
+   * * use a free text query. Example: `"important instance"`
    * </pre>
    *
    * <code>string description = 5;</code>
@@ -298,8 +298,8 @@ public interface ResourceSearchResultOrBuilder
    * could be up to 1M bytes. This field is available only when the resource's
    * Protobuf contains it.
    * To search against the `description`:
-   * * Use a field query. Example: `description:"important instance"`
-   * * Use a free text query. Example: `"important instance"`
+   * * use a field query. Example: `description:"important instance"`
+   * * use a free text query. Example: `"important instance"`
    * </pre>
    *
    * <code>string description = 5;</code>
@@ -316,8 +316,8 @@ public interface ResourceSearchResultOrBuilder
    * `us-west1-b`. This field is available only when the resource's Protobuf
    * contains it.
    * To search against the `location`:
-   * * Use a field query. Example: `location:us-west*`
-   * * Use a free text query. Example: `us-west*`
+   * * use a field query. Example: `location:us-west*`
+   * * use a free text query. Example: `us-west*`
    * </pre>
    *
    * <code>string location = 6;</code>
@@ -333,8 +333,8 @@ public interface ResourceSearchResultOrBuilder
    * `us-west1-b`. This field is available only when the resource's Protobuf
    * contains it.
    * To search against the `location`:
-   * * Use a field query. Example: `location:us-west*`
-   * * Use a free text query. Example: `us-west*`
+   * * use a field query. Example: `location:us-west*`
+   * * use a free text query. Example: `us-west*`
    * </pre>
    *
    * <code>string location = 6;</code>
@@ -352,11 +352,11 @@ public interface ResourceSearchResultOrBuilder
    * for more information. This field is available only when the resource's
    * Protobuf contains it.
    * To search against the `labels`:
-   * * Use a field query:
+   * * use a field query:
    *     - query on any label's key or value. Example: `labels:prod`
    *     - query by a given label. Example: `labels.env:prod`
    *     - query by a given label's existence. Example: `labels.env:*`
-   * * Use a free text query. Example: `prod`
+   * * use a free text query. Example: `prod`
    * </pre>
    *
    * <code>map&lt;string, string&gt; labels = 7;</code>
@@ -371,11 +371,11 @@ public interface ResourceSearchResultOrBuilder
    * for more information. This field is available only when the resource's
    * Protobuf contains it.
    * To search against the `labels`:
-   * * Use a field query:
+   * * use a field query:
    *     - query on any label's key or value. Example: `labels:prod`
    *     - query by a given label. Example: `labels.env:prod`
    *     - query by a given label's existence. Example: `labels.env:*`
-   * * Use a free text query. Example: `prod`
+   * * use a free text query. Example: `prod`
    * </pre>
    *
    * <code>map&lt;string, string&gt; labels = 7;</code>
@@ -393,11 +393,11 @@ public interface ResourceSearchResultOrBuilder
    * for more information. This field is available only when the resource's
    * Protobuf contains it.
    * To search against the `labels`:
-   * * Use a field query:
+   * * use a field query:
    *     - query on any label's key or value. Example: `labels:prod`
    *     - query by a given label. Example: `labels.env:prod`
    *     - query by a given label's existence. Example: `labels.env:*`
-   * * Use a free text query. Example: `prod`
+   * * use a free text query. Example: `prod`
    * </pre>
    *
    * <code>map&lt;string, string&gt; labels = 7;</code>
@@ -412,11 +412,11 @@ public interface ResourceSearchResultOrBuilder
    * for more information. This field is available only when the resource's
    * Protobuf contains it.
    * To search against the `labels`:
-   * * Use a field query:
+   * * use a field query:
    *     - query on any label's key or value. Example: `labels:prod`
    *     - query by a given label. Example: `labels.env:prod`
    *     - query by a given label's existence. Example: `labels.env:*`
-   * * Use a free text query. Example: `prod`
+   * * use a free text query. Example: `prod`
    * </pre>
    *
    * <code>map&lt;string, string&gt; labels = 7;</code>
@@ -436,11 +436,11 @@ public interface ResourceSearchResultOrBuilder
    * for more information. This field is available only when the resource's
    * Protobuf contains it.
    * To search against the `labels`:
-   * * Use a field query:
+   * * use a field query:
    *     - query on any label's key or value. Example: `labels:prod`
    *     - query by a given label. Example: `labels.env:prod`
    *     - query by a given label's existence. Example: `labels.env:*`
-   * * Use a free text query. Example: `prod`
+   * * use a free text query. Example: `prod`
    * </pre>
    *
    * <code>map&lt;string, string&gt; labels = 7;</code>
@@ -457,8 +457,8 @@ public interface ResourceSearchResultOrBuilder
    * for more information. This field is available only when the resource's
    * Protobuf contains it.
    * To search against the `network_tags`:
-   * * Use a field query. Example: `networkTags:internal`
-   * * Use a free text query. Example: `internal`
+   * * use a field query. Example: `networkTags:internal`
+   * * use a free text query. Example: `internal`
    * </pre>
    *
    * <code>repeated string network_tags = 8;</code>
@@ -476,8 +476,8 @@ public interface ResourceSearchResultOrBuilder
    * for more information. This field is available only when the resource's
    * Protobuf contains it.
    * To search against the `network_tags`:
-   * * Use a field query. Example: `networkTags:internal`
-   * * Use a free text query. Example: `internal`
+   * * use a field query. Example: `networkTags:internal`
+   * * use a free text query. Example: `internal`
    * </pre>
    *
    * <code>repeated string network_tags = 8;</code>
@@ -495,8 +495,8 @@ public interface ResourceSearchResultOrBuilder
    * for more information. This field is available only when the resource's
    * Protobuf contains it.
    * To search against the `network_tags`:
-   * * Use a field query. Example: `networkTags:internal`
-   * * Use a free text query. Example: `internal`
+   * * use a field query. Example: `networkTags:internal`
+   * * use a free text query. Example: `internal`
    * </pre>
    *
    * <code>repeated string network_tags = 8;</code>
@@ -515,8 +515,8 @@ public interface ResourceSearchResultOrBuilder
    * for more information. This field is available only when the resource's
    * Protobuf contains it.
    * To search against the `network_tags`:
-   * * Use a field query. Example: `networkTags:internal`
-   * * Use a free text query. Example: `internal`
+   * * use a field query. Example: `networkTags:internal`
+   * * use a free text query. Example: `internal`
    * </pre>
    *
    * <code>repeated string network_tags = 8;</code>
@@ -534,25 +534,17 @@ public interface ResourceSearchResultOrBuilder
    * [CryptoKey](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys)
    * name or
    * [CryptoKeyVersion](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys.cryptoKeyVersions)
-   * name.
-   * This field only presents for the purpose of backward compatibility. Please
-   * use the `kms_keys` field to retrieve KMS key information. This field is
-   * available only when the resource's Protobuf contains it and will only be
-   * populated for [these resource
-   * types](https://cloud.google.com/asset-inventory/docs/legacy-field-names#resource_types_with_the_to_be_deprecated_kmskey_field)
-   * for backward compatible purposes.
+   * name. This field is available only when the resource's Protobuf contains
+   * it.
    * To search against the `kms_key`:
-   * * Use a field query. Example: `kmsKey:key`
-   * * Use a free text query. Example: `key`
+   * * use a field query. Example: `kmsKey:key`
+   * * use a free text query. Example: `key`
    * </pre>
    *
-   * <code>string kms_key = 10 [deprecated = true];</code>
+   * <code>string kms_key = 10;</code>
    *
-   * @deprecated google.cloud.asset.v1.ResourceSearchResult.kms_key is deprecated. See
-   *     google/cloud/asset/v1/assets.proto;l=434
    * @return The kmsKey.
    */
-  @java.lang.Deprecated
   java.lang.String getKmsKey();
   /**
    *
@@ -562,109 +554,18 @@ public interface ResourceSearchResultOrBuilder
    * [CryptoKey](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys)
    * name or
    * [CryptoKeyVersion](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys.cryptoKeyVersions)
-   * name.
-   * This field only presents for the purpose of backward compatibility. Please
-   * use the `kms_keys` field to retrieve KMS key information. This field is
-   * available only when the resource's Protobuf contains it and will only be
-   * populated for [these resource
-   * types](https://cloud.google.com/asset-inventory/docs/legacy-field-names#resource_types_with_the_to_be_deprecated_kmskey_field)
-   * for backward compatible purposes.
+   * name. This field is available only when the resource's Protobuf contains
+   * it.
    * To search against the `kms_key`:
-   * * Use a field query. Example: `kmsKey:key`
-   * * Use a free text query. Example: `key`
+   * * use a field query. Example: `kmsKey:key`
+   * * use a free text query. Example: `key`
    * </pre>
    *
-   * <code>string kms_key = 10 [deprecated = true];</code>
+   * <code>string kms_key = 10;</code>
    *
-   * @deprecated google.cloud.asset.v1.ResourceSearchResult.kms_key is deprecated. See
-   *     google/cloud/asset/v1/assets.proto;l=434
    * @return The bytes for kmsKey.
    */
-  @java.lang.Deprecated
   com.google.protobuf.ByteString getKmsKeyBytes();
-
-  /**
-   *
-   *
-   * <pre>
-   * The Cloud KMS
-   * [CryptoKey](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys)
-   * names or
-   * [CryptoKeyVersion](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys.cryptoKeyVersions)
-   * names. This field is available only when the resource's Protobuf contains
-   * it.
-   * To search against the `kms_keys`:
-   * * Use a field query. Example: `kmsKeys:key`
-   * * Use a free text query. Example: `key`
-   * </pre>
-   *
-   * <code>repeated string kms_keys = 28;</code>
-   *
-   * @return A list containing the kmsKeys.
-   */
-  java.util.List<java.lang.String> getKmsKeysList();
-  /**
-   *
-   *
-   * <pre>
-   * The Cloud KMS
-   * [CryptoKey](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys)
-   * names or
-   * [CryptoKeyVersion](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys.cryptoKeyVersions)
-   * names. This field is available only when the resource's Protobuf contains
-   * it.
-   * To search against the `kms_keys`:
-   * * Use a field query. Example: `kmsKeys:key`
-   * * Use a free text query. Example: `key`
-   * </pre>
-   *
-   * <code>repeated string kms_keys = 28;</code>
-   *
-   * @return The count of kmsKeys.
-   */
-  int getKmsKeysCount();
-  /**
-   *
-   *
-   * <pre>
-   * The Cloud KMS
-   * [CryptoKey](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys)
-   * names or
-   * [CryptoKeyVersion](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys.cryptoKeyVersions)
-   * names. This field is available only when the resource's Protobuf contains
-   * it.
-   * To search against the `kms_keys`:
-   * * Use a field query. Example: `kmsKeys:key`
-   * * Use a free text query. Example: `key`
-   * </pre>
-   *
-   * <code>repeated string kms_keys = 28;</code>
-   *
-   * @param index The index of the element to return.
-   * @return The kmsKeys at the given index.
-   */
-  java.lang.String getKmsKeys(int index);
-  /**
-   *
-   *
-   * <pre>
-   * The Cloud KMS
-   * [CryptoKey](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys)
-   * names or
-   * [CryptoKeyVersion](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys.cryptoKeyVersions)
-   * names. This field is available only when the resource's Protobuf contains
-   * it.
-   * To search against the `kms_keys`:
-   * * Use a field query. Example: `kmsKeys:key`
-   * * Use a free text query. Example: `key`
-   * </pre>
-   *
-   * <code>repeated string kms_keys = 28;</code>
-   *
-   * @param index The index of the value to return.
-   * @return The bytes of the kmsKeys at the given index.
-   */
-  com.google.protobuf.ByteString getKmsKeysBytes(int index);
 
   /**
    *
@@ -674,7 +575,7 @@ public interface ResourceSearchResultOrBuilder
    * The granularity is in seconds. Timestamp.nanos will always be 0. This field
    * is available only when the resource's Protobuf contains it.
    * To search against `create_time`:
-   * * Use a field query.
+   * * use a field query.
    *     - value in seconds since unix epoch. Example: `createTime &gt; 1609459200`
    *     - value in date string. Example: `createTime &gt; 2021-01-01`
    *     - value in date-time string (must be quoted). Example: `createTime &gt;
@@ -694,7 +595,7 @@ public interface ResourceSearchResultOrBuilder
    * The granularity is in seconds. Timestamp.nanos will always be 0. This field
    * is available only when the resource's Protobuf contains it.
    * To search against `create_time`:
-   * * Use a field query.
+   * * use a field query.
    *     - value in seconds since unix epoch. Example: `createTime &gt; 1609459200`
    *     - value in date string. Example: `createTime &gt; 2021-01-01`
    *     - value in date-time string (must be quoted). Example: `createTime &gt;
@@ -714,7 +615,7 @@ public interface ResourceSearchResultOrBuilder
    * The granularity is in seconds. Timestamp.nanos will always be 0. This field
    * is available only when the resource's Protobuf contains it.
    * To search against `create_time`:
-   * * Use a field query.
+   * * use a field query.
    *     - value in seconds since unix epoch. Example: `createTime &gt; 1609459200`
    *     - value in date string. Example: `createTime &gt; 2021-01-01`
    *     - value in date-time string (must be quoted). Example: `createTime &gt;
@@ -734,7 +635,7 @@ public interface ResourceSearchResultOrBuilder
    * always be 0. This field is available only when the resource's Protobuf
    * contains it.
    * To search against `update_time`:
-   * * Use a field query.
+   * * use a field query.
    *     - value in seconds since unix epoch. Example: `updateTime &lt; 1609459200`
    *     - value in date string. Example: `updateTime &lt; 2021-01-01`
    *     - value in date-time string (must be quoted). Example: `updateTime &lt;
@@ -755,7 +656,7 @@ public interface ResourceSearchResultOrBuilder
    * always be 0. This field is available only when the resource's Protobuf
    * contains it.
    * To search against `update_time`:
-   * * Use a field query.
+   * * use a field query.
    *     - value in seconds since unix epoch. Example: `updateTime &lt; 1609459200`
    *     - value in date string. Example: `updateTime &lt; 2021-01-01`
    *     - value in date-time string (must be quoted). Example: `updateTime &lt;
@@ -776,7 +677,7 @@ public interface ResourceSearchResultOrBuilder
    * always be 0. This field is available only when the resource's Protobuf
    * contains it.
    * To search against `update_time`:
-   * * Use a field query.
+   * * use a field query.
    *     - value in seconds since unix epoch. Example: `updateTime &lt; 1609459200`
    *     - value in date string. Example: `updateTime &lt; 2021-01-01`
    *     - value in date-time string (must be quoted). Example: `updateTime &lt;
@@ -806,8 +707,8 @@ public interface ResourceSearchResultOrBuilder
    * DELETE_IN_PROGRESS. See `lifecycleState` definition in [API
    * Reference](https://cloud.google.com/resource-manager/reference/rest/v1/projects).
    * To search against the `state`:
-   * * Use a field query. Example: `state:RUNNING`
-   * * Use a free text query. Example: `RUNNING`
+   * * use a field query. Example: `state:RUNNING`
+   * * use a free text query. Example: `RUNNING`
    * </pre>
    *
    * <code>string state = 13;</code>
@@ -834,8 +735,8 @@ public interface ResourceSearchResultOrBuilder
    * DELETE_IN_PROGRESS. See `lifecycleState` definition in [API
    * Reference](https://cloud.google.com/resource-manager/reference/rest/v1/projects).
    * To search against the `state`:
-   * * Use a field query. Example: `state:RUNNING`
-   * * Use a free text query. Example: `RUNNING`
+   * * use a field query. Example: `state:RUNNING`
+   * * use a free text query. Example: `RUNNING`
    * </pre>
    *
    * <code>string state = 13;</code>
@@ -861,7 +762,7 @@ public interface ResourceSearchResultOrBuilder
    * values may change as the GCP service updates to a new incompatible API
    * version.
    * To search against the `additional_attributes`:
-   * * Use a free text query to match the attributes values. Example: to search
+   * * use a free text query to match the attributes values. Example: to search
    *   `additional_attributes = { dnsName: "foobar" }`, you can issue a query
    *   `foobar`.
    * </pre>
@@ -888,7 +789,7 @@ public interface ResourceSearchResultOrBuilder
    * values may change as the GCP service updates to a new incompatible API
    * version.
    * To search against the `additional_attributes`:
-   * * Use a free text query to match the attributes values. Example: to search
+   * * use a free text query to match the attributes values. Example: to search
    *   `additional_attributes = { dnsName: "foobar" }`, you can issue a query
    *   `foobar`.
    * </pre>
@@ -915,7 +816,7 @@ public interface ResourceSearchResultOrBuilder
    * values may change as the GCP service updates to a new incompatible API
    * version.
    * To search against the `additional_attributes`:
-   * * Use a free text query to match the attributes values. Example: to search
+   * * use a free text query to match the attributes values. Example: to search
    *   `additional_attributes = { dnsName: "foobar" }`, you can issue a query
    *   `foobar`.
    * </pre>
@@ -930,9 +831,9 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * The full resource name of this resource's parent, if it has one.
    * To search against the `parent_full_resource_name`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    * `parentFullResourceName:"project-name"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    * `project-name`
    * </pre>
    *
@@ -947,9 +848,9 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * The full resource name of this resource's parent, if it has one.
    * To search against the `parent_full_resource_name`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    * `parentFullResourceName:"project-name"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    * `project-name`
    * </pre>
    *
@@ -1203,11 +1104,11 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * TagKey namespaced names, in the format of {ORG_ID}/{TAG_KEY_SHORT_NAME}.
    * To search against the `tagKeys`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    *     - `tagKeys:"123456789/env*"`
    *     - `tagKeys="123456789/env"`
    *     - `tagKeys:"env"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    *     - `env`
    * </pre>
    *
@@ -1222,11 +1123,11 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * TagKey namespaced names, in the format of {ORG_ID}/{TAG_KEY_SHORT_NAME}.
    * To search against the `tagKeys`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    *     - `tagKeys:"123456789/env*"`
    *     - `tagKeys="123456789/env"`
    *     - `tagKeys:"env"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    *     - `env`
    * </pre>
    *
@@ -1241,11 +1142,11 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * TagKey namespaced names, in the format of {ORG_ID}/{TAG_KEY_SHORT_NAME}.
    * To search against the `tagKeys`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    *     - `tagKeys:"123456789/env*"`
    *     - `tagKeys="123456789/env"`
    *     - `tagKeys:"env"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    *     - `env`
    * </pre>
    *
@@ -1261,11 +1162,11 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * TagKey namespaced names, in the format of {ORG_ID}/{TAG_KEY_SHORT_NAME}.
    * To search against the `tagKeys`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    *     - `tagKeys:"123456789/env*"`
    *     - `tagKeys="123456789/env"`
    *     - `tagKeys:"env"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    *     - `env`
    * </pre>
    *
@@ -1283,12 +1184,12 @@ public interface ResourceSearchResultOrBuilder
    * TagValue namespaced names, in the format of
    * {ORG_ID}/{TAG_KEY_SHORT_NAME}/{TAG_VALUE_SHORT_NAME}.
    * To search against the `tagValues`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    *     - `tagValues:"env"`
    *     - `tagValues:"env/prod"`
    *     - `tagValues:"123456789/env/prod*"`
    *     - `tagValues="123456789/env/prod"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    *     - `prod`
    * </pre>
    *
@@ -1304,12 +1205,12 @@ public interface ResourceSearchResultOrBuilder
    * TagValue namespaced names, in the format of
    * {ORG_ID}/{TAG_KEY_SHORT_NAME}/{TAG_VALUE_SHORT_NAME}.
    * To search against the `tagValues`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    *     - `tagValues:"env"`
    *     - `tagValues:"env/prod"`
    *     - `tagValues:"123456789/env/prod*"`
    *     - `tagValues="123456789/env/prod"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    *     - `prod`
    * </pre>
    *
@@ -1325,12 +1226,12 @@ public interface ResourceSearchResultOrBuilder
    * TagValue namespaced names, in the format of
    * {ORG_ID}/{TAG_KEY_SHORT_NAME}/{TAG_VALUE_SHORT_NAME}.
    * To search against the `tagValues`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    *     - `tagValues:"env"`
    *     - `tagValues:"env/prod"`
    *     - `tagValues:"123456789/env/prod*"`
    *     - `tagValues="123456789/env/prod"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    *     - `prod`
    * </pre>
    *
@@ -1347,12 +1248,12 @@ public interface ResourceSearchResultOrBuilder
    * TagValue namespaced names, in the format of
    * {ORG_ID}/{TAG_KEY_SHORT_NAME}/{TAG_VALUE_SHORT_NAME}.
    * To search against the `tagValues`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    *     - `tagValues:"env"`
    *     - `tagValues:"env/prod"`
    *     - `tagValues:"123456789/env/prod*"`
    *     - `tagValues="123456789/env/prod"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    *     - `prod`
    * </pre>
    *
@@ -1369,10 +1270,10 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * TagValue IDs, in the format of tagValues/{TAG_VALUE_ID}.
    * To search against the `tagValueIds`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    *     - `tagValueIds:"456"`
    *     - `tagValueIds="tagValues/456"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    *     - `456`
    * </pre>
    *
@@ -1387,10 +1288,10 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * TagValue IDs, in the format of tagValues/{TAG_VALUE_ID}.
    * To search against the `tagValueIds`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    *     - `tagValueIds:"456"`
    *     - `tagValueIds="tagValues/456"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    *     - `456`
    * </pre>
    *
@@ -1405,10 +1306,10 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * TagValue IDs, in the format of tagValues/{TAG_VALUE_ID}.
    * To search against the `tagValueIds`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    *     - `tagValueIds:"456"`
    *     - `tagValueIds="tagValues/456"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    *     - `456`
    * </pre>
    *
@@ -1424,10 +1325,10 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * TagValue IDs, in the format of tagValues/{TAG_VALUE_ID}.
    * To search against the `tagValueIds`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    *     - `tagValueIds:"456"`
    *     - `tagValueIds="tagValues/456"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    *     - `456`
    * </pre>
    *
@@ -1444,9 +1345,9 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * The type of this resource's immediate parent, if there is one.
    * To search against the `parent_asset_type`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    * `parentAssetType:"cloudresourcemanager.googleapis.com/Project"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    * `cloudresourcemanager.googleapis.com/Project`
    * </pre>
    *
@@ -1461,9 +1362,9 @@ public interface ResourceSearchResultOrBuilder
    * <pre>
    * The type of this resource's immediate parent, if there is one.
    * To search against the `parent_asset_type`:
-   * * Use a field query. Example:
+   * * use a field query. Example:
    * `parentAssetType:"cloudresourcemanager.googleapis.com/Project"`
-   * * Use a free text query. Example:
+   * * use a free text query. Example:
    * `cloudresourcemanager.googleapis.com/Project`
    * </pre>
    *

@@ -429,9 +429,6 @@ public final class BetaAnalyticsDataGrpc {
      * measurements of user activity on your property, such as active users or
      * event count. Dimensions break down metrics across some common criteria,
      * such as country or event name.
-     * For a guide to constructing requests &amp; understanding responses, see
-     * [Creating a
-     * Report](https://developers.google.com/analytics/devguides/reporting/data/v1/basics).
      * </pre>
      */
     public void runReport(
@@ -518,14 +515,9 @@ public final class BetaAnalyticsDataGrpc {
      *
      *
      * <pre>
-     * Returns a customized report of realtime event data for your property.
-     * Events appear in realtime reports seconds after they have been sent to
-     * the Google Analytics. Realtime reports show events and usage data for the
-     * periods of time ranging from the present moment to 30 minutes ago (up to
-     * 60 minutes for Google Analytics 360 properties).
-     * For a guide to constructing realtime requests &amp; understanding responses,
-     * see [Creating a Realtime
-     * Report](https://developers.google.com/analytics/devguides/reporting/data/v1/realtime-basics).
+     * The Google Analytics Realtime API returns a customized report of realtime
+     * event data for your property. These reports show events and usage from the
+     * last 30 minutes.
      * </pre>
      */
     public void runRealtimeReport(
@@ -643,9 +635,6 @@ public final class BetaAnalyticsDataGrpc {
      * measurements of user activity on your property, such as active users or
      * event count. Dimensions break down metrics across some common criteria,
      * such as country or event name.
-     * For a guide to constructing requests &amp; understanding responses, see
-     * [Creating a
-     * Report](https://developers.google.com/analytics/devguides/reporting/data/v1/basics).
      * </pre>
      */
     public void runReport(
@@ -741,14 +730,9 @@ public final class BetaAnalyticsDataGrpc {
      *
      *
      * <pre>
-     * Returns a customized report of realtime event data for your property.
-     * Events appear in realtime reports seconds after they have been sent to
-     * the Google Analytics. Realtime reports show events and usage data for the
-     * periods of time ranging from the present moment to 30 minutes ago (up to
-     * 60 minutes for Google Analytics 360 properties).
-     * For a guide to constructing realtime requests &amp; understanding responses,
-     * see [Creating a Realtime
-     * Report](https://developers.google.com/analytics/devguides/reporting/data/v1/realtime-basics).
+     * The Google Analytics Realtime API returns a customized report of realtime
+     * event data for your property. These reports show events and usage from the
+     * last 30 minutes.
      * </pre>
      */
     public void runRealtimeReport(
@@ -817,9 +801,6 @@ public final class BetaAnalyticsDataGrpc {
      * measurements of user activity on your property, such as active users or
      * event count. Dimensions break down metrics across some common criteria,
      * such as country or event name.
-     * For a guide to constructing requests &amp; understanding responses, see
-     * [Creating a
-     * Report](https://developers.google.com/analytics/devguides/reporting/data/v1/basics).
      * </pre>
      */
     public com.google.analytics.data.v1beta.RunReportResponse runReport(
@@ -898,14 +879,9 @@ public final class BetaAnalyticsDataGrpc {
      *
      *
      * <pre>
-     * Returns a customized report of realtime event data for your property.
-     * Events appear in realtime reports seconds after they have been sent to
-     * the Google Analytics. Realtime reports show events and usage data for the
-     * periods of time ranging from the present moment to 30 minutes ago (up to
-     * 60 minutes for Google Analytics 360 properties).
-     * For a guide to constructing realtime requests &amp; understanding responses,
-     * see [Creating a Realtime
-     * Report](https://developers.google.com/analytics/devguides/reporting/data/v1/realtime-basics).
+     * The Google Analytics Realtime API returns a customized report of realtime
+     * event data for your property. These reports show events and usage from the
+     * last 30 minutes.
      * </pre>
      */
     public com.google.analytics.data.v1beta.RunRealtimeReportResponse runRealtimeReport(
@@ -965,9 +941,6 @@ public final class BetaAnalyticsDataGrpc {
      * measurements of user activity on your property, such as active users or
      * event count. Dimensions break down metrics across some common criteria,
      * such as country or event name.
-     * For a guide to constructing requests &amp; understanding responses, see
-     * [Creating a
-     * Report](https://developers.google.com/analytics/devguides/reporting/data/v1/basics).
      * </pre>
      */
     public com.google.common.util.concurrent.ListenableFuture<
@@ -1051,14 +1024,9 @@ public final class BetaAnalyticsDataGrpc {
      *
      *
      * <pre>
-     * Returns a customized report of realtime event data for your property.
-     * Events appear in realtime reports seconds after they have been sent to
-     * the Google Analytics. Realtime reports show events and usage data for the
-     * periods of time ranging from the present moment to 30 minutes ago (up to
-     * 60 minutes for Google Analytics 360 properties).
-     * For a guide to constructing realtime requests &amp; understanding responses,
-     * see [Creating a Realtime
-     * Report](https://developers.google.com/analytics/devguides/reporting/data/v1/realtime-basics).
+     * The Google Analytics Realtime API returns a customized report of realtime
+     * event data for your property. These reports show events and usage from the
+     * last 30 minutes.
      * </pre>
      */
     public com.google.common.util.concurrent.ListenableFuture<

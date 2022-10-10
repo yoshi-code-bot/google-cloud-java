@@ -4392,8 +4392,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Resource edges of the graph starting from the policy attached
-     * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-     * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * resource to any descendant resources. The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * contains the full resource name of a parent resource and
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
      * contains the full resource name of a child resource. This field is
      * present only if the output_resource_edges option is enabled in request.
      * </pre>
@@ -4406,8 +4408,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Resource edges of the graph starting from the policy attached
-     * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-     * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * resource to any descendant resources. The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * contains the full resource name of a parent resource and
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
      * contains the full resource name of a child resource. This field is
      * present only if the output_resource_edges option is enabled in request.
      * </pre>
@@ -4420,8 +4424,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Resource edges of the graph starting from the policy attached
-     * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-     * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * resource to any descendant resources. The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * contains the full resource name of a parent resource and
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
      * contains the full resource name of a child resource. This field is
      * present only if the output_resource_edges option is enabled in request.
      * </pre>
@@ -4434,8 +4440,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Resource edges of the graph starting from the policy attached
-     * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-     * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * resource to any descendant resources. The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * contains the full resource name of a parent resource and
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
      * contains the full resource name of a child resource. This field is
      * present only if the output_resource_edges option is enabled in request.
      * </pre>
@@ -4449,8 +4457,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Resource edges of the graph starting from the policy attached
-     * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-     * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * resource to any descendant resources. The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * contains the full resource name of a parent resource and
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
      * contains the full resource name of a child resource. This field is
      * present only if the output_resource_edges option is enabled in request.
      * </pre>
@@ -4731,8 +4741,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Resource edges of the graph starting from the policy attached
-     * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-     * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * resource to any descendant resources. The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * contains the full resource name of a parent resource and
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
      * contains the full resource name of a child resource. This field is
      * present only if the output_resource_edges option is enabled in request.
      * </pre>
@@ -4749,8 +4761,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Resource edges of the graph starting from the policy attached
-     * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-     * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * resource to any descendant resources. The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * contains the full resource name of a parent resource and
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
      * contains the full resource name of a child resource. This field is
      * present only if the output_resource_edges option is enabled in request.
      * </pre>
@@ -4767,8 +4781,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Resource edges of the graph starting from the policy attached
-     * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-     * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * resource to any descendant resources. The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * contains the full resource name of a parent resource and
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
      * contains the full resource name of a child resource. This field is
      * present only if the output_resource_edges option is enabled in request.
      * </pre>
@@ -4784,8 +4800,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Resource edges of the graph starting from the policy attached
-     * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-     * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * resource to any descendant resources. The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * contains the full resource name of a parent resource and
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
      * contains the full resource name of a child resource. This field is
      * present only if the output_resource_edges option is enabled in request.
      * </pre>
@@ -4801,8 +4819,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Resource edges of the graph starting from the policy attached
-     * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-     * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * resource to any descendant resources. The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * contains the full resource name of a parent resource and
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
      * contains the full resource name of a child resource. This field is
      * present only if the output_resource_edges option is enabled in request.
      * </pre>
@@ -6286,8 +6306,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6308,8 +6330,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6329,8 +6353,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6350,8 +6376,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6378,8 +6406,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6404,8 +6434,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6432,8 +6464,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6460,8 +6494,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6485,8 +6521,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6511,8 +6549,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6537,8 +6577,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6561,8 +6603,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6585,8 +6629,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6603,8 +6649,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6625,8 +6673,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6648,8 +6698,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6668,8 +6720,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -6688,8 +6742,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Resource edges of the graph starting from the policy attached
-       * resource to any descendant resources. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node] contains
-       * the full resource name of a parent resource and [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * resource to any descendant resources. The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * contains the full resource name of a parent resource and
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
        * contains the full resource name of a child resource. This field is
        * present only if the output_resource_edges option is enabled in request.
        * </pre>
@@ -7063,12 +7119,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Group identity edges of the graph starting from the binding's
-     * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * group members to any node of the
+     * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+     * The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
      * contains a group, such as `group:parent&#64;google.com`. The
-     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-     * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-     * This field is present only if the output_group_edges option is enabled in
-     * request.
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * contains a member of the group, such as `group:child&#64;google.com` or
+     * `user:foo&#64;google.com`. This field is present only if the
+     * output_group_edges option is enabled in request.
      * </pre>
      *
      * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -7079,12 +7138,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Group identity edges of the graph starting from the binding's
-     * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * group members to any node of the
+     * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+     * The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
      * contains a group, such as `group:parent&#64;google.com`. The
-     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-     * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-     * This field is present only if the output_group_edges option is enabled in
-     * request.
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * contains a member of the group, such as `group:child&#64;google.com` or
+     * `user:foo&#64;google.com`. This field is present only if the
+     * output_group_edges option is enabled in request.
      * </pre>
      *
      * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -7095,12 +7157,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Group identity edges of the graph starting from the binding's
-     * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * group members to any node of the
+     * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+     * The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
      * contains a group, such as `group:parent&#64;google.com`. The
-     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-     * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-     * This field is present only if the output_group_edges option is enabled in
-     * request.
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * contains a member of the group, such as `group:child&#64;google.com` or
+     * `user:foo&#64;google.com`. This field is present only if the
+     * output_group_edges option is enabled in request.
      * </pre>
      *
      * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -7111,12 +7176,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Group identity edges of the graph starting from the binding's
-     * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * group members to any node of the
+     * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+     * The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
      * contains a group, such as `group:parent&#64;google.com`. The
-     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-     * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-     * This field is present only if the output_group_edges option is enabled in
-     * request.
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * contains a member of the group, such as `group:child&#64;google.com` or
+     * `user:foo&#64;google.com`. This field is present only if the
+     * output_group_edges option is enabled in request.
      * </pre>
      *
      * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -7128,12 +7196,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Group identity edges of the graph starting from the binding's
-     * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * group members to any node of the
+     * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+     * The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
      * contains a group, such as `group:parent&#64;google.com`. The
-     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-     * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-     * This field is present only if the output_group_edges option is enabled in
-     * request.
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * contains a member of the group, such as `group:child&#64;google.com` or
+     * `user:foo&#64;google.com`. This field is present only if the
+     * output_group_edges option is enabled in request.
      * </pre>
      *
      * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -7285,12 +7356,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Group identity edges of the graph starting from the binding's
-     * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * group members to any node of the
+     * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+     * The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
      * contains a group, such as `group:parent&#64;google.com`. The
-     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-     * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-     * This field is present only if the output_group_edges option is enabled in
-     * request.
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * contains a member of the group, such as `group:child&#64;google.com` or
+     * `user:foo&#64;google.com`. This field is present only if the
+     * output_group_edges option is enabled in request.
      * </pre>
      *
      * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -7305,12 +7379,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Group identity edges of the graph starting from the binding's
-     * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * group members to any node of the
+     * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+     * The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
      * contains a group, such as `group:parent&#64;google.com`. The
-     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-     * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-     * This field is present only if the output_group_edges option is enabled in
-     * request.
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * contains a member of the group, such as `group:child&#64;google.com` or
+     * `user:foo&#64;google.com`. This field is present only if the
+     * output_group_edges option is enabled in request.
      * </pre>
      *
      * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -7325,12 +7402,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Group identity edges of the graph starting from the binding's
-     * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * group members to any node of the
+     * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+     * The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
      * contains a group, such as `group:parent&#64;google.com`. The
-     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-     * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-     * This field is present only if the output_group_edges option is enabled in
-     * request.
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * contains a member of the group, such as `group:child&#64;google.com` or
+     * `user:foo&#64;google.com`. This field is present only if the
+     * output_group_edges option is enabled in request.
      * </pre>
      *
      * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -7344,12 +7424,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Group identity edges of the graph starting from the binding's
-     * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * group members to any node of the
+     * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+     * The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
      * contains a group, such as `group:parent&#64;google.com`. The
-     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-     * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-     * This field is present only if the output_group_edges option is enabled in
-     * request.
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * contains a member of the group, such as `group:child&#64;google.com` or
+     * `user:foo&#64;google.com`. This field is present only if the
+     * output_group_edges option is enabled in request.
      * </pre>
      *
      * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -7363,12 +7446,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      * <pre>
      * Group identity edges of the graph starting from the binding's
-     * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+     * group members to any node of the
+     * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+     * The
+     * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
      * contains a group, such as `group:parent&#64;google.com`. The
-     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-     * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-     * This field is present only if the output_group_edges option is enabled in
-     * request.
+     * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+     * contains a member of the group, such as `group:child&#64;google.com` or
+     * `user:foo&#64;google.com`. This field is present only if the
+     * output_group_edges option is enabled in request.
      * </pre>
      *
      * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8296,12 +8382,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8319,12 +8408,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8341,12 +8433,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8363,12 +8458,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8392,12 +8490,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8419,12 +8520,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8447,12 +8551,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8476,12 +8583,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8502,12 +8612,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8529,12 +8642,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8556,12 +8672,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8581,12 +8700,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8606,12 +8728,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8625,12 +8750,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8648,12 +8776,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8672,12 +8803,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8692,12 +8826,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8713,12 +8850,15 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
        *
        * <pre>
        * Group identity edges of the graph starting from the binding's
-       * group members to any node of the [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities]. The [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
+       * group members to any node of the
+       * [identities][google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList.identities].
+       * The
+       * [Edge.source_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.source_node]
        * contains a group, such as `group:parent&#64;google.com`. The
-       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node] contains a member of the group,
-       * such as `group:child&#64;google.com` or `user:foo&#64;google.com`.
-       * This field is present only if the output_group_edges option is enabled in
-       * request.
+       * [Edge.target_node][google.cloud.asset.v1.IamPolicyAnalysisResult.Edge.target_node]
+       * contains a member of the group, such as `group:child&#64;google.com` or
+       * `user:foo&#64;google.com`. This field is present only if the
+       * output_group_edges option is enabled in request.
        * </pre>
        *
        * <code>repeated .google.cloud.asset.v1.IamPolicyAnalysisResult.Edge group_edges = 2;</code>
@@ -8820,7 +8960,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
    * <pre>
    * The [full resource
    * name](https://cloud.google.com/asset-inventory/docs/resource-name-format)
-   * of the resource to which the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] policy attaches.
+   * of the resource to which the
+   * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+   * policy attaches.
    * </pre>
    *
    * <code>string attached_resource_full_name = 1;</code>
@@ -8845,7 +8987,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
    * <pre>
    * The [full resource
    * name](https://cloud.google.com/asset-inventory/docs/resource-name-format)
-   * of the resource to which the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] policy attaches.
+   * of the resource to which the
+   * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+   * policy attaches.
    * </pre>
    *
    * <code>string attached_resource_full_name = 1;</code>
@@ -8918,8 +9062,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-   * potentially match resource and access selectors specified in the request.
+   * The access control lists derived from the
+   * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+   * that match or potentially match resource and access selectors specified in
+   * the request.
    * </pre>
    *
    * <code>
@@ -8935,8 +9081,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-   * potentially match resource and access selectors specified in the request.
+   * The access control lists derived from the
+   * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+   * that match or potentially match resource and access selectors specified in
+   * the request.
    * </pre>
    *
    * <code>
@@ -8953,8 +9101,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-   * potentially match resource and access selectors specified in the request.
+   * The access control lists derived from the
+   * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+   * that match or potentially match resource and access selectors specified in
+   * the request.
    * </pre>
    *
    * <code>
@@ -8969,8 +9119,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-   * potentially match resource and access selectors specified in the request.
+   * The access control lists derived from the
+   * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+   * that match or potentially match resource and access selectors specified in
+   * the request.
    * </pre>
    *
    * <code>
@@ -8986,8 +9138,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-   * potentially match resource and access selectors specified in the request.
+   * The access control lists derived from the
+   * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+   * that match or potentially match resource and access selectors specified in
+   * the request.
    * </pre>
    *
    * <code>
@@ -9006,8 +9160,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * The identity list derived from members of the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-   * potentially match identity selector specified in the request.
+   * The identity list derived from members of the
+   * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+   * that match or potentially match identity selector specified in the request.
    * </pre>
    *
    * <code>.google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList identity_list = 4;</code>
@@ -9022,8 +9177,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * The identity list derived from members of the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-   * potentially match identity selector specified in the request.
+   * The identity list derived from members of the
+   * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+   * that match or potentially match identity selector specified in the request.
    * </pre>
    *
    * <code>.google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList identity_list = 4;</code>
@@ -9040,8 +9196,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * The identity list derived from members of the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-   * potentially match identity selector specified in the request.
+   * The identity list derived from members of the
+   * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+   * that match or potentially match identity selector specified in the request.
    * </pre>
    *
    * <code>.google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList identity_list = 4;</code>
@@ -9058,8 +9215,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * Represents whether all analyses on the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] have successfully
-   * finished.
+   * Represents whether all analyses on the
+   * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+   * have successfully finished.
    * </pre>
    *
    * <code>bool fully_explored = 5;</code>
@@ -9572,7 +9730,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      * <pre>
      * The [full resource
      * name](https://cloud.google.com/asset-inventory/docs/resource-name-format)
-     * of the resource to which the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] policy attaches.
+     * of the resource to which the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * policy attaches.
      * </pre>
      *
      * <code>string attached_resource_full_name = 1;</code>
@@ -9596,7 +9756,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      * <pre>
      * The [full resource
      * name](https://cloud.google.com/asset-inventory/docs/resource-name-format)
-     * of the resource to which the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] policy attaches.
+     * of the resource to which the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * policy attaches.
      * </pre>
      *
      * <code>string attached_resource_full_name = 1;</code>
@@ -9620,7 +9782,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      * <pre>
      * The [full resource
      * name](https://cloud.google.com/asset-inventory/docs/resource-name-format)
-     * of the resource to which the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] policy attaches.
+     * of the resource to which the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * policy attaches.
      * </pre>
      *
      * <code>string attached_resource_full_name = 1;</code>
@@ -9643,7 +9807,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      * <pre>
      * The [full resource
      * name](https://cloud.google.com/asset-inventory/docs/resource-name-format)
-     * of the resource to which the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] policy attaches.
+     * of the resource to which the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * policy attaches.
      * </pre>
      *
      * <code>string attached_resource_full_name = 1;</code>
@@ -9662,7 +9828,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      * <pre>
      * The [full resource
      * name](https://cloud.google.com/asset-inventory/docs/resource-name-format)
-     * of the resource to which the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] policy attaches.
+     * of the resource to which the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * policy attaches.
      * </pre>
      *
      * <code>string attached_resource_full_name = 1;</code>
@@ -9883,8 +10051,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -9903,8 +10073,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -9922,8 +10094,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -9942,8 +10116,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -9968,8 +10144,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -9993,8 +10171,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -10019,8 +10199,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -10045,8 +10227,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -10069,8 +10253,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -10094,8 +10280,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -10119,8 +10307,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -10141,8 +10331,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -10163,8 +10355,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -10179,8 +10373,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -10199,8 +10395,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -10220,8 +10418,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -10239,8 +10439,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -10259,8 +10461,10 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The access control lists derived from the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match resource and access selectors specified in the request.
+     * The access control lists derived from the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match resource and access selectors specified in
+     * the request.
      * </pre>
      *
      * <code>
@@ -10303,8 +10507,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The identity list derived from members of the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match identity selector specified in the request.
+     * The identity list derived from members of the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match identity selector specified in the request.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList identity_list = 4;</code>
@@ -10318,8 +10523,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The identity list derived from members of the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match identity selector specified in the request.
+     * The identity list derived from members of the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match identity selector specified in the request.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList identity_list = 4;</code>
@@ -10339,8 +10545,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The identity list derived from members of the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match identity selector specified in the request.
+     * The identity list derived from members of the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match identity selector specified in the request.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList identity_list = 4;</code>
@@ -10363,8 +10570,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The identity list derived from members of the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match identity selector specified in the request.
+     * The identity list derived from members of the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match identity selector specified in the request.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList identity_list = 4;</code>
@@ -10384,8 +10592,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The identity list derived from members of the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match identity selector specified in the request.
+     * The identity list derived from members of the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match identity selector specified in the request.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList identity_list = 4;</code>
@@ -10413,8 +10622,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The identity list derived from members of the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match identity selector specified in the request.
+     * The identity list derived from members of the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match identity selector specified in the request.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList identity_list = 4;</code>
@@ -10434,8 +10644,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The identity list derived from members of the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match identity selector specified in the request.
+     * The identity list derived from members of the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match identity selector specified in the request.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList identity_list = 4;</code>
@@ -10450,8 +10661,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The identity list derived from members of the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match identity selector specified in the request.
+     * The identity list derived from members of the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match identity selector specified in the request.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList identity_list = 4;</code>
@@ -10470,8 +10682,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The identity list derived from members of the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] that match or
-     * potentially match identity selector specified in the request.
+     * The identity list derived from members of the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * that match or potentially match identity selector specified in the request.
      * </pre>
      *
      * <code>.google.cloud.asset.v1.IamPolicyAnalysisResult.IdentityList identity_list = 4;</code>
@@ -10498,8 +10711,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Represents whether all analyses on the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] have successfully
-     * finished.
+     * Represents whether all analyses on the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * have successfully finished.
      * </pre>
      *
      * <code>bool fully_explored = 5;</code>
@@ -10514,8 +10728,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Represents whether all analyses on the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] have successfully
-     * finished.
+     * Represents whether all analyses on the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * have successfully finished.
      * </pre>
      *
      * <code>bool fully_explored = 5;</code>
@@ -10533,8 +10748,9 @@ public final class IamPolicyAnalysisResult extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Represents whether all analyses on the [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding] have successfully
-     * finished.
+     * Represents whether all analyses on the
+     * [iam_binding][google.cloud.asset.v1.IamPolicyAnalysisResult.iam_binding]
+     * have successfully finished.
      * </pre>
      *
      * <code>bool fully_explored = 5;</code>

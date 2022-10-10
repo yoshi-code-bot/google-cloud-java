@@ -93,7 +93,7 @@ public final class SuggestionFeature extends com.google.protobuf.GeneratedMessag
      *
      *
      * <pre>
-     * Run article suggestion model for chat.
+     * Run article suggestion model.
      * </pre>
      *
      * <code>ARTICLE_SUGGESTION = 1;</code>
@@ -103,7 +103,7 @@ public final class SuggestionFeature extends com.google.protobuf.GeneratedMessag
      *
      *
      * <pre>
-     * Run FAQ model for chat.
+     * Run FAQ model.
      * </pre>
      *
      * <code>FAQ = 2;</code>
@@ -113,7 +113,7 @@ public final class SuggestionFeature extends com.google.protobuf.GeneratedMessag
      *
      *
      * <pre>
-     * Run smart reply model for chat.
+     * Run smart reply model.
      * </pre>
      *
      * <code>SMART_REPLY = 3;</code>
@@ -136,7 +136,7 @@ public final class SuggestionFeature extends com.google.protobuf.GeneratedMessag
      *
      *
      * <pre>
-     * Run article suggestion model for chat.
+     * Run article suggestion model.
      * </pre>
      *
      * <code>ARTICLE_SUGGESTION = 1;</code>
@@ -146,7 +146,7 @@ public final class SuggestionFeature extends com.google.protobuf.GeneratedMessag
      *
      *
      * <pre>
-     * Run FAQ model for chat.
+     * Run FAQ model.
      * </pre>
      *
      * <code>FAQ = 2;</code>
@@ -156,7 +156,7 @@ public final class SuggestionFeature extends com.google.protobuf.GeneratedMessag
      *
      *
      * <pre>
-     * Run smart reply model for chat.
+     * Run smart reply model.
      * </pre>
      *
      * <code>SMART_REPLY = 3;</code>
