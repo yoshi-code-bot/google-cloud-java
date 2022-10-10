@@ -13,7 +13,7 @@
 # limitations under the License.
 
 import synthtool as s
-{% if should_include_templates %}from synthtool.languages import java{% endif %}
+from synthtool.languages import java
 
 
 for library in s.get_staging_dirs():
@@ -21,4 +21,15 @@ for library in s.get_staging_dirs():
     s.move(library)
 
 s.remove_staging_dirs()
-{% if should_include_templates %}java.common_templates({% if template_excludes %}excludes={{ template_excludes }}{% endif %}){% endif %}
+java.common_templates(excludes=[
+    ".github/*",
+    ".kokoro/*",
+    ".samples/*",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "SECURITY.md",
+    "java.header",
+    "license-checks.xml",
+    "renovate.json"
+])
