@@ -18,6 +18,7 @@ package com.google.cloud.alloydb.v1beta;
 
 import static com.google.cloud.alloydb.v1beta.AlloyDBAdminClient.ListBackupsPagedResponse;
 import static com.google.cloud.alloydb.v1beta.AlloyDBAdminClient.ListClustersPagedResponse;
+import static com.google.cloud.alloydb.v1beta.AlloyDBAdminClient.ListDatabasesPagedResponse;
 import static com.google.cloud.alloydb.v1beta.AlloyDBAdminClient.ListInstancesPagedResponse;
 import static com.google.cloud.alloydb.v1beta.AlloyDBAdminClient.ListLocationsPagedResponse;
 import static com.google.cloud.alloydb.v1beta.AlloyDBAdminClient.ListSupportedDatabaseFlagsPagedResponse;
@@ -357,6 +358,12 @@ public class AlloyDBAdminSettings extends ClientSettings<AlloyDBAdminSettings> {
     return ((AlloyDBAdminStubSettings) getStubSettings()).deleteUserSettings();
   }
 
+  /** Returns the object with the settings used for calls to listDatabases. */
+  public PagedCallSettings<ListDatabasesRequest, ListDatabasesResponse, ListDatabasesPagedResponse>
+      listDatabasesSettings() {
+    return ((AlloyDBAdminStubSettings) getStubSettings()).listDatabasesSettings();
+  }
+
   /** Returns the object with the settings used for calls to listLocations. */
   public PagedCallSettings<ListLocationsRequest, ListLocationsResponse, ListLocationsPagedResponse>
       listLocationsSettings() {
@@ -419,7 +426,6 @@ public class AlloyDBAdminSettings extends ClientSettings<AlloyDBAdminSettings> {
   }
 
   /** Returns a new REST builder for this class. */
-  @BetaApi
   public static Builder newHttpJsonBuilder() {
     return Builder.createHttpJsonDefault();
   }
@@ -461,7 +467,6 @@ public class AlloyDBAdminSettings extends ClientSettings<AlloyDBAdminSettings> {
       return new Builder(AlloyDBAdminStubSettings.newBuilder());
     }
 
-    @BetaApi
     private static Builder createHttpJsonDefault() {
       return new Builder(AlloyDBAdminStubSettings.newHttpJsonBuilder());
     }
@@ -757,6 +762,13 @@ public class AlloyDBAdminSettings extends ClientSettings<AlloyDBAdminSettings> {
     /** Returns the builder for the settings used for calls to deleteUser. */
     public UnaryCallSettings.Builder<DeleteUserRequest, Empty> deleteUserSettings() {
       return getStubSettingsBuilder().deleteUserSettings();
+    }
+
+    /** Returns the builder for the settings used for calls to listDatabases. */
+    public PagedCallSettings.Builder<
+            ListDatabasesRequest, ListDatabasesResponse, ListDatabasesPagedResponse>
+        listDatabasesSettings() {
+      return getStubSettingsBuilder().listDatabasesSettings();
     }
 
     /** Returns the builder for the settings used for calls to listLocations. */

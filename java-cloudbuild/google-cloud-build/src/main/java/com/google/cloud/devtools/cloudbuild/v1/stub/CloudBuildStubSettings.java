@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -560,7 +560,6 @@ public class CloudBuildStubSettings extends StubSettings<CloudBuildStubSettings>
     return defaultGrpcTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultGrpcApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -569,7 +568,6 @@ public class CloudBuildStubSettings extends StubSettings<CloudBuildStubSettings>
             GaxGrpcProperties.getGrpcTokenName(), GaxGrpcProperties.getGrpcVersion());
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultHttpJsonApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -1149,8 +1147,6 @@ public class CloudBuildStubSettings extends StubSettings<CloudBuildStubSettings>
     }
 
     /** Returns the builder for the settings used for calls to createBuild. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<CreateBuildRequest, Build, BuildOperationMetadata>
         createBuildOperationSettings() {
       return createBuildOperationSettings;
@@ -1178,8 +1174,6 @@ public class CloudBuildStubSettings extends StubSettings<CloudBuildStubSettings>
     }
 
     /** Returns the builder for the settings used for calls to retryBuild. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<RetryBuildRequest, Build, BuildOperationMetadata>
         retryBuildOperationSettings() {
       return retryBuildOperationSettings;
@@ -1191,8 +1185,6 @@ public class CloudBuildStubSettings extends StubSettings<CloudBuildStubSettings>
     }
 
     /** Returns the builder for the settings used for calls to approveBuild. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<ApproveBuildRequest, Build, BuildOperationMetadata>
         approveBuildOperationSettings() {
       return approveBuildOperationSettings;
@@ -1235,8 +1227,6 @@ public class CloudBuildStubSettings extends StubSettings<CloudBuildStubSettings>
     }
 
     /** Returns the builder for the settings used for calls to runBuildTrigger. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<RunBuildTriggerRequest, Build, BuildOperationMetadata>
         runBuildTriggerOperationSettings() {
       return runBuildTriggerOperationSettings;
@@ -1255,8 +1245,6 @@ public class CloudBuildStubSettings extends StubSettings<CloudBuildStubSettings>
     }
 
     /** Returns the builder for the settings used for calls to createWorkerPool. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             CreateWorkerPoolRequest, WorkerPool, CreateWorkerPoolOperationMetadata>
         createWorkerPoolOperationSettings() {
@@ -1275,8 +1263,6 @@ public class CloudBuildStubSettings extends StubSettings<CloudBuildStubSettings>
     }
 
     /** Returns the builder for the settings used for calls to deleteWorkerPool. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             DeleteWorkerPoolRequest, Empty, DeleteWorkerPoolOperationMetadata>
         deleteWorkerPoolOperationSettings() {
@@ -1290,8 +1276,6 @@ public class CloudBuildStubSettings extends StubSettings<CloudBuildStubSettings>
     }
 
     /** Returns the builder for the settings used for calls to updateWorkerPool. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             UpdateWorkerPoolRequest, WorkerPool, UpdateWorkerPoolOperationMetadata>
         updateWorkerPoolOperationSettings() {

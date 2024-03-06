@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -406,7 +406,6 @@ public class AgentsStubSettings extends StubSettings<AgentsStubSettings> {
     return defaultGrpcTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultGrpcApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken("gapic", GaxProperties.getLibraryVersion(AgentsStubSettings.class))
@@ -414,7 +413,6 @@ public class AgentsStubSettings extends StubSettings<AgentsStubSettings> {
             GaxGrpcProperties.getGrpcTokenName(), GaxGrpcProperties.getGrpcVersion());
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultHttpJsonApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken("gapic", GaxProperties.getLibraryVersion(AgentsStubSettings.class))
@@ -817,8 +815,6 @@ public class AgentsStubSettings extends StubSettings<AgentsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to trainAgent. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<TrainAgentRequest, Empty, Struct>
         trainAgentOperationSettings() {
       return trainAgentOperationSettings;
@@ -830,8 +826,6 @@ public class AgentsStubSettings extends StubSettings<AgentsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to exportAgent. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<ExportAgentRequest, ExportAgentResponse, Struct>
         exportAgentOperationSettings() {
       return exportAgentOperationSettings;
@@ -843,8 +837,6 @@ public class AgentsStubSettings extends StubSettings<AgentsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to importAgent. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<ImportAgentRequest, Empty, Struct>
         importAgentOperationSettings() {
       return importAgentOperationSettings;
@@ -856,8 +848,6 @@ public class AgentsStubSettings extends StubSettings<AgentsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to restoreAgent. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<RestoreAgentRequest, Empty, Struct>
         restoreAgentOperationSettings() {
       return restoreAgentOperationSettings;

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -424,7 +424,6 @@ public class ConversationDatasetsStubSettings
     return defaultGrpcTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultGrpcApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -433,7 +432,6 @@ public class ConversationDatasetsStubSettings
             GaxGrpcProperties.getGrpcTokenName(), GaxGrpcProperties.getGrpcVersion());
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultHttpJsonApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -772,8 +770,6 @@ public class ConversationDatasetsStubSettings
     }
 
     /** Returns the builder for the settings used for calls to createConversationDataset. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             CreateConversationDatasetRequest,
             ConversationDataset,
@@ -804,8 +800,6 @@ public class ConversationDatasetsStubSettings
     }
 
     /** Returns the builder for the settings used for calls to deleteConversationDataset. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             DeleteConversationDatasetRequest, Empty, DeleteConversationDatasetOperationMetadata>
         deleteConversationDatasetOperationSettings() {
@@ -819,8 +813,6 @@ public class ConversationDatasetsStubSettings
     }
 
     /** Returns the builder for the settings used for calls to importConversationData. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             ImportConversationDataRequest,
             ImportConversationDataOperationResponse,

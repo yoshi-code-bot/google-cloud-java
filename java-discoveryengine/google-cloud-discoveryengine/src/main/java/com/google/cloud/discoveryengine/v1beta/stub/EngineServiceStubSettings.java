@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -289,7 +289,6 @@ public class EngineServiceStubSettings extends StubSettings<EngineServiceStubSet
     return defaultGrpcTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultGrpcApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -298,7 +297,6 @@ public class EngineServiceStubSettings extends StubSettings<EngineServiceStubSet
             GaxGrpcProperties.getGrpcTokenName(), GaxGrpcProperties.getGrpcVersion());
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultHttpJsonApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -545,8 +543,6 @@ public class EngineServiceStubSettings extends StubSettings<EngineServiceStubSet
     }
 
     /** Returns the builder for the settings used for calls to createEngine. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<CreateEngineRequest, Engine, CreateEngineMetadata>
         createEngineOperationSettings() {
       return createEngineOperationSettings;
@@ -558,8 +554,6 @@ public class EngineServiceStubSettings extends StubSettings<EngineServiceStubSet
     }
 
     /** Returns the builder for the settings used for calls to deleteEngine. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteEngineRequest, Empty, DeleteEngineMetadata>
         deleteEngineOperationSettings() {
       return deleteEngineOperationSettings;

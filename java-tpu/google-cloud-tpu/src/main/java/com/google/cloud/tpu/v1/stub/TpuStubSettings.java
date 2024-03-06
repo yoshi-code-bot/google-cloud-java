@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,6 @@ import static com.google.cloud.tpu.v1.TpuClient.ListTensorFlowVersionsPagedRespo
 
 import com.google.api.core.ApiFunction;
 import com.google.api.core.ApiFuture;
-import com.google.api.core.BetaApi;
 import com.google.api.gax.core.GaxProperties;
 import com.google.api.gax.core.GoogleCredentialsProvider;
 import com.google.api.gax.core.InstantiatingExecutorProvider;
@@ -569,7 +568,6 @@ public class TpuStubSettings extends StubSettings<TpuStubSettings> {
     return defaultGrpcTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken("gapic", GaxProperties.getLibraryVersion(TpuStubSettings.class))
@@ -990,8 +988,6 @@ public class TpuStubSettings extends StubSettings<TpuStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to createNode. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<CreateNodeRequest, Node, OperationMetadata>
         createNodeOperationSettings() {
       return createNodeOperationSettings;
@@ -1003,8 +999,6 @@ public class TpuStubSettings extends StubSettings<TpuStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to deleteNode. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteNodeRequest, Node, OperationMetadata>
         deleteNodeOperationSettings() {
       return deleteNodeOperationSettings;
@@ -1016,8 +1010,6 @@ public class TpuStubSettings extends StubSettings<TpuStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to reimageNode. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<ReimageNodeRequest, Node, OperationMetadata>
         reimageNodeOperationSettings() {
       return reimageNodeOperationSettings;
@@ -1029,8 +1021,6 @@ public class TpuStubSettings extends StubSettings<TpuStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to stopNode. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<StopNodeRequest, Node, OperationMetadata>
         stopNodeOperationSettings() {
       return stopNodeOperationSettings;
@@ -1042,8 +1032,6 @@ public class TpuStubSettings extends StubSettings<TpuStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to startNode. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<StartNodeRequest, Node, OperationMetadata>
         startNodeOperationSettings() {
       return startNodeOperationSettings;

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -244,7 +244,6 @@ public class ConversationModelsSettings extends ClientSettings<ConversationModel
     return ConversationModelsStubSettings.defaultTransportChannelProvider();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
     return ConversationModelsStubSettings.defaultApiClientHeaderProviderBuilder();
   }
@@ -255,7 +254,6 @@ public class ConversationModelsSettings extends ClientSettings<ConversationModel
   }
 
   /** Returns a new REST builder for this class. */
-  @BetaApi
   public static Builder newHttpJsonBuilder() {
     return Builder.createHttpJsonDefault();
   }
@@ -297,7 +295,6 @@ public class ConversationModelsSettings extends ClientSettings<ConversationModel
       return new Builder(ConversationModelsStubSettings.newBuilder());
     }
 
-    @BetaApi
     private static Builder createHttpJsonDefault() {
       return new Builder(ConversationModelsStubSettings.newHttpJsonBuilder());
     }

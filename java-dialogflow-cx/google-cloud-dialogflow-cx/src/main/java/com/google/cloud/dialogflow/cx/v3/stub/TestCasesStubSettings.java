@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -512,7 +512,6 @@ public class TestCasesStubSettings extends StubSettings<TestCasesStubSettings> {
     return defaultGrpcTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultGrpcApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken("gapic", GaxProperties.getLibraryVersion(TestCasesStubSettings.class))
@@ -520,7 +519,6 @@ public class TestCasesStubSettings extends StubSettings<TestCasesStubSettings> {
             GaxGrpcProperties.getGrpcTokenName(), GaxGrpcProperties.getGrpcVersion());
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultHttpJsonApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken("gapic", GaxProperties.getLibraryVersion(TestCasesStubSettings.class))
@@ -981,8 +979,6 @@ public class TestCasesStubSettings extends StubSettings<TestCasesStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to runTestCase. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             RunTestCaseRequest, RunTestCaseResponse, RunTestCaseMetadata>
         runTestCaseOperationSettings() {
@@ -996,8 +992,6 @@ public class TestCasesStubSettings extends StubSettings<TestCasesStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to batchRunTestCases. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             BatchRunTestCasesRequest, BatchRunTestCasesResponse, BatchRunTestCasesMetadata>
         batchRunTestCasesOperationSettings() {
@@ -1016,8 +1010,6 @@ public class TestCasesStubSettings extends StubSettings<TestCasesStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to importTestCases. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             ImportTestCasesRequest, ImportTestCasesResponse, ImportTestCasesMetadata>
         importTestCasesOperationSettings() {
@@ -1030,8 +1022,6 @@ public class TestCasesStubSettings extends StubSettings<TestCasesStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to exportTestCases. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             ExportTestCasesRequest, ExportTestCasesResponse, ExportTestCasesMetadata>
         exportTestCasesOperationSettings() {

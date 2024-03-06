@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,6 @@
 
 package com.google.cloud.discoveryengine.v1alpha;
 
-import com.google.api.core.BetaApi;
 import com.google.api.pathtemplate.PathTemplate;
 import com.google.api.pathtemplate.ValidationException;
 import com.google.api.resourcenames.ResourceName;
@@ -97,12 +96,10 @@ public class TargetSiteName implements ResourceName {
     return new Builder();
   }
 
-  @BetaApi("The per-pattern Builders are not stable yet and may be changed in the future.")
   public static Builder newProjectLocationDataStoreTargetSiteBuilder() {
     return new Builder();
   }
 
-  @BetaApi("The per-pattern Builders are not stable yet and may be changed in the future.")
   public static ProjectLocationCollectionDataStoreTargetSiteBuilder
       newProjectLocationCollectionDataStoreTargetSiteBuilder() {
     return new ProjectLocationCollectionDataStoreTargetSiteBuilder();
@@ -122,7 +119,6 @@ public class TargetSiteName implements ResourceName {
         .build();
   }
 
-  @BetaApi("The static create methods are not stable yet and may be changed in the future.")
   public static TargetSiteName ofProjectLocationDataStoreTargetSiteName(
       String project, String location, String dataStore, String targetSite) {
     return newBuilder()
@@ -133,7 +129,6 @@ public class TargetSiteName implements ResourceName {
         .build();
   }
 
-  @BetaApi("The static create methods are not stable yet and may be changed in the future.")
   public static TargetSiteName ofProjectLocationCollectionDataStoreTargetSiteName(
       String project, String location, String collection, String dataStore, String targetSite) {
     return newProjectLocationCollectionDataStoreTargetSiteBuilder()
@@ -156,7 +151,6 @@ public class TargetSiteName implements ResourceName {
         .toString();
   }
 
-  @BetaApi("The static format methods are not stable yet and may be changed in the future.")
   public static String formatProjectLocationDataStoreTargetSiteName(
       String project, String location, String dataStore, String targetSite) {
     return newBuilder()
@@ -168,7 +162,6 @@ public class TargetSiteName implements ResourceName {
         .toString();
   }
 
-  @BetaApi("The static format methods are not stable yet and may be changed in the future.")
   public static String formatProjectLocationCollectionDataStoreTargetSiteName(
       String project, String location, String collection, String dataStore, String targetSite) {
     return newProjectLocationCollectionDataStoreTargetSiteBuilder()
@@ -368,7 +361,6 @@ public class TargetSiteName implements ResourceName {
    * Builder for
    * projects/{project}/locations/{location}/collections/{collection}/dataStores/{data_store}/siteSearchEngine/targetSites/{target_site}.
    */
-  @BetaApi("The per-pattern Builders are not stable yet and may be changed in the future.")
   public static class ProjectLocationCollectionDataStoreTargetSiteBuilder {
     private String project;
     private String location;

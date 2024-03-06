@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -159,7 +159,6 @@ public class EssentialContactsServiceSettings
     return EssentialContactsServiceStubSettings.defaultTransportChannelProvider();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
     return EssentialContactsServiceStubSettings.defaultApiClientHeaderProviderBuilder();
   }
@@ -170,7 +169,6 @@ public class EssentialContactsServiceSettings
   }
 
   /** Returns a new REST builder for this class. */
-  @BetaApi
   public static Builder newHttpJsonBuilder() {
     return Builder.createHttpJsonDefault();
   }
@@ -213,7 +211,6 @@ public class EssentialContactsServiceSettings
       return new Builder(EssentialContactsServiceStubSettings.newBuilder());
     }
 
-    @BetaApi
     private static Builder createHttpJsonDefault() {
       return new Builder(EssentialContactsServiceStubSettings.newHttpJsonBuilder());
     }

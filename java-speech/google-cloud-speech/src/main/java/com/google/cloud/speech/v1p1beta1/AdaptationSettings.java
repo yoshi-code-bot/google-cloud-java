@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -170,7 +170,6 @@ public class AdaptationSettings extends ClientSettings<AdaptationSettings> {
     return AdaptationStubSettings.defaultTransportChannelProvider();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
     return AdaptationStubSettings.defaultApiClientHeaderProviderBuilder();
   }
@@ -181,7 +180,6 @@ public class AdaptationSettings extends ClientSettings<AdaptationSettings> {
   }
 
   /** Returns a new REST builder for this class. */
-  @BetaApi
   public static Builder newHttpJsonBuilder() {
     return Builder.createHttpJsonDefault();
   }
@@ -223,7 +221,6 @@ public class AdaptationSettings extends ClientSettings<AdaptationSettings> {
       return new Builder(AdaptationStubSettings.newBuilder());
     }
 
-    @BetaApi
     private static Builder createHttpJsonDefault() {
       return new Builder(AdaptationStubSettings.newHttpJsonBuilder());
     }

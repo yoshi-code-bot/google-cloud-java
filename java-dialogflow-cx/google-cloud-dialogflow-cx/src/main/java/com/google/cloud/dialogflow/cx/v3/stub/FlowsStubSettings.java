@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -407,7 +407,6 @@ public class FlowsStubSettings extends StubSettings<FlowsStubSettings> {
     return defaultGrpcTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultGrpcApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken("gapic", GaxProperties.getLibraryVersion(FlowsStubSettings.class))
@@ -415,7 +414,6 @@ public class FlowsStubSettings extends StubSettings<FlowsStubSettings> {
             GaxGrpcProperties.getGrpcTokenName(), GaxGrpcProperties.getGrpcVersion());
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultHttpJsonApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken("gapic", GaxProperties.getLibraryVersion(FlowsStubSettings.class))
@@ -805,8 +803,6 @@ public class FlowsStubSettings extends StubSettings<FlowsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to trainFlow. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<TrainFlowRequest, Empty, Struct>
         trainFlowOperationSettings() {
       return trainFlowOperationSettings;
@@ -830,8 +826,6 @@ public class FlowsStubSettings extends StubSettings<FlowsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to importFlow. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<ImportFlowRequest, ImportFlowResponse, Struct>
         importFlowOperationSettings() {
       return importFlowOperationSettings;
@@ -843,8 +837,6 @@ public class FlowsStubSettings extends StubSettings<FlowsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to exportFlow. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<ExportFlowRequest, ExportFlowResponse, Struct>
         exportFlowOperationSettings() {
       return exportFlowOperationSettings;

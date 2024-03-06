@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,6 @@
 
 package com.google.cloud.dialogflow.v2beta1;
 
-import com.google.api.core.BetaApi;
 import com.google.api.pathtemplate.PathTemplate;
 import com.google.api.pathtemplate.ValidationException;
 import com.google.api.resourcenames.ResourceName;
@@ -89,12 +88,10 @@ public class MessageName implements ResourceName {
     return new Builder();
   }
 
-  @BetaApi("The per-pattern Builders are not stable yet and may be changed in the future.")
   public static Builder newProjectConversationMessageBuilder() {
     return new Builder();
   }
 
-  @BetaApi("The per-pattern Builders are not stable yet and may be changed in the future.")
   public static ProjectLocationConversationMessageBuilder
       newProjectLocationConversationMessageBuilder() {
     return new ProjectLocationConversationMessageBuilder();
@@ -112,7 +109,6 @@ public class MessageName implements ResourceName {
         .build();
   }
 
-  @BetaApi("The static create methods are not stable yet and may be changed in the future.")
   public static MessageName ofProjectConversationMessageName(
       String project, String conversation, String message) {
     return newBuilder()
@@ -122,7 +118,6 @@ public class MessageName implements ResourceName {
         .build();
   }
 
-  @BetaApi("The static create methods are not stable yet and may be changed in the future.")
   public static MessageName ofProjectLocationConversationMessageName(
       String project, String location, String conversation, String message) {
     return newProjectLocationConversationMessageBuilder()
@@ -142,7 +137,6 @@ public class MessageName implements ResourceName {
         .toString();
   }
 
-  @BetaApi("The static format methods are not stable yet and may be changed in the future.")
   public static String formatProjectConversationMessageName(
       String project, String conversation, String message) {
     return newBuilder()
@@ -153,7 +147,6 @@ public class MessageName implements ResourceName {
         .toString();
   }
 
-  @BetaApi("The static format methods are not stable yet and may be changed in the future.")
   public static String formatProjectLocationConversationMessageName(
       String project, String location, String conversation, String message) {
     return newProjectLocationConversationMessageBuilder()
@@ -327,7 +320,6 @@ public class MessageName implements ResourceName {
    * Builder for
    * projects/{project}/locations/{location}/conversations/{conversation}/messages/{message}.
    */
-  @BetaApi("The per-pattern Builders are not stable yet and may be changed in the future.")
   public static class ProjectLocationConversationMessageBuilder {
     private String project;
     private String location;

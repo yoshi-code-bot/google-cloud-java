@@ -18,6 +18,7 @@ package com.google.cloud.alloydb.v1beta.stub;
 
 import static com.google.cloud.alloydb.v1beta.AlloyDBAdminClient.ListBackupsPagedResponse;
 import static com.google.cloud.alloydb.v1beta.AlloyDBAdminClient.ListClustersPagedResponse;
+import static com.google.cloud.alloydb.v1beta.AlloyDBAdminClient.ListDatabasesPagedResponse;
 import static com.google.cloud.alloydb.v1beta.AlloyDBAdminClient.ListInstancesPagedResponse;
 import static com.google.cloud.alloydb.v1beta.AlloyDBAdminClient.ListLocationsPagedResponse;
 import static com.google.cloud.alloydb.v1beta.AlloyDBAdminClient.ListSupportedDatabaseFlagsPagedResponse;
@@ -63,6 +64,7 @@ import com.google.cloud.alloydb.v1beta.CreateInstanceRequest;
 import com.google.cloud.alloydb.v1beta.CreateSecondaryClusterRequest;
 import com.google.cloud.alloydb.v1beta.CreateSecondaryInstanceRequest;
 import com.google.cloud.alloydb.v1beta.CreateUserRequest;
+import com.google.cloud.alloydb.v1beta.Database;
 import com.google.cloud.alloydb.v1beta.DeleteBackupRequest;
 import com.google.cloud.alloydb.v1beta.DeleteClusterRequest;
 import com.google.cloud.alloydb.v1beta.DeleteInstanceRequest;
@@ -81,6 +83,8 @@ import com.google.cloud.alloydb.v1beta.ListBackupsRequest;
 import com.google.cloud.alloydb.v1beta.ListBackupsResponse;
 import com.google.cloud.alloydb.v1beta.ListClustersRequest;
 import com.google.cloud.alloydb.v1beta.ListClustersResponse;
+import com.google.cloud.alloydb.v1beta.ListDatabasesRequest;
+import com.google.cloud.alloydb.v1beta.ListDatabasesResponse;
 import com.google.cloud.alloydb.v1beta.ListInstancesRequest;
 import com.google.cloud.alloydb.v1beta.ListInstancesResponse;
 import com.google.cloud.alloydb.v1beta.ListSupportedDatabaseFlagsRequest;
@@ -238,6 +242,9 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
   private final UnaryCallSettings<CreateUserRequest, User> createUserSettings;
   private final UnaryCallSettings<UpdateUserRequest, User> updateUserSettings;
   private final UnaryCallSettings<DeleteUserRequest, Empty> deleteUserSettings;
+  private final PagedCallSettings<
+          ListDatabasesRequest, ListDatabasesResponse, ListDatabasesPagedResponse>
+      listDatabasesSettings;
   private final PagedCallSettings<
           ListLocationsRequest, ListLocationsResponse, ListLocationsPagedResponse>
       listLocationsSettings;
@@ -436,6 +443,42 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
             }
           };
 
+  private static final PagedListDescriptor<ListDatabasesRequest, ListDatabasesResponse, Database>
+      LIST_DATABASES_PAGE_STR_DESC =
+          new PagedListDescriptor<ListDatabasesRequest, ListDatabasesResponse, Database>() {
+            @Override
+            public String emptyToken() {
+              return "";
+            }
+
+            @Override
+            public ListDatabasesRequest injectToken(ListDatabasesRequest payload, String token) {
+              return ListDatabasesRequest.newBuilder(payload).setPageToken(token).build();
+            }
+
+            @Override
+            public ListDatabasesRequest injectPageSize(ListDatabasesRequest payload, int pageSize) {
+              return ListDatabasesRequest.newBuilder(payload).setPageSize(pageSize).build();
+            }
+
+            @Override
+            public Integer extractPageSize(ListDatabasesRequest payload) {
+              return payload.getPageSize();
+            }
+
+            @Override
+            public String extractNextToken(ListDatabasesResponse payload) {
+              return payload.getNextPageToken();
+            }
+
+            @Override
+            public Iterable<Database> extractResources(ListDatabasesResponse payload) {
+              return payload.getDatabasesList() == null
+                  ? ImmutableList.<Database>of()
+                  : payload.getDatabasesList();
+            }
+          };
+
   private static final PagedListDescriptor<ListLocationsRequest, ListLocationsResponse, Location>
       LIST_LOCATIONS_PAGE_STR_DESC =
           new PagedListDescriptor<ListLocationsRequest, ListLocationsResponse, Location>() {
@@ -565,6 +608,23 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
               PageContext<ListUsersRequest, ListUsersResponse, User> pageContext =
                   PageContext.create(callable, LIST_USERS_PAGE_STR_DESC, request, context);
               return ListUsersPagedResponse.createAsync(pageContext, futureResponse);
+            }
+          };
+
+  private static final PagedListResponseFactory<
+          ListDatabasesRequest, ListDatabasesResponse, ListDatabasesPagedResponse>
+      LIST_DATABASES_PAGE_STR_FACT =
+          new PagedListResponseFactory<
+              ListDatabasesRequest, ListDatabasesResponse, ListDatabasesPagedResponse>() {
+            @Override
+            public ApiFuture<ListDatabasesPagedResponse> getFuturePagedResponse(
+                UnaryCallable<ListDatabasesRequest, ListDatabasesResponse> callable,
+                ListDatabasesRequest request,
+                ApiCallContext context,
+                ApiFuture<ListDatabasesResponse> futureResponse) {
+              PageContext<ListDatabasesRequest, ListDatabasesResponse, Database> pageContext =
+                  PageContext.create(callable, LIST_DATABASES_PAGE_STR_DESC, request, context);
+              return ListDatabasesPagedResponse.createAsync(pageContext, futureResponse);
             }
           };
 
@@ -854,6 +914,12 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     return deleteUserSettings;
   }
 
+  /** Returns the object with the settings used for calls to listDatabases. */
+  public PagedCallSettings<ListDatabasesRequest, ListDatabasesResponse, ListDatabasesPagedResponse>
+      listDatabasesSettings() {
+    return listDatabasesSettings;
+  }
+
   /** Returns the object with the settings used for calls to listLocations. */
   public PagedCallSettings<ListLocationsRequest, ListLocationsResponse, ListLocationsPagedResponse>
       listLocationsSettings() {
@@ -1036,6 +1102,7 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     createUserSettings = settingsBuilder.createUserSettings().build();
     updateUserSettings = settingsBuilder.updateUserSettings().build();
     deleteUserSettings = settingsBuilder.deleteUserSettings().build();
+    listDatabasesSettings = settingsBuilder.listDatabasesSettings().build();
     listLocationsSettings = settingsBuilder.listLocationsSettings().build();
     getLocationSettings = settingsBuilder.getLocationSettings().build();
   }
@@ -1138,6 +1205,9 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     private final UnaryCallSettings.Builder<UpdateUserRequest, User> updateUserSettings;
     private final UnaryCallSettings.Builder<DeleteUserRequest, Empty> deleteUserSettings;
     private final PagedCallSettings.Builder<
+            ListDatabasesRequest, ListDatabasesResponse, ListDatabasesPagedResponse>
+        listDatabasesSettings;
+    private final PagedCallSettings.Builder<
             ListLocationsRequest, ListLocationsResponse, ListLocationsPagedResponse>
         listLocationsSettings;
     private final UnaryCallSettings.Builder<GetLocationRequest, Location> getLocationSettings;
@@ -1238,6 +1308,7 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
       createUserSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
       updateUserSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
       deleteUserSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
+      listDatabasesSettings = PagedCallSettings.newBuilder(LIST_DATABASES_PAGE_STR_FACT);
       listLocationsSettings = PagedCallSettings.newBuilder(LIST_LOCATIONS_PAGE_STR_FACT);
       getLocationSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
 
@@ -1274,6 +1345,7 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
               createUserSettings,
               updateUserSettings,
               deleteUserSettings,
+              listDatabasesSettings,
               listLocationsSettings,
               getLocationSettings);
       initDefaults(this);
@@ -1333,6 +1405,7 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
       createUserSettings = settings.createUserSettings.toBuilder();
       updateUserSettings = settings.updateUserSettings.toBuilder();
       deleteUserSettings = settings.deleteUserSettings.toBuilder();
+      listDatabasesSettings = settings.listDatabasesSettings.toBuilder();
       listLocationsSettings = settings.listLocationsSettings.toBuilder();
       getLocationSettings = settings.getLocationSettings.toBuilder();
 
@@ -1369,6 +1442,7 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
               createUserSettings,
               updateUserSettings,
               deleteUserSettings,
+              listDatabasesSettings,
               listLocationsSettings,
               getLocationSettings);
     }
@@ -1552,6 +1626,11 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
           .deleteUserSettings()
           .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("no_retry_1_codes"))
           .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("no_retry_1_params"));
+
+      builder
+          .listDatabasesSettings()
+          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("retry_policy_0_codes"))
+          .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("retry_policy_0_params"));
 
       builder
           .listLocationsSettings()
@@ -2007,8 +2086,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to createCluster. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<CreateClusterRequest, Cluster, OperationMetadata>
         createClusterOperationSettings() {
       return createClusterOperationSettings;
@@ -2020,8 +2097,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to updateCluster. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<UpdateClusterRequest, Cluster, OperationMetadata>
         updateClusterOperationSettings() {
       return updateClusterOperationSettings;
@@ -2033,8 +2108,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to deleteCluster. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteClusterRequest, Empty, OperationMetadata>
         deleteClusterOperationSettings() {
       return deleteClusterOperationSettings;
@@ -2046,8 +2119,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to promoteCluster. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<PromoteClusterRequest, Cluster, OperationMetadata>
         promoteClusterOperationSettings() {
       return promoteClusterOperationSettings;
@@ -2059,8 +2130,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to restoreCluster. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<RestoreClusterRequest, Cluster, OperationMetadata>
         restoreClusterOperationSettings() {
       return restoreClusterOperationSettings;
@@ -2073,8 +2142,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to createSecondaryCluster. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<CreateSecondaryClusterRequest, Cluster, OperationMetadata>
         createSecondaryClusterOperationSettings() {
       return createSecondaryClusterOperationSettings;
@@ -2098,8 +2165,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to createInstance. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<CreateInstanceRequest, Instance, OperationMetadata>
         createInstanceOperationSettings() {
       return createInstanceOperationSettings;
@@ -2112,8 +2177,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to createSecondaryInstance. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             CreateSecondaryInstanceRequest, Instance, OperationMetadata>
         createSecondaryInstanceOperationSettings() {
@@ -2127,8 +2190,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to batchCreateInstances. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             BatchCreateInstancesRequest, BatchCreateInstancesResponse, OperationMetadata>
         batchCreateInstancesOperationSettings() {
@@ -2141,8 +2202,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to updateInstance. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<UpdateInstanceRequest, Instance, OperationMetadata>
         updateInstanceOperationSettings() {
       return updateInstanceOperationSettings;
@@ -2154,8 +2213,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to deleteInstance. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteInstanceRequest, Empty, OperationMetadata>
         deleteInstanceOperationSettings() {
       return deleteInstanceOperationSettings;
@@ -2168,8 +2225,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to failoverInstance. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<FailoverInstanceRequest, Instance, OperationMetadata>
         failoverInstanceOperationSettings() {
       return failoverInstanceOperationSettings;
@@ -2181,8 +2236,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to injectFault. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<InjectFaultRequest, Instance, OperationMetadata>
         injectFaultOperationSettings() {
       return injectFaultOperationSettings;
@@ -2194,8 +2247,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to restartInstance. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<RestartInstanceRequest, Instance, OperationMetadata>
         restartInstanceOperationSettings() {
       return restartInstanceOperationSettings;
@@ -2219,8 +2270,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to createBackup. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<CreateBackupRequest, Backup, OperationMetadata>
         createBackupOperationSettings() {
       return createBackupOperationSettings;
@@ -2232,8 +2281,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to updateBackup. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<UpdateBackupRequest, Backup, OperationMetadata>
         updateBackupOperationSettings() {
       return updateBackupOperationSettings;
@@ -2245,8 +2292,6 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     }
 
     /** Returns the builder for the settings used for calls to deleteBackup. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteBackupRequest, Empty, OperationMetadata>
         deleteBackupOperationSettings() {
       return deleteBackupOperationSettings;
@@ -2298,6 +2343,13 @@ public class AlloyDBAdminStubSettings extends StubSettings<AlloyDBAdminStubSetti
     /** Returns the builder for the settings used for calls to deleteUser. */
     public UnaryCallSettings.Builder<DeleteUserRequest, Empty> deleteUserSettings() {
       return deleteUserSettings;
+    }
+
+    /** Returns the builder for the settings used for calls to listDatabases. */
+    public PagedCallSettings.Builder<
+            ListDatabasesRequest, ListDatabasesResponse, ListDatabasesPagedResponse>
+        listDatabasesSettings() {
+      return listDatabasesSettings;
     }
 
     /** Returns the builder for the settings used for calls to listLocations. */

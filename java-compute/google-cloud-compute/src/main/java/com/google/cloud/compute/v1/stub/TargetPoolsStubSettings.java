@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,6 @@ import static com.google.cloud.compute.v1.TargetPoolsClient.ListPagedResponse;
 
 import com.google.api.core.ApiFunction;
 import com.google.api.core.ApiFuture;
-import com.google.api.core.BetaApi;
 import com.google.api.gax.core.GaxProperties;
 import com.google.api.gax.core.GoogleCredentialsProvider;
 import com.google.api.gax.core.InstantiatingExecutorProvider;
@@ -461,7 +460,6 @@ public class TargetPoolsStubSettings extends StubSettings<TargetPoolsStubSetting
     return defaultHttpJsonTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -979,8 +977,6 @@ public class TargetPoolsStubSettings extends StubSettings<TargetPoolsStubSetting
     }
 
     /** Returns the builder for the settings used for calls to addHealthCheck. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<AddHealthCheckTargetPoolRequest, Operation, Operation>
         addHealthCheckOperationSettings() {
       return addHealthCheckOperationSettings;
@@ -993,8 +989,6 @@ public class TargetPoolsStubSettings extends StubSettings<TargetPoolsStubSetting
     }
 
     /** Returns the builder for the settings used for calls to addInstance. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<AddInstanceTargetPoolRequest, Operation, Operation>
         addInstanceOperationSettings() {
       return addInstanceOperationSettings;
@@ -1013,8 +1007,6 @@ public class TargetPoolsStubSettings extends StubSettings<TargetPoolsStubSetting
     }
 
     /** Returns the builder for the settings used for calls to delete. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteTargetPoolRequest, Operation, Operation>
         deleteOperationSettings() {
       return deleteOperationSettings;
@@ -1037,8 +1029,6 @@ public class TargetPoolsStubSettings extends StubSettings<TargetPoolsStubSetting
     }
 
     /** Returns the builder for the settings used for calls to insert. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<InsertTargetPoolRequest, Operation, Operation>
         insertOperationSettings() {
       return insertOperationSettings;
@@ -1057,8 +1047,6 @@ public class TargetPoolsStubSettings extends StubSettings<TargetPoolsStubSetting
     }
 
     /** Returns the builder for the settings used for calls to removeHealthCheck. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<RemoveHealthCheckTargetPoolRequest, Operation, Operation>
         removeHealthCheckOperationSettings() {
       return removeHealthCheckOperationSettings;
@@ -1071,8 +1059,6 @@ public class TargetPoolsStubSettings extends StubSettings<TargetPoolsStubSetting
     }
 
     /** Returns the builder for the settings used for calls to removeInstance. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<RemoveInstanceTargetPoolRequest, Operation, Operation>
         removeInstanceOperationSettings() {
       return removeInstanceOperationSettings;
@@ -1084,8 +1070,6 @@ public class TargetPoolsStubSettings extends StubSettings<TargetPoolsStubSetting
     }
 
     /** Returns the builder for the settings used for calls to setBackup. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<SetBackupTargetPoolRequest, Operation, Operation>
         setBackupOperationSettings() {
       return setBackupOperationSettings;
@@ -1098,8 +1082,6 @@ public class TargetPoolsStubSettings extends StubSettings<TargetPoolsStubSetting
     }
 
     /** Returns the builder for the settings used for calls to setSecurityPolicy. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<SetSecurityPolicyTargetPoolRequest, Operation, Operation>
         setSecurityPolicyOperationSettings() {
       return setSecurityPolicyOperationSettings;

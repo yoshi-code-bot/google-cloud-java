@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -186,7 +186,6 @@ public class ConversationsSettings extends ClientSettings<ConversationsSettings>
     return ConversationsStubSettings.defaultTransportChannelProvider();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
     return ConversationsStubSettings.defaultApiClientHeaderProviderBuilder();
   }
@@ -197,7 +196,6 @@ public class ConversationsSettings extends ClientSettings<ConversationsSettings>
   }
 
   /** Returns a new REST builder for this class. */
-  @BetaApi
   public static Builder newHttpJsonBuilder() {
     return Builder.createHttpJsonDefault();
   }
@@ -239,7 +237,6 @@ public class ConversationsSettings extends ClientSettings<ConversationsSettings>
       return new Builder(ConversationsStubSettings.newBuilder());
     }
 
-    @BetaApi
     private static Builder createHttpJsonDefault() {
       return new Builder(ConversationsStubSettings.newHttpJsonBuilder());
     }

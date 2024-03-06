@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,6 @@ import static com.google.cloud.compute.v1.RegionHealthChecksClient.ListPagedResp
 
 import com.google.api.core.ApiFunction;
 import com.google.api.core.ApiFuture;
-import com.google.api.core.BetaApi;
 import com.google.api.gax.core.GaxProperties;
 import com.google.api.gax.core.GoogleCredentialsProvider;
 import com.google.api.gax.core.InstantiatingExecutorProvider;
@@ -301,7 +300,6 @@ public class RegionHealthChecksStubSettings extends StubSettings<RegionHealthChe
     return defaultHttpJsonTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -626,8 +624,6 @@ public class RegionHealthChecksStubSettings extends StubSettings<RegionHealthChe
     }
 
     /** Returns the builder for the settings used for calls to delete. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteRegionHealthCheckRequest, Operation, Operation>
         deleteOperationSettings() {
       return deleteOperationSettings;
@@ -644,8 +640,6 @@ public class RegionHealthChecksStubSettings extends StubSettings<RegionHealthChe
     }
 
     /** Returns the builder for the settings used for calls to insert. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<InsertRegionHealthCheckRequest, Operation, Operation>
         insertOperationSettings() {
       return insertOperationSettings;
@@ -664,8 +658,6 @@ public class RegionHealthChecksStubSettings extends StubSettings<RegionHealthChe
     }
 
     /** Returns the builder for the settings used for calls to patch. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<PatchRegionHealthCheckRequest, Operation, Operation>
         patchOperationSettings() {
       return patchOperationSettings;
@@ -677,8 +669,6 @@ public class RegionHealthChecksStubSettings extends StubSettings<RegionHealthChe
     }
 
     /** Returns the builder for the settings used for calls to update. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<UpdateRegionHealthCheckRequest, Operation, Operation>
         updateOperationSettings() {
       return updateOperationSettings;

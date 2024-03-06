@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -298,7 +298,6 @@ public class SchemaServiceStubSettings extends StubSettings<SchemaServiceStubSet
     return defaultGrpcTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultGrpcApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -307,7 +306,6 @@ public class SchemaServiceStubSettings extends StubSettings<SchemaServiceStubSet
             GaxGrpcProperties.getGrpcTokenName(), GaxGrpcProperties.getGrpcVersion());
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultHttpJsonApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -606,8 +604,6 @@ public class SchemaServiceStubSettings extends StubSettings<SchemaServiceStubSet
     }
 
     /** Returns the builder for the settings used for calls to createSchema. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<CreateSchemaRequest, Schema, CreateSchemaMetadata>
         createSchemaOperationSettings() {
       return createSchemaOperationSettings;
@@ -619,8 +615,6 @@ public class SchemaServiceStubSettings extends StubSettings<SchemaServiceStubSet
     }
 
     /** Returns the builder for the settings used for calls to updateSchema. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<UpdateSchemaRequest, Schema, UpdateSchemaMetadata>
         updateSchemaOperationSettings() {
       return updateSchemaOperationSettings;
@@ -632,8 +626,6 @@ public class SchemaServiceStubSettings extends StubSettings<SchemaServiceStubSet
     }
 
     /** Returns the builder for the settings used for calls to deleteSchema. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteSchemaRequest, Empty, DeleteSchemaMetadata>
         deleteSchemaOperationSettings() {
       return deleteSchemaOperationSettings;

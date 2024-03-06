@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,6 @@ import static com.google.cloud.compute.v1.ProjectsClient.GetXpnResourcesPagedRes
 import static com.google.cloud.compute.v1.ProjectsClient.ListXpnHostsPagedResponse;
 
 import com.google.api.core.ApiFunction;
-import com.google.api.core.BetaApi;
 import com.google.api.gax.core.GoogleCredentialsProvider;
 import com.google.api.gax.core.InstantiatingExecutorProvider;
 import com.google.api.gax.httpjson.InstantiatingHttpJsonChannelProvider;
@@ -165,6 +164,17 @@ public class ProjectsSettings extends ClientSettings<ProjectsSettings> {
     return ((ProjectsStubSettings) getStubSettings()).moveInstanceOperationSettings();
   }
 
+  /** Returns the object with the settings used for calls to setCloudArmorTier. */
+  public UnaryCallSettings<SetCloudArmorTierProjectRequest, Operation> setCloudArmorTierSettings() {
+    return ((ProjectsStubSettings) getStubSettings()).setCloudArmorTierSettings();
+  }
+
+  /** Returns the object with the settings used for calls to setCloudArmorTier. */
+  public OperationCallSettings<SetCloudArmorTierProjectRequest, Operation, Operation>
+      setCloudArmorTierOperationSettings() {
+    return ((ProjectsStubSettings) getStubSettings()).setCloudArmorTierOperationSettings();
+  }
+
   /** Returns the object with the settings used for calls to setCommonInstanceMetadata. */
   public UnaryCallSettings<SetCommonInstanceMetadataProjectRequest, Operation>
       setCommonInstanceMetadataSettings() {
@@ -235,7 +245,6 @@ public class ProjectsSettings extends ClientSettings<ProjectsSettings> {
     return ProjectsStubSettings.defaultTransportChannelProvider();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
     return ProjectsStubSettings.defaultApiClientHeaderProviderBuilder();
   }
@@ -390,6 +399,18 @@ public class ProjectsSettings extends ClientSettings<ProjectsSettings> {
     public OperationCallSettings.Builder<MoveInstanceProjectRequest, Operation, Operation>
         moveInstanceOperationSettings() {
       return getStubSettingsBuilder().moveInstanceOperationSettings();
+    }
+
+    /** Returns the builder for the settings used for calls to setCloudArmorTier. */
+    public UnaryCallSettings.Builder<SetCloudArmorTierProjectRequest, Operation>
+        setCloudArmorTierSettings() {
+      return getStubSettingsBuilder().setCloudArmorTierSettings();
+    }
+
+    /** Returns the builder for the settings used for calls to setCloudArmorTier. */
+    public OperationCallSettings.Builder<SetCloudArmorTierProjectRequest, Operation, Operation>
+        setCloudArmorTierOperationSettings() {
+      return getStubSettingsBuilder().setCloudArmorTierOperationSettings();
     }
 
     /** Returns the builder for the settings used for calls to setCommonInstanceMetadata. */

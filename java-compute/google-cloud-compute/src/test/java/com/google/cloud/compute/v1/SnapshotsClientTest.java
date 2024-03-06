@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -181,6 +181,9 @@ public class SnapshotsClientTest {
             .setSourceDiskEncryptionKey(CustomerEncryptionKey.newBuilder().build())
             .setSourceDiskForRecoveryCheckpoint("sourceDiskForRecoveryCheckpoint-1997957586")
             .setSourceDiskId("sourceDiskId888256403")
+            .setSourceInstantSnapshot("sourceInstantSnapshot-1002724054")
+            .setSourceInstantSnapshotEncryptionKey(CustomerEncryptionKey.newBuilder().build())
+            .setSourceInstantSnapshotId("sourceInstantSnapshotId-1545139227")
             .setSourceSnapshotSchedulePolicy("sourceSnapshotSchedulePolicy-1664282744")
             .setSourceSnapshotSchedulePolicyId("sourceSnapshotSchedulePolicyId-1647880509")
             .setStatus("status-892481550")

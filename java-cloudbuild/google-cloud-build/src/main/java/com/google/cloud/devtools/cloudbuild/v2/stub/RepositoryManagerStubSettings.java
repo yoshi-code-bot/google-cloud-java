@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -571,7 +571,6 @@ public class RepositoryManagerStubSettings extends StubSettings<RepositoryManage
     return defaultGrpcTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultGrpcApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -580,7 +579,6 @@ public class RepositoryManagerStubSettings extends StubSettings<RepositoryManage
             GaxGrpcProperties.getGrpcTokenName(), GaxGrpcProperties.getGrpcVersion());
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultHttpJsonApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -1124,8 +1122,6 @@ public class RepositoryManagerStubSettings extends StubSettings<RepositoryManage
     }
 
     /** Returns the builder for the settings used for calls to createConnection. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<CreateConnectionRequest, Connection, OperationMetadata>
         createConnectionOperationSettings() {
       return createConnectionOperationSettings;
@@ -1150,8 +1146,6 @@ public class RepositoryManagerStubSettings extends StubSettings<RepositoryManage
     }
 
     /** Returns the builder for the settings used for calls to updateConnection. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<UpdateConnectionRequest, Connection, OperationMetadata>
         updateConnectionOperationSettings() {
       return updateConnectionOperationSettings;
@@ -1164,8 +1158,6 @@ public class RepositoryManagerStubSettings extends StubSettings<RepositoryManage
     }
 
     /** Returns the builder for the settings used for calls to deleteConnection. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteConnectionRequest, Empty, OperationMetadata>
         deleteConnectionOperationSettings() {
       return deleteConnectionOperationSettings;
@@ -1178,8 +1170,6 @@ public class RepositoryManagerStubSettings extends StubSettings<RepositoryManage
     }
 
     /** Returns the builder for the settings used for calls to createRepository. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<CreateRepositoryRequest, Repository, OperationMetadata>
         createRepositoryOperationSettings() {
       return createRepositoryOperationSettings;
@@ -1192,8 +1182,6 @@ public class RepositoryManagerStubSettings extends StubSettings<RepositoryManage
     }
 
     /** Returns the builder for the settings used for calls to batchCreateRepositories. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             BatchCreateRepositoriesRequest, BatchCreateRepositoriesResponse, OperationMetadata>
         batchCreateRepositoriesOperationSettings() {
@@ -1219,8 +1207,6 @@ public class RepositoryManagerStubSettings extends StubSettings<RepositoryManage
     }
 
     /** Returns the builder for the settings used for calls to deleteRepository. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteRepositoryRequest, Empty, OperationMetadata>
         deleteRepositoryOperationSettings() {
       return deleteRepositoryOperationSettings;

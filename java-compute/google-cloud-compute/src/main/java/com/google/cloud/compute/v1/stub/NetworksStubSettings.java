@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,6 @@ import static com.google.cloud.compute.v1.NetworksClient.ListPeeringRoutesPagedR
 
 import com.google.api.core.ApiFunction;
 import com.google.api.core.ApiFuture;
-import com.google.api.core.BetaApi;
 import com.google.api.gax.core.GaxProperties;
 import com.google.api.gax.core.GoogleCredentialsProvider;
 import com.google.api.gax.core.InstantiatingExecutorProvider;
@@ -440,7 +439,6 @@ public class NetworksStubSettings extends StubSettings<NetworksStubSettings> {
     return defaultHttpJsonTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken("gapic", GaxProperties.getLibraryVersion(NetworksStubSettings.class))
@@ -911,8 +909,6 @@ public class NetworksStubSettings extends StubSettings<NetworksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to addPeering. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<AddPeeringNetworkRequest, Operation, Operation>
         addPeeringOperationSettings() {
       return addPeeringOperationSettings;
@@ -924,8 +920,6 @@ public class NetworksStubSettings extends StubSettings<NetworksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to delete. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteNetworkRequest, Operation, Operation>
         deleteOperationSettings() {
       return deleteOperationSettings;
@@ -949,8 +943,6 @@ public class NetworksStubSettings extends StubSettings<NetworksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to insert. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<InsertNetworkRequest, Operation, Operation>
         insertOperationSettings() {
       return insertOperationSettings;
@@ -977,8 +969,6 @@ public class NetworksStubSettings extends StubSettings<NetworksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to patch. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<PatchNetworkRequest, Operation, Operation>
         patchOperationSettings() {
       return patchOperationSettings;
@@ -991,8 +981,6 @@ public class NetworksStubSettings extends StubSettings<NetworksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to removePeering. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<RemovePeeringNetworkRequest, Operation, Operation>
         removePeeringOperationSettings() {
       return removePeeringOperationSettings;
@@ -1005,8 +993,6 @@ public class NetworksStubSettings extends StubSettings<NetworksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to switchToCustomMode. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<SwitchToCustomModeNetworkRequest, Operation, Operation>
         switchToCustomModeOperationSettings() {
       return switchToCustomModeOperationSettings;
@@ -1019,8 +1005,6 @@ public class NetworksStubSettings extends StubSettings<NetworksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to updatePeering. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<UpdatePeeringNetworkRequest, Operation, Operation>
         updatePeeringOperationSettings() {
       return updatePeeringOperationSettings;

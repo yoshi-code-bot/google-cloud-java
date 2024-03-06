@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -757,7 +757,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
     return defaultGrpcTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultGrpcApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -766,7 +765,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
             GaxGrpcProperties.getGrpcTokenName(), GaxGrpcProperties.getGrpcVersion());
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultHttpJsonApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -1530,8 +1528,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
     }
 
     /** Returns the builder for the settings used for calls to enableService. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<EnableServiceRequest, Empty, OperationMetadata>
         enableServiceOperationSettings() {
       return enableServiceOperationSettings;
@@ -1548,8 +1544,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
     }
 
     /** Returns the builder for the settings used for calls to disableService. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DisableServiceRequest, Empty, OperationMetadata>
         disableServiceOperationSettings() {
       return disableServiceOperationSettings;
@@ -1589,8 +1583,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
     }
 
     /** Returns the builder for the settings used for calls to batchEnableServices. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<BatchEnableServicesRequest, Empty, OperationMetadata>
         batchEnableServicesOperationSettings() {
       return batchEnableServicesOperationSettings;
@@ -1624,8 +1616,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
     }
 
     /** Returns the builder for the settings used for calls to createAdminOverride. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             CreateAdminOverrideRequest, QuotaOverride, OperationMetadata>
         createAdminOverrideOperationSettings() {
@@ -1639,8 +1629,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
     }
 
     /** Returns the builder for the settings used for calls to updateAdminOverride. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             UpdateAdminOverrideRequest, QuotaOverride, OperationMetadata>
         updateAdminOverrideOperationSettings() {
@@ -1654,8 +1642,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
     }
 
     /** Returns the builder for the settings used for calls to deleteAdminOverride. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteAdminOverrideRequest, Empty, OperationMetadata>
         deleteAdminOverrideOperationSettings() {
       return deleteAdminOverrideOperationSettings;
@@ -1675,8 +1661,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
     }
 
     /** Returns the builder for the settings used for calls to importAdminOverrides. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             ImportAdminOverridesRequest, ImportAdminOverridesResponse, ImportAdminOverridesMetadata>
         importAdminOverridesOperationSettings() {
@@ -1690,8 +1674,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
     }
 
     /** Returns the builder for the settings used for calls to createConsumerOverride. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             CreateConsumerOverrideRequest, QuotaOverride, OperationMetadata>
         createConsumerOverrideOperationSettings() {
@@ -1705,8 +1687,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
     }
 
     /** Returns the builder for the settings used for calls to updateConsumerOverride. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             UpdateConsumerOverrideRequest, QuotaOverride, OperationMetadata>
         updateConsumerOverrideOperationSettings() {
@@ -1720,8 +1700,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
     }
 
     /** Returns the builder for the settings used for calls to deleteConsumerOverride. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteConsumerOverrideRequest, Empty, OperationMetadata>
         deleteConsumerOverrideOperationSettings() {
       return deleteConsumerOverrideOperationSettings;
@@ -1743,8 +1721,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
     }
 
     /** Returns the builder for the settings used for calls to importConsumerOverrides. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             ImportConsumerOverridesRequest,
             ImportConsumerOverridesResponse,
@@ -1760,8 +1736,6 @@ public class ServiceUsageStubSettings extends StubSettings<ServiceUsageStubSetti
     }
 
     /** Returns the builder for the settings used for calls to generateServiceIdentity. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<GenerateServiceIdentityRequest, ServiceIdentity, Empty>
         generateServiceIdentityOperationSettings() {
       return generateServiceIdentityOperationSettings;

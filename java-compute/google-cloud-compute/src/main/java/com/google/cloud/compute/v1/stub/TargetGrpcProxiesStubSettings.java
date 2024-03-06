@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,6 @@ import static com.google.cloud.compute.v1.TargetGrpcProxiesClient.ListPagedRespo
 
 import com.google.api.core.ApiFunction;
 import com.google.api.core.ApiFuture;
-import com.google.api.core.BetaApi;
 import com.google.api.gax.core.GaxProperties;
 import com.google.api.gax.core.GoogleCredentialsProvider;
 import com.google.api.gax.core.InstantiatingExecutorProvider;
@@ -288,7 +287,6 @@ public class TargetGrpcProxiesStubSettings extends StubSettings<TargetGrpcProxie
     return defaultHttpJsonTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -558,8 +556,6 @@ public class TargetGrpcProxiesStubSettings extends StubSettings<TargetGrpcProxie
     }
 
     /** Returns the builder for the settings used for calls to delete. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteTargetGrpcProxyRequest, Operation, Operation>
         deleteOperationSettings() {
       return deleteOperationSettings;
@@ -576,8 +572,6 @@ public class TargetGrpcProxiesStubSettings extends StubSettings<TargetGrpcProxie
     }
 
     /** Returns the builder for the settings used for calls to insert. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<InsertTargetGrpcProxyRequest, Operation, Operation>
         insertOperationSettings() {
       return insertOperationSettings;
@@ -596,8 +590,6 @@ public class TargetGrpcProxiesStubSettings extends StubSettings<TargetGrpcProxie
     }
 
     /** Returns the builder for the settings used for calls to patch. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<PatchTargetGrpcProxyRequest, Operation, Operation>
         patchOperationSettings() {
       return patchOperationSettings;

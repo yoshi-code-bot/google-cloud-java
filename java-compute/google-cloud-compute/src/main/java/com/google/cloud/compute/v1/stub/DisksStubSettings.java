@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,6 @@ import static com.google.cloud.compute.v1.DisksClient.ListPagedResponse;
 
 import com.google.api.core.ApiFunction;
 import com.google.api.core.ApiFuture;
-import com.google.api.core.BetaApi;
 import com.google.api.gax.core.GaxProperties;
 import com.google.api.gax.core.GoogleCredentialsProvider;
 import com.google.api.gax.core.InstantiatingExecutorProvider;
@@ -518,7 +517,6 @@ public class DisksStubSettings extends StubSettings<DisksStubSettings> {
     return defaultHttpJsonTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken("gapic", GaxProperties.getLibraryVersion(DisksStubSettings.class))
@@ -1222,8 +1220,6 @@ public class DisksStubSettings extends StubSettings<DisksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to addResourcePolicies. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<AddResourcePoliciesDiskRequest, Operation, Operation>
         addResourcePoliciesOperationSettings() {
       return addResourcePoliciesOperationSettings;
@@ -1242,8 +1238,6 @@ public class DisksStubSettings extends StubSettings<DisksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to bulkInsert. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<BulkInsertDiskRequest, Operation, Operation>
         bulkInsertOperationSettings() {
       return bulkInsertOperationSettings;
@@ -1256,8 +1250,6 @@ public class DisksStubSettings extends StubSettings<DisksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to createSnapshot. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<CreateSnapshotDiskRequest, Operation, Operation>
         createSnapshotOperationSettings() {
       return createSnapshotOperationSettings;
@@ -1269,8 +1261,6 @@ public class DisksStubSettings extends StubSettings<DisksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to delete. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteDiskRequest, Operation, Operation>
         deleteOperationSettings() {
       return deleteOperationSettings;
@@ -1292,8 +1282,6 @@ public class DisksStubSettings extends StubSettings<DisksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to insert. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<InsertDiskRequest, Operation, Operation>
         insertOperationSettings() {
       return insertOperationSettings;
@@ -1311,8 +1299,6 @@ public class DisksStubSettings extends StubSettings<DisksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to removeResourcePolicies. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<RemoveResourcePoliciesDiskRequest, Operation, Operation>
         removeResourcePoliciesOperationSettings() {
       return removeResourcePoliciesOperationSettings;
@@ -1324,8 +1310,6 @@ public class DisksStubSettings extends StubSettings<DisksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to resize. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<ResizeDiskRequest, Operation, Operation>
         resizeOperationSettings() {
       return resizeOperationSettings;
@@ -1342,8 +1326,6 @@ public class DisksStubSettings extends StubSettings<DisksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to setLabels. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<SetLabelsDiskRequest, Operation, Operation>
         setLabelsOperationSettings() {
       return setLabelsOperationSettings;
@@ -1356,8 +1338,6 @@ public class DisksStubSettings extends StubSettings<DisksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to startAsyncReplication. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<StartAsyncReplicationDiskRequest, Operation, Operation>
         startAsyncReplicationOperationSettings() {
       return startAsyncReplicationOperationSettings;
@@ -1370,8 +1350,6 @@ public class DisksStubSettings extends StubSettings<DisksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to stopAsyncReplication. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<StopAsyncReplicationDiskRequest, Operation, Operation>
         stopAsyncReplicationOperationSettings() {
       return stopAsyncReplicationOperationSettings;
@@ -1384,8 +1362,6 @@ public class DisksStubSettings extends StubSettings<DisksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to stopGroupAsyncReplication. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<StopGroupAsyncReplicationDiskRequest, Operation, Operation>
         stopGroupAsyncReplicationOperationSettings() {
       return stopGroupAsyncReplicationOperationSettings;
@@ -1403,8 +1379,6 @@ public class DisksStubSettings extends StubSettings<DisksStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to update. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<UpdateDiskRequest, Operation, Operation>
         updateOperationSettings() {
       return updateOperationSettings;

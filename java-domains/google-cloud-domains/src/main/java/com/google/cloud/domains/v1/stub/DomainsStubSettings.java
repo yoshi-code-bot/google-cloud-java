@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -435,7 +435,6 @@ public class DomainsStubSettings extends StubSettings<DomainsStubSettings> {
     return defaultGrpcTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultGrpcApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken("gapic", GaxProperties.getLibraryVersion(DomainsStubSettings.class))
@@ -443,7 +442,6 @@ public class DomainsStubSettings extends StubSettings<DomainsStubSettings> {
             GaxGrpcProperties.getGrpcTokenName(), GaxGrpcProperties.getGrpcVersion());
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultHttpJsonApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken("gapic", GaxProperties.getLibraryVersion(DomainsStubSettings.class))
@@ -1026,8 +1024,6 @@ public class DomainsStubSettings extends StubSettings<DomainsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to registerDomain. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<RegisterDomainRequest, Registration, OperationMetadata>
         registerDomainOperationSettings() {
       return registerDomainOperationSettings;
@@ -1046,8 +1042,6 @@ public class DomainsStubSettings extends StubSettings<DomainsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to transferDomain. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<TransferDomainRequest, Registration, OperationMetadata>
         transferDomainOperationSettings() {
       return transferDomainOperationSettings;
@@ -1073,8 +1067,6 @@ public class DomainsStubSettings extends StubSettings<DomainsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to updateRegistration. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<UpdateRegistrationRequest, Registration, OperationMetadata>
         updateRegistrationOperationSettings() {
       return updateRegistrationOperationSettings;
@@ -1087,8 +1079,6 @@ public class DomainsStubSettings extends StubSettings<DomainsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to configureManagementSettings. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             ConfigureManagementSettingsRequest, Registration, OperationMetadata>
         configureManagementSettingsOperationSettings() {
@@ -1102,8 +1092,6 @@ public class DomainsStubSettings extends StubSettings<DomainsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to configureDnsSettings. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             ConfigureDnsSettingsRequest, Registration, OperationMetadata>
         configureDnsSettingsOperationSettings() {
@@ -1117,8 +1105,6 @@ public class DomainsStubSettings extends StubSettings<DomainsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to configureContactSettings. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             ConfigureContactSettingsRequest, Registration, OperationMetadata>
         configureContactSettingsOperationSettings() {
@@ -1132,8 +1118,6 @@ public class DomainsStubSettings extends StubSettings<DomainsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to exportRegistration. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<ExportRegistrationRequest, Registration, OperationMetadata>
         exportRegistrationOperationSettings() {
       return exportRegistrationOperationSettings;
@@ -1146,8 +1130,6 @@ public class DomainsStubSettings extends StubSettings<DomainsStubSettings> {
     }
 
     /** Returns the builder for the settings used for calls to deleteRegistration. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<DeleteRegistrationRequest, Empty, OperationMetadata>
         deleteRegistrationOperationSettings() {
       return deleteRegistrationOperationSettings;

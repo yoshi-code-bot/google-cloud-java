@@ -28,6 +28,7 @@
     <module>java-apigee-registry</module>
     <module>java-apikeys</module>
     <module>java-appengine-admin</module>
+    <module>java-apphub</module>
     <module>java-area120-tables</module>
     <module>java-artifact-registry</module>
     <module>java-asset</module>
@@ -186,6 +187,7 @@
     <module>java-websecurityscanner</module>
     <module>java-workflow-executions</module>
     <module>java-workflows</module>
+    <module>java-workspaceevents</module>
     <module>java-workstations</module>
 
   </modules>

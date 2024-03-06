@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -171,7 +171,6 @@ public class ToolsSettings extends ClientSettings<ToolsSettings> {
     return ToolsStubSettings.defaultTransportChannelProvider();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
     return ToolsStubSettings.defaultApiClientHeaderProviderBuilder();
   }
@@ -182,7 +181,6 @@ public class ToolsSettings extends ClientSettings<ToolsSettings> {
   }
 
   /** Returns a new REST builder for this class. */
-  @BetaApi
   public static Builder newHttpJsonBuilder() {
     return Builder.createHttpJsonDefault();
   }
@@ -224,7 +222,6 @@ public class ToolsSettings extends ClientSettings<ToolsSettings> {
       return new Builder(ToolsStubSettings.newBuilder());
     }
 
-    @BetaApi
     private static Builder createHttpJsonDefault() {
       return new Builder(ToolsStubSettings.newHttpJsonBuilder());
     }

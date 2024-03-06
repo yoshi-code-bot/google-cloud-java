@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -252,7 +252,6 @@ public class CloudShellServiceStubSettings extends StubSettings<CloudShellServic
     return defaultGrpcTransportProviderBuilder().build();
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultGrpcApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -261,7 +260,6 @@ public class CloudShellServiceStubSettings extends StubSettings<CloudShellServic
             GaxGrpcProperties.getGrpcTokenName(), GaxGrpcProperties.getGrpcVersion());
   }
 
-  @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultHttpJsonApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
@@ -605,8 +603,6 @@ public class CloudShellServiceStubSettings extends StubSettings<CloudShellServic
     }
 
     /** Returns the builder for the settings used for calls to startEnvironment. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             StartEnvironmentRequest, StartEnvironmentResponse, StartEnvironmentMetadata>
         startEnvironmentOperationSettings() {
@@ -620,8 +616,6 @@ public class CloudShellServiceStubSettings extends StubSettings<CloudShellServic
     }
 
     /** Returns the builder for the settings used for calls to authorizeEnvironment. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             AuthorizeEnvironmentRequest, AuthorizeEnvironmentResponse, AuthorizeEnvironmentMetadata>
         authorizeEnvironmentOperationSettings() {
@@ -634,8 +628,6 @@ public class CloudShellServiceStubSettings extends StubSettings<CloudShellServic
     }
 
     /** Returns the builder for the settings used for calls to addPublicKey. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             AddPublicKeyRequest, AddPublicKeyResponse, AddPublicKeyMetadata>
         addPublicKeyOperationSettings() {
@@ -648,8 +640,6 @@ public class CloudShellServiceStubSettings extends StubSettings<CloudShellServic
     }
 
     /** Returns the builder for the settings used for calls to removePublicKey. */
-    @BetaApi(
-        "The surface for use by generated code is not stable yet and may change in the future.")
     public OperationCallSettings.Builder<
             RemovePublicKeyRequest, RemovePublicKeyResponse, RemovePublicKeyMetadata>
         removePublicKeyOperationSettings() {
