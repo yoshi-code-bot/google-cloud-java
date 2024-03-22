@@ -33,6 +33,12 @@
     <dependency>
       <groupId>com.google.api.grpc</groupId>
       <artifactId>proto-google-cloud-pubsub-v1</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>com.google.guava</groupId>
+          <artifactId>failureaccess</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>com.google.api.grpc</groupId>
@@ -41,6 +47,12 @@
     <dependency>
       <groupId>com.google.apis</groupId>
       <artifactId>google-api-services-storage</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>com.google.api-client</groupId>
+          <artifactId>google-api-client</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>com.google.api</groupId>
@@ -53,6 +65,12 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>com.google.guava</groupId>
+          <artifactId>failureaccess</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <!--  Test dependencies  -->

@@ -1,6 +1,6 @@
 gapic_generator_version: 2.38.1
 protobuf_version: '25.2'
-googleapis_commitish: 6a4b047c5a1f344a308bfcf25924dbe3b1eaefff
+googleapis_commitish: 7aad45192aa74cb8fc874fe27c3abac56bf1a200
 owlbot_cli_image: sha256:623647ee79ac605858d09e60c1382a716c125fb776f69301b72de1cd35d49409
 synthtool_commitish: 6612ab8f3afcd5e292aecd647f0fa68812c9f5b5
 template_excludes:
@@ -37,6 +37,7 @@ libraries:
   distribution_name: com.google.cloud:google-identity-accesscontextmanager
   GAPICs:
   - proto_path: google/identity/accesscontextmanager/v1
+  - proto_path: google/identity/accesscontextmanager/type
 
 - api_shortname: advisorynotifications
   name_pretty: Advisory Notifications API
@@ -961,6 +962,12 @@ libraries:
   release_level: stable
   GAPICs:
   - proto_path: google/cloud/gsuiteaddons/v1
+  - proto_path: google/apps/script/type
+  - proto_path: google/apps/script/type/docs
+  - proto_path: google/apps/script/type/drive
+  - proto_path: google/apps/script/type/gmail
+  - proto_path: google/apps/script/type/sheets
+  - proto_path: google/apps/script/type/slides
 
 - api_shortname: iam
   name_pretty: IAM
@@ -1338,6 +1345,22 @@ libraries:
   - proto_path: google/cloud/oslogin/v1
   - proto_path: google/cloud/oslogin/v1beta
 
+- api_shortname: parallelstore
+  name_pretty: Parallelstore API
+  product_documentation: https://cloud/parallelstore?hl=en
+  api_description: 'Parallelstore is based on Intel DAOS and delivers up to 6.3x greater
+    read throughput performance compared to competitive Lustre scratch offerings. '
+  client_documentation: 
+    https://cloud.google.com/java/docs/reference/google-cloud-parallelstore/latest/overview
+  release_level: preview
+  distribution_name: com.google.cloud:google-cloud-parallelstore
+  api_id: parallelstore.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.cloud
+  cloud_api: true
+  GAPICs:
+  - proto_path: google/cloud/parallelstore/v1beta
+  requires_billing: true
 - api_shortname: phishingprotection
   name_pretty: Phishing Protection
   product_documentation: https://cloud.google.com/phishing-protection/docs/
@@ -1537,6 +1560,7 @@ libraries:
   requires_billing: false
   GAPICs:
   - proto_path: google/cloud/secretmanager/v1
+  - proto_path: google/cloud/secretmanager/v1beta2
 
 - api_shortname: securesourcemanager
   name_pretty: Secure Source Manager API

@@ -19,6 +19,7 @@ package com.google.cloud.vertexai.generativeai;
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 
+import com.google.api.core.ApiFuture;
 import com.google.api.core.BetaApi;
 import com.google.cloud.vertexai.VertexAI;
 import com.google.cloud.vertexai.api.Content;
@@ -32,7 +33,6 @@ import com.google.cloud.vertexai.api.Tool;
 import com.google.common.base.Strings;
 import com.google.common.collect.ImmutableList;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -41,9 +41,9 @@ public final class GenerativeModel {
   private final String modelName;
   private final String resourceName;
   private final VertexAI vertexAi;
-  private GenerationConfig generationConfig = GenerationConfig.getDefaultInstance();
-  private ImmutableList<SafetySetting> safetySettings = ImmutableList.of();
-  private ImmutableList<Tool> tools = ImmutableList.of();
+  private final GenerationConfig generationConfig;
+  private final ImmutableList<SafetySetting> safetySettings;
+  private final ImmutableList<Tool> tools;
 
   /**
    * Constructs a GenerativeModel instance.
@@ -59,8 +59,8 @@ public final class GenerativeModel {
     this(
         modelName,
         GenerationConfig.getDefaultInstance(),
-        new ArrayList<SafetySetting>(),
-        new ArrayList<Tool>(),
+        ImmutableList.of(),
+        ImmutableList.of(),
         vertexAi);
   }
 
@@ -81,22 +81,29 @@ public final class GenerativeModel {
   private GenerativeModel(
       String modelName,
       GenerationConfig generationConfig,
-      List<SafetySetting> safetySettings,
-      List<Tool> tools,
+      ImmutableList<SafetySetting> safetySettings,
+      ImmutableList<Tool> tools,
       VertexAI vertexAi) {
+    checkArgument(
+        !Strings.isNullOrEmpty(modelName),
+        "modelName can't be null or empty. Please refer to"
+            + " https://cloud.google.com/vertex-ai/docs/generative-ai/learn/models#gemini-models"
+            + " to find the right model name.");
+    checkNotNull(vertexAi, "VertexAI can't be null.");
+    checkNotNull(generationConfig, "GenerationConfig can't be null.");
+    checkNotNull(safetySettings, "ImmutableList<SafetySettings> can't be null.");
+    checkNotNull(tools, "ImmutableList<Tool> can't be null.");
+
     modelName = reconcileModelName(modelName);
     this.modelName = modelName;
     this.resourceName =
         String.format(
             "projects/%s/locations/%s/publishers/google/models/%s",
             vertexAi.getProjectId(), vertexAi.getLocation(), modelName);
-    checkNotNull(generationConfig, "GenerationConfig can't be null.");
-    checkNotNull(safetySettings, "List<SafetySettings> can't be null.");
-    checkNotNull(tools, "List<Tool> can't be null.");
     this.vertexAi = vertexAi;
     this.generationConfig = generationConfig;
-    this.safetySettings = ImmutableList.copyOf(safetySettings);
-    this.tools = ImmutableList.copyOf(tools);
+    this.safetySettings = safetySettings;
+    this.tools = tools;
   }
 
   /** Builder class for {@link GenerativeModel}. */
@@ -163,7 +170,6 @@ public final class GenerativeModel {
       checkNotNull(
           safetySettings,
           "safetySettings can't be null. Use an empty list if no safety settings is intended.");
-      safetySettings.removeIf(safetySetting -> safetySetting == null);
       this.safetySettings = ImmutableList.copyOf(safetySettings);
       return this;
     }
@@ -175,7 +181,6 @@ public final class GenerativeModel {
     @BetaApi
     public Builder setTools(List<Tool> tools) {
       checkNotNull(tools, "tools can't be null. Use an empty list if no tool is to be used.");
-      tools.removeIf(tool -> tool == null);
       this.tools = ImmutableList.copyOf(tools);
       return this;
     }
@@ -315,12 +320,7 @@ public final class GenerativeModel {
    */
   @BetaApi("generateContent is a preview feature.")
   public GenerateContentResponse generateContent(List<Content> contents) throws IOException {
-    GenerateContentRequest.Builder requestBuilder =
-        GenerateContentRequest.newBuilder().setModel(this.resourceName).addAllContents(contents);
-    requestBuilder.setGenerationConfig(this.generationConfig);
-    requestBuilder.addAllSafetySettings(this.safetySettings);
-    requestBuilder.addAllTools(this.tools);
-    return generateContent(requestBuilder.build());
+    return generateContent(buildGenerateContentRequest(contents));
   }
 
   /**
@@ -374,13 +374,7 @@ public final class GenerativeModel {
    */
   public ResponseStream<GenerateContentResponse> generateContentStream(List<Content> contents)
       throws IOException {
-    GenerateContentRequest.Builder requestBuilder =
-        GenerateContentRequest.newBuilder().setModel(this.resourceName).addAllContents(contents);
-    requestBuilder.setGenerationConfig(this.generationConfig);
-    requestBuilder.addAllSafetySettings(this.safetySettings);
-    requestBuilder.addAllTools(this.tools);
-
-    return generateContentStream(requestBuilder.build());
+    return generateContentStream(buildGenerateContentRequest(contents));
   }
 
   /**
@@ -400,6 +394,76 @@ public final class GenerativeModel {
                 .streamGenerateContentCallable()
                 .call(request)
                 .iterator()));
+  }
+
+  /**
+   * Asynchronously generates content from generative model given a text.
+   *
+   * @param text a text message to send to the generative model
+   * @return a {@link com.google.api.core.ApiFuture} represents the response of an asynchronous
+   *     generateContent request
+   * @throws IOException if an I/O error occurs while making the API call
+   */
+  @BetaApi
+  public ApiFuture<GenerateContentResponse> generateContentAsync(String text) throws IOException {
+    return generateContentAsync(ContentMaker.fromString(text));
+  }
+
+  /**
+   * Asynchronously generates content from generative model given a single Content.
+   *
+   * @param content a {@link com.google.cloud.vertexai.api.Content} to send to the generative model.
+   *     The role of the content is "user".
+   * @return a {@link com.google.api.core.ApiFuture} represents the response of an asynchronous
+   *     generateContent request
+   * @throws IOException if an I/O error occurs while making the API call
+   */
+  @BetaApi
+  public ApiFuture<GenerateContentResponse> generateContentAsync(Content content)
+      throws IOException {
+    return generateContentAsync(Arrays.asList(content));
+  }
+
+  /**
+   * Asynchronously generates content from generative model given a list of contents.
+   *
+   * @param contents a list of {@link com.google.cloud.vertexai.api.Content} to send to the
+   *     generative model
+   * @return a {@link com.google.api.core.ApiFuture} represents the response of an asynchronous
+   *     generateContent request
+   * @throws IOException if an I/O error occurs while making the API call
+   */
+  @BetaApi
+  public ApiFuture<GenerateContentResponse> generateContentAsync(List<Content> contents)
+      throws IOException {
+    return generateContentAsync(buildGenerateContentRequest(contents));
+  }
+
+  /**
+   * A base generateContentAsync method that will be used internally.
+   *
+   * @param request a {@link com.google.cloud.vertexai.api.GenerateContentRequest} instance
+   * @return a {@link com.google.api.core.ApiFuture} represents the response of an asynchronous
+   *     generateContent request
+   * @throws IOException if an I/O error occurs while making the API call
+   */
+  private ApiFuture<GenerateContentResponse> generateContentAsync(GenerateContentRequest request)
+      throws IOException {
+    return vertexAi.getPredictionServiceClient().generateContentCallable().futureCall(request);
+  }
+
+  /**
+   * Builds a {@link com.google.cloud.vertexai.api.GenerateContentRequest} based on a list of
+   * contents and model configurations.
+   */
+  private GenerateContentRequest buildGenerateContentRequest(List<Content> contents) {
+    return GenerateContentRequest.newBuilder()
+        .setModel(resourceName)
+        .addAllContents(contents)
+        .setGenerationConfig(generationConfig)
+        .addAllSafetySettings(safetySettings)
+        .addAllTools(tools)
+        .build();
   }
 
   /** Returns the model name of this generative model. */
