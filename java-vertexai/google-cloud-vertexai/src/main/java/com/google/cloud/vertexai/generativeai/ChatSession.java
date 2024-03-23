@@ -21,16 +21,15 @@ import static com.google.cloud.vertexai.generativeai.ResponseHandler.getContent;
 import static com.google.cloud.vertexai.generativeai.ResponseHandler.getFinishReason;
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import com.google.api.core.BetaApi;
 import com.google.cloud.vertexai.api.Candidate.FinishReason;
 import com.google.cloud.vertexai.api.Content;
 import com.google.cloud.vertexai.api.GenerateContentResponse;
 import com.google.cloud.vertexai.api.GenerationConfig;
 import com.google.cloud.vertexai.api.SafetySetting;
 import com.google.cloud.vertexai.api.Tool;
+import com.google.common.collect.ImmutableList;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -46,7 +45,6 @@ public final class ChatSession {
    * Creates a new chat session given a GenerativeModel instance. Configurations of the chat (e.g.,
    * GenerationConfig) inherits from the model.
    */
-  @BetaApi
   public ChatSession(GenerativeModel model) {
     this(model, Optional.empty());
   }
@@ -60,7 +58,6 @@ public final class ChatSession {
    *     chat session will be merged to the root chat session.
    * @return a {@link ChatSession} instance.
    */
-  @BetaApi
   private ChatSession(GenerativeModel model, Optional<ChatSession> rootChatSession) {
     checkNotNull(model, "model should not be null");
     this.model = model;
@@ -76,7 +73,6 @@ public final class ChatSession {
    *     used in the new ChatSession.
    * @return a new {@link ChatSession} instance with the specified GenerationConfig.
    */
-  @BetaApi
   public ChatSession withGenerationConfig(GenerationConfig generationConfig) {
     ChatSession rootChat = rootChatSession.orElse(this);
     ChatSession newChatSession =
@@ -92,12 +88,11 @@ public final class ChatSession {
    *     in the new ChatSession.
    * @return a new {@link ChatSession} instance with the specified SafetySettings.
    */
-  @BetaApi
   public ChatSession withSafetySettings(List<SafetySetting> safetySettings) {
     ChatSession rootChat = rootChatSession.orElse(this);
     ChatSession newChatSession =
         new ChatSession(model.withSafetySettings(safetySettings), Optional.of(rootChat));
-    newChatSession.setHistory(history);
+    newChatSession.history = history;
     return newChatSession;
   }
 
@@ -108,11 +103,10 @@ public final class ChatSession {
    *     ChatSession.
    * @return a new {@link ChatSession} instance with the specified Tools.
    */
-  @BetaApi
   public ChatSession withTools(List<Tool> tools) {
     ChatSession rootChat = rootChatSession.orElse(this);
     ChatSession newChatSession = new ChatSession(model.withTools(tools), Optional.of(rootChat));
-    newChatSession.setHistory(history);
+    newChatSession.history = history;
     return newChatSession;
   }
 
@@ -123,7 +117,6 @@ public final class ChatSession {
    * @return an iterable in which each element is a GenerateContentResponse. Can be converted to
    *     stream by stream() method.
    */
-  @BetaApi
   public ResponseStream<GenerateContentResponse> sendMessageStream(String text) throws IOException {
     return sendMessageStream(ContentMaker.fromString(text));
   }
@@ -135,7 +128,6 @@ public final class ChatSession {
    * @return an iterable in which each element is a GenerateContentResponse. Can be converted to
    *     stream by stream() method.
    */
-  @BetaApi
   public ResponseStream<GenerateContentResponse> sendMessageStream(Content content)
       throws IOException, IllegalArgumentException {
     checkLastResponseAndEditHistory();
@@ -152,7 +144,6 @@ public final class ChatSession {
    * @param text the message to be sent.
    * @return a response.
    */
-  @BetaApi
   public GenerateContentResponse sendMessage(String text) throws IOException {
     return sendMessage(ContentMaker.fromString(text));
   }
@@ -163,7 +154,6 @@ public final class ChatSession {
    * @param content the content to be sent.
    * @return a response.
    */
-  @BetaApi
   public GenerateContentResponse sendMessage(Content content) throws IOException {
     checkLastResponseAndEditHistory();
     history.add(content);
@@ -220,10 +210,9 @@ public final class ChatSession {
   /**
    * Returns the history of the conversation.
    *
-   * @return an unmodifiable history of the conversation.
+   * @return a history of the conversation as an immutable list of {@link Content}.
    */
-  @BetaApi
-  public List<Content> getHistory() {
+  public ImmutableList<Content> getHistory() {
     try {
       checkLastResponseAndEditHistory();
     } catch (IllegalStateException e) {
@@ -236,7 +225,7 @@ public final class ChatSession {
       }
       throw e;
     }
-    return Collections.unmodifiableList(history);
+    return ImmutableList.copyOf(history);
   }
 
   /**
@@ -263,9 +252,8 @@ public final class ChatSession {
   }
 
   /** Set the history to a list of Content */
-  @BetaApi
   public void setHistory(List<Content> history) {
-    this.history = history;
+    this.history = new ArrayList<>(history);
   }
 
   /** Sets the current response of the root chat session (if exists) or the current chat session. */
