@@ -127,10 +127,6 @@ public class VertexAI implements AutoCloseable {
     this.apiEndpoint = apiEndpoint.orElse(String.format("%s-aiplatform.googleapis.com", location));
   }
 
-  public static Builder builder() {
-    return new Builder();
-  }
-
   /** Builder for {@link VertexAI}. */
   public static class Builder {
     private String projectId;
@@ -143,8 +139,6 @@ public class VertexAI implements AutoCloseable {
     private Supplier<PredictionServiceClient> predictionClientSupplier;
 
     private Supplier<LlmUtilityServiceClient> llmClientSupplier;
-
-    Builder() {}
 
     public VertexAI build() {
       checkNotNull(projectId, "projectId must be set.");
@@ -161,6 +155,7 @@ public class VertexAI implements AutoCloseable {
           Optional.ofNullable(llmClientSupplier));
     }
 
+    @CanIgnoreReturnValue
     public Builder setProjectId(String projectId) {
       checkArgument(!Strings.isNullOrEmpty(projectId), "projectId can't be null or empty");
 
@@ -168,6 +163,7 @@ public class VertexAI implements AutoCloseable {
       return this;
     }
 
+    @CanIgnoreReturnValue
     public Builder setLocation(String location) {
       checkArgument(!Strings.isNullOrEmpty(location), "location can't be null or empty");
 
@@ -175,6 +171,7 @@ public class VertexAI implements AutoCloseable {
       return this;
     }
 
+    @CanIgnoreReturnValue
     public Builder setApiEndpoint(String apiEndpoint) {
       checkArgument(!Strings.isNullOrEmpty(apiEndpoint), "apiEndpoint can't be null or empty");
 
@@ -182,6 +179,7 @@ public class VertexAI implements AutoCloseable {
       return this;
     }
 
+    @CanIgnoreReturnValue
     public Builder setTransport(Transport transport) {
       checkNotNull(transport, "transport can't be null");
 
@@ -189,6 +187,7 @@ public class VertexAI implements AutoCloseable {
       return this;
     }
 
+    @CanIgnoreReturnValue
     public Builder setCredentials(Credentials credentials) {
       checkNotNull(credentials, "credentials can't be null");
 
@@ -209,6 +208,7 @@ public class VertexAI implements AutoCloseable {
       return this;
     }
 
+    @CanIgnoreReturnValue
     public Builder setScopes(List<String> scopes) {
       checkNotNull(scopes, "scopes can't be null");
 

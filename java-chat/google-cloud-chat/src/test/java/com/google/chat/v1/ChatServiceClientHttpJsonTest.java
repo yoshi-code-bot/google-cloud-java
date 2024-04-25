@@ -1645,6 +1645,64 @@ public class ChatServiceClientHttpJsonTest {
   }
 
   @Test
+  public void updateMembershipTest() throws Exception {
+    Membership expectedResponse =
+        Membership.newBuilder()
+            .setName(MembershipName.of("[SPACE]", "[MEMBER]").toString())
+            .setCreateTime(Timestamp.newBuilder().build())
+            .setDeleteTime(Timestamp.newBuilder().build())
+            .build();
+    mockService.addResponse(expectedResponse);
+
+    Membership membership =
+        Membership.newBuilder()
+            .setName(MembershipName.of("[SPACE]", "[MEMBER]").toString())
+            .setCreateTime(Timestamp.newBuilder().build())
+            .setDeleteTime(Timestamp.newBuilder().build())
+            .build();
+    FieldMask updateMask = FieldMask.newBuilder().build();
+
+    Membership actualResponse = client.updateMembership(membership, updateMask);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<String> actualRequests = mockService.getRequestPaths();
+    Assert.assertEquals(1, actualRequests.size());
+
+    String apiClientHeaderKey =
+        mockService
+            .getRequestHeaders()
+            .get(ApiClientHeaderProvider.getDefaultApiClientHeaderKey())
+            .iterator()
+            .next();
+    Assert.assertTrue(
+        GaxHttpJsonProperties.getDefaultApiClientHeaderPattern()
+            .matcher(apiClientHeaderKey)
+            .matches());
+  }
+
+  @Test
+  public void updateMembershipExceptionTest() throws Exception {
+    ApiException exception =
+        ApiExceptionFactory.createException(
+            new Exception(), FakeStatusCode.of(StatusCode.Code.INVALID_ARGUMENT), false);
+    mockService.addException(exception);
+
+    try {
+      Membership membership =
+          Membership.newBuilder()
+              .setName(MembershipName.of("[SPACE]", "[MEMBER]").toString())
+              .setCreateTime(Timestamp.newBuilder().build())
+              .setDeleteTime(Timestamp.newBuilder().build())
+              .build();
+      FieldMask updateMask = FieldMask.newBuilder().build();
+      client.updateMembership(membership, updateMask);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception.
+    }
+  }
+
+  @Test
   public void deleteMembershipTest() throws Exception {
     Membership expectedResponse =
         Membership.newBuilder()
@@ -2006,6 +2064,241 @@ public class ChatServiceClientHttpJsonTest {
     try {
       String name = "spaces/space-9479/messages/message-9479/reactions/reaction-9479";
       client.deleteReaction(name);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception.
+    }
+  }
+
+  @Test
+  public void getSpaceReadStateTest() throws Exception {
+    SpaceReadState expectedResponse =
+        SpaceReadState.newBuilder()
+            .setName(SpaceReadStateName.of("[USER]", "[SPACE]").toString())
+            .setLastReadTime(Timestamp.newBuilder().build())
+            .build();
+    mockService.addResponse(expectedResponse);
+
+    SpaceReadStateName name = SpaceReadStateName.of("[USER]", "[SPACE]");
+
+    SpaceReadState actualResponse = client.getSpaceReadState(name);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<String> actualRequests = mockService.getRequestPaths();
+    Assert.assertEquals(1, actualRequests.size());
+
+    String apiClientHeaderKey =
+        mockService
+            .getRequestHeaders()
+            .get(ApiClientHeaderProvider.getDefaultApiClientHeaderKey())
+            .iterator()
+            .next();
+    Assert.assertTrue(
+        GaxHttpJsonProperties.getDefaultApiClientHeaderPattern()
+            .matcher(apiClientHeaderKey)
+            .matches());
+  }
+
+  @Test
+  public void getSpaceReadStateExceptionTest() throws Exception {
+    ApiException exception =
+        ApiExceptionFactory.createException(
+            new Exception(), FakeStatusCode.of(StatusCode.Code.INVALID_ARGUMENT), false);
+    mockService.addException(exception);
+
+    try {
+      SpaceReadStateName name = SpaceReadStateName.of("[USER]", "[SPACE]");
+      client.getSpaceReadState(name);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception.
+    }
+  }
+
+  @Test
+  public void getSpaceReadStateTest2() throws Exception {
+    SpaceReadState expectedResponse =
+        SpaceReadState.newBuilder()
+            .setName(SpaceReadStateName.of("[USER]", "[SPACE]").toString())
+            .setLastReadTime(Timestamp.newBuilder().build())
+            .build();
+    mockService.addResponse(expectedResponse);
+
+    String name = "users/user-2197/spaces/space-2197/spaceReadState";
+
+    SpaceReadState actualResponse = client.getSpaceReadState(name);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<String> actualRequests = mockService.getRequestPaths();
+    Assert.assertEquals(1, actualRequests.size());
+
+    String apiClientHeaderKey =
+        mockService
+            .getRequestHeaders()
+            .get(ApiClientHeaderProvider.getDefaultApiClientHeaderKey())
+            .iterator()
+            .next();
+    Assert.assertTrue(
+        GaxHttpJsonProperties.getDefaultApiClientHeaderPattern()
+            .matcher(apiClientHeaderKey)
+            .matches());
+  }
+
+  @Test
+  public void getSpaceReadStateExceptionTest2() throws Exception {
+    ApiException exception =
+        ApiExceptionFactory.createException(
+            new Exception(), FakeStatusCode.of(StatusCode.Code.INVALID_ARGUMENT), false);
+    mockService.addException(exception);
+
+    try {
+      String name = "users/user-2197/spaces/space-2197/spaceReadState";
+      client.getSpaceReadState(name);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception.
+    }
+  }
+
+  @Test
+  public void updateSpaceReadStateTest() throws Exception {
+    SpaceReadState expectedResponse =
+        SpaceReadState.newBuilder()
+            .setName(SpaceReadStateName.of("[USER]", "[SPACE]").toString())
+            .setLastReadTime(Timestamp.newBuilder().build())
+            .build();
+    mockService.addResponse(expectedResponse);
+
+    SpaceReadState spaceReadState =
+        SpaceReadState.newBuilder()
+            .setName(SpaceReadStateName.of("[USER]", "[SPACE]").toString())
+            .setLastReadTime(Timestamp.newBuilder().build())
+            .build();
+    FieldMask updateMask = FieldMask.newBuilder().build();
+
+    SpaceReadState actualResponse = client.updateSpaceReadState(spaceReadState, updateMask);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<String> actualRequests = mockService.getRequestPaths();
+    Assert.assertEquals(1, actualRequests.size());
+
+    String apiClientHeaderKey =
+        mockService
+            .getRequestHeaders()
+            .get(ApiClientHeaderProvider.getDefaultApiClientHeaderKey())
+            .iterator()
+            .next();
+    Assert.assertTrue(
+        GaxHttpJsonProperties.getDefaultApiClientHeaderPattern()
+            .matcher(apiClientHeaderKey)
+            .matches());
+  }
+
+  @Test
+  public void updateSpaceReadStateExceptionTest() throws Exception {
+    ApiException exception =
+        ApiExceptionFactory.createException(
+            new Exception(), FakeStatusCode.of(StatusCode.Code.INVALID_ARGUMENT), false);
+    mockService.addException(exception);
+
+    try {
+      SpaceReadState spaceReadState =
+          SpaceReadState.newBuilder()
+              .setName(SpaceReadStateName.of("[USER]", "[SPACE]").toString())
+              .setLastReadTime(Timestamp.newBuilder().build())
+              .build();
+      FieldMask updateMask = FieldMask.newBuilder().build();
+      client.updateSpaceReadState(spaceReadState, updateMask);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception.
+    }
+  }
+
+  @Test
+  public void getThreadReadStateTest() throws Exception {
+    ThreadReadState expectedResponse =
+        ThreadReadState.newBuilder()
+            .setName(ThreadReadStateName.of("[USER]", "[SPACE]", "[THREAD]").toString())
+            .setLastReadTime(Timestamp.newBuilder().build())
+            .build();
+    mockService.addResponse(expectedResponse);
+
+    ThreadReadStateName name = ThreadReadStateName.of("[USER]", "[SPACE]", "[THREAD]");
+
+    ThreadReadState actualResponse = client.getThreadReadState(name);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<String> actualRequests = mockService.getRequestPaths();
+    Assert.assertEquals(1, actualRequests.size());
+
+    String apiClientHeaderKey =
+        mockService
+            .getRequestHeaders()
+            .get(ApiClientHeaderProvider.getDefaultApiClientHeaderKey())
+            .iterator()
+            .next();
+    Assert.assertTrue(
+        GaxHttpJsonProperties.getDefaultApiClientHeaderPattern()
+            .matcher(apiClientHeaderKey)
+            .matches());
+  }
+
+  @Test
+  public void getThreadReadStateExceptionTest() throws Exception {
+    ApiException exception =
+        ApiExceptionFactory.createException(
+            new Exception(), FakeStatusCode.of(StatusCode.Code.INVALID_ARGUMENT), false);
+    mockService.addException(exception);
+
+    try {
+      ThreadReadStateName name = ThreadReadStateName.of("[USER]", "[SPACE]", "[THREAD]");
+      client.getThreadReadState(name);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception.
+    }
+  }
+
+  @Test
+  public void getThreadReadStateTest2() throws Exception {
+    ThreadReadState expectedResponse =
+        ThreadReadState.newBuilder()
+            .setName(ThreadReadStateName.of("[USER]", "[SPACE]", "[THREAD]").toString())
+            .setLastReadTime(Timestamp.newBuilder().build())
+            .build();
+    mockService.addResponse(expectedResponse);
+
+    String name = "users/user-8554/spaces/space-8554/threads/thread-8554/threadReadState";
+
+    ThreadReadState actualResponse = client.getThreadReadState(name);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<String> actualRequests = mockService.getRequestPaths();
+    Assert.assertEquals(1, actualRequests.size());
+
+    String apiClientHeaderKey =
+        mockService
+            .getRequestHeaders()
+            .get(ApiClientHeaderProvider.getDefaultApiClientHeaderKey())
+            .iterator()
+            .next();
+    Assert.assertTrue(
+        GaxHttpJsonProperties.getDefaultApiClientHeaderPattern()
+            .matcher(apiClientHeaderKey)
+            .matches());
+  }
+
+  @Test
+  public void getThreadReadStateExceptionTest2() throws Exception {
+    ApiException exception =
+        ApiExceptionFactory.createException(
+            new Exception(), FakeStatusCode.of(StatusCode.Code.INVALID_ARGUMENT), false);
+    mockService.addException(exception);
+
+    try {
+      String name = "users/user-8554/spaces/space-8554/threads/thread-8554/threadReadState";
+      client.getThreadReadState(name);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
       // Expected exception.

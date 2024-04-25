@@ -1410,6 +1410,49 @@ public class ChatServiceClientTest {
   }
 
   @Test
+  public void updateMembershipTest() throws Exception {
+    Membership expectedResponse =
+        Membership.newBuilder()
+            .setName(MembershipName.of("[SPACE]", "[MEMBER]").toString())
+            .setCreateTime(Timestamp.newBuilder().build())
+            .setDeleteTime(Timestamp.newBuilder().build())
+            .build();
+    mockChatService.addResponse(expectedResponse);
+
+    Membership membership = Membership.newBuilder().build();
+    FieldMask updateMask = FieldMask.newBuilder().build();
+
+    Membership actualResponse = client.updateMembership(membership, updateMask);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<AbstractMessage> actualRequests = mockChatService.getRequests();
+    Assert.assertEquals(1, actualRequests.size());
+    UpdateMembershipRequest actualRequest = ((UpdateMembershipRequest) actualRequests.get(0));
+
+    Assert.assertEquals(membership, actualRequest.getMembership());
+    Assert.assertEquals(updateMask, actualRequest.getUpdateMask());
+    Assert.assertTrue(
+        channelProvider.isHeaderSent(
+            ApiClientHeaderProvider.getDefaultApiClientHeaderKey(),
+            GaxGrpcProperties.getDefaultApiClientHeaderPattern()));
+  }
+
+  @Test
+  public void updateMembershipExceptionTest() throws Exception {
+    StatusRuntimeException exception = new StatusRuntimeException(io.grpc.Status.INVALID_ARGUMENT);
+    mockChatService.addException(exception);
+
+    try {
+      Membership membership = Membership.newBuilder().build();
+      FieldMask updateMask = FieldMask.newBuilder().build();
+      client.updateMembership(membership, updateMask);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception.
+    }
+  }
+
+  @Test
   public void deleteMembershipTest() throws Exception {
     Membership expectedResponse =
         Membership.newBuilder()
@@ -1725,6 +1768,205 @@ public class ChatServiceClientTest {
     try {
       String name = "name3373707";
       client.deleteReaction(name);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception.
+    }
+  }
+
+  @Test
+  public void getSpaceReadStateTest() throws Exception {
+    SpaceReadState expectedResponse =
+        SpaceReadState.newBuilder()
+            .setName(SpaceReadStateName.of("[USER]", "[SPACE]").toString())
+            .setLastReadTime(Timestamp.newBuilder().build())
+            .build();
+    mockChatService.addResponse(expectedResponse);
+
+    SpaceReadStateName name = SpaceReadStateName.of("[USER]", "[SPACE]");
+
+    SpaceReadState actualResponse = client.getSpaceReadState(name);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<AbstractMessage> actualRequests = mockChatService.getRequests();
+    Assert.assertEquals(1, actualRequests.size());
+    GetSpaceReadStateRequest actualRequest = ((GetSpaceReadStateRequest) actualRequests.get(0));
+
+    Assert.assertEquals(name.toString(), actualRequest.getName());
+    Assert.assertTrue(
+        channelProvider.isHeaderSent(
+            ApiClientHeaderProvider.getDefaultApiClientHeaderKey(),
+            GaxGrpcProperties.getDefaultApiClientHeaderPattern()));
+  }
+
+  @Test
+  public void getSpaceReadStateExceptionTest() throws Exception {
+    StatusRuntimeException exception = new StatusRuntimeException(io.grpc.Status.INVALID_ARGUMENT);
+    mockChatService.addException(exception);
+
+    try {
+      SpaceReadStateName name = SpaceReadStateName.of("[USER]", "[SPACE]");
+      client.getSpaceReadState(name);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception.
+    }
+  }
+
+  @Test
+  public void getSpaceReadStateTest2() throws Exception {
+    SpaceReadState expectedResponse =
+        SpaceReadState.newBuilder()
+            .setName(SpaceReadStateName.of("[USER]", "[SPACE]").toString())
+            .setLastReadTime(Timestamp.newBuilder().build())
+            .build();
+    mockChatService.addResponse(expectedResponse);
+
+    String name = "name3373707";
+
+    SpaceReadState actualResponse = client.getSpaceReadState(name);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<AbstractMessage> actualRequests = mockChatService.getRequests();
+    Assert.assertEquals(1, actualRequests.size());
+    GetSpaceReadStateRequest actualRequest = ((GetSpaceReadStateRequest) actualRequests.get(0));
+
+    Assert.assertEquals(name, actualRequest.getName());
+    Assert.assertTrue(
+        channelProvider.isHeaderSent(
+            ApiClientHeaderProvider.getDefaultApiClientHeaderKey(),
+            GaxGrpcProperties.getDefaultApiClientHeaderPattern()));
+  }
+
+  @Test
+  public void getSpaceReadStateExceptionTest2() throws Exception {
+    StatusRuntimeException exception = new StatusRuntimeException(io.grpc.Status.INVALID_ARGUMENT);
+    mockChatService.addException(exception);
+
+    try {
+      String name = "name3373707";
+      client.getSpaceReadState(name);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception.
+    }
+  }
+
+  @Test
+  public void updateSpaceReadStateTest() throws Exception {
+    SpaceReadState expectedResponse =
+        SpaceReadState.newBuilder()
+            .setName(SpaceReadStateName.of("[USER]", "[SPACE]").toString())
+            .setLastReadTime(Timestamp.newBuilder().build())
+            .build();
+    mockChatService.addResponse(expectedResponse);
+
+    SpaceReadState spaceReadState = SpaceReadState.newBuilder().build();
+    FieldMask updateMask = FieldMask.newBuilder().build();
+
+    SpaceReadState actualResponse = client.updateSpaceReadState(spaceReadState, updateMask);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<AbstractMessage> actualRequests = mockChatService.getRequests();
+    Assert.assertEquals(1, actualRequests.size());
+    UpdateSpaceReadStateRequest actualRequest =
+        ((UpdateSpaceReadStateRequest) actualRequests.get(0));
+
+    Assert.assertEquals(spaceReadState, actualRequest.getSpaceReadState());
+    Assert.assertEquals(updateMask, actualRequest.getUpdateMask());
+    Assert.assertTrue(
+        channelProvider.isHeaderSent(
+            ApiClientHeaderProvider.getDefaultApiClientHeaderKey(),
+            GaxGrpcProperties.getDefaultApiClientHeaderPattern()));
+  }
+
+  @Test
+  public void updateSpaceReadStateExceptionTest() throws Exception {
+    StatusRuntimeException exception = new StatusRuntimeException(io.grpc.Status.INVALID_ARGUMENT);
+    mockChatService.addException(exception);
+
+    try {
+      SpaceReadState spaceReadState = SpaceReadState.newBuilder().build();
+      FieldMask updateMask = FieldMask.newBuilder().build();
+      client.updateSpaceReadState(spaceReadState, updateMask);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception.
+    }
+  }
+
+  @Test
+  public void getThreadReadStateTest() throws Exception {
+    ThreadReadState expectedResponse =
+        ThreadReadState.newBuilder()
+            .setName(ThreadReadStateName.of("[USER]", "[SPACE]", "[THREAD]").toString())
+            .setLastReadTime(Timestamp.newBuilder().build())
+            .build();
+    mockChatService.addResponse(expectedResponse);
+
+    ThreadReadStateName name = ThreadReadStateName.of("[USER]", "[SPACE]", "[THREAD]");
+
+    ThreadReadState actualResponse = client.getThreadReadState(name);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<AbstractMessage> actualRequests = mockChatService.getRequests();
+    Assert.assertEquals(1, actualRequests.size());
+    GetThreadReadStateRequest actualRequest = ((GetThreadReadStateRequest) actualRequests.get(0));
+
+    Assert.assertEquals(name.toString(), actualRequest.getName());
+    Assert.assertTrue(
+        channelProvider.isHeaderSent(
+            ApiClientHeaderProvider.getDefaultApiClientHeaderKey(),
+            GaxGrpcProperties.getDefaultApiClientHeaderPattern()));
+  }
+
+  @Test
+  public void getThreadReadStateExceptionTest() throws Exception {
+    StatusRuntimeException exception = new StatusRuntimeException(io.grpc.Status.INVALID_ARGUMENT);
+    mockChatService.addException(exception);
+
+    try {
+      ThreadReadStateName name = ThreadReadStateName.of("[USER]", "[SPACE]", "[THREAD]");
+      client.getThreadReadState(name);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception.
+    }
+  }
+
+  @Test
+  public void getThreadReadStateTest2() throws Exception {
+    ThreadReadState expectedResponse =
+        ThreadReadState.newBuilder()
+            .setName(ThreadReadStateName.of("[USER]", "[SPACE]", "[THREAD]").toString())
+            .setLastReadTime(Timestamp.newBuilder().build())
+            .build();
+    mockChatService.addResponse(expectedResponse);
+
+    String name = "name3373707";
+
+    ThreadReadState actualResponse = client.getThreadReadState(name);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<AbstractMessage> actualRequests = mockChatService.getRequests();
+    Assert.assertEquals(1, actualRequests.size());
+    GetThreadReadStateRequest actualRequest = ((GetThreadReadStateRequest) actualRequests.get(0));
+
+    Assert.assertEquals(name, actualRequest.getName());
+    Assert.assertTrue(
+        channelProvider.isHeaderSent(
+            ApiClientHeaderProvider.getDefaultApiClientHeaderKey(),
+            GaxGrpcProperties.getDefaultApiClientHeaderPattern()));
+  }
+
+  @Test
+  public void getThreadReadStateExceptionTest2() throws Exception {
+    StatusRuntimeException exception = new StatusRuntimeException(io.grpc.Status.INVALID_ARGUMENT);
+    mockChatService.addException(exception);
+
+    try {
+      String name = "name3373707";
+      client.getThreadReadState(name);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
       // Expected exception.

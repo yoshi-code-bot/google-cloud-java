@@ -48,7 +48,9 @@ import com.google.chat.v1.FindDirectMessageRequest;
 import com.google.chat.v1.GetAttachmentRequest;
 import com.google.chat.v1.GetMembershipRequest;
 import com.google.chat.v1.GetMessageRequest;
+import com.google.chat.v1.GetSpaceReadStateRequest;
 import com.google.chat.v1.GetSpaceRequest;
+import com.google.chat.v1.GetThreadReadStateRequest;
 import com.google.chat.v1.ListMembershipsRequest;
 import com.google.chat.v1.ListMembershipsResponse;
 import com.google.chat.v1.ListMessagesRequest;
@@ -62,7 +64,11 @@ import com.google.chat.v1.Message;
 import com.google.chat.v1.Reaction;
 import com.google.chat.v1.SetUpSpaceRequest;
 import com.google.chat.v1.Space;
+import com.google.chat.v1.SpaceReadState;
+import com.google.chat.v1.ThreadReadState;
+import com.google.chat.v1.UpdateMembershipRequest;
 import com.google.chat.v1.UpdateMessageRequest;
+import com.google.chat.v1.UpdateSpaceReadStateRequest;
 import com.google.chat.v1.UpdateSpaceRequest;
 import com.google.chat.v1.UploadAttachmentRequest;
 import com.google.chat.v1.UploadAttachmentResponse;
@@ -739,6 +745,45 @@ public class HttpJsonChatServiceStub extends ChatServiceStub {
                       .build())
               .build();
 
+  private static final ApiMethodDescriptor<UpdateMembershipRequest, Membership>
+      updateMembershipMethodDescriptor =
+          ApiMethodDescriptor.<UpdateMembershipRequest, Membership>newBuilder()
+              .setFullMethodName("google.chat.v1.ChatService/UpdateMembership")
+              .setHttpMethod("PATCH")
+              .setType(ApiMethodDescriptor.MethodType.UNARY)
+              .setRequestFormatter(
+                  ProtoMessageRequestFormatter.<UpdateMembershipRequest>newBuilder()
+                      .setPath(
+                          "/v1/{membership.name=spaces/*/members/*}",
+                          request -> {
+                            Map<String, String> fields = new HashMap<>();
+                            ProtoRestSerializer<UpdateMembershipRequest> serializer =
+                                ProtoRestSerializer.create();
+                            serializer.putPathParam(
+                                fields, "membership.name", request.getMembership().getName());
+                            return fields;
+                          })
+                      .setQueryParamsExtractor(
+                          request -> {
+                            Map<String, List<String>> fields = new HashMap<>();
+                            ProtoRestSerializer<UpdateMembershipRequest> serializer =
+                                ProtoRestSerializer.create();
+                            serializer.putQueryParam(fields, "updateMask", request.getUpdateMask());
+                            serializer.putQueryParam(fields, "$alt", "json;enum-encoding=int");
+                            return fields;
+                          })
+                      .setRequestBodyExtractor(
+                          request ->
+                              ProtoRestSerializer.create()
+                                  .toBody("membership", request.getMembership(), true))
+                      .build())
+              .setResponseParser(
+                  ProtoMessageResponseParser.<Membership>newBuilder()
+                      .setDefaultInstance(Membership.getDefaultInstance())
+                      .setDefaultTypeRegistry(typeRegistry)
+                      .build())
+              .build();
+
   private static final ApiMethodDescriptor<DeleteMembershipRequest, Membership>
       deleteMembershipMethodDescriptor =
           ApiMethodDescriptor.<DeleteMembershipRequest, Membership>newBuilder()
@@ -881,6 +926,115 @@ public class HttpJsonChatServiceStub extends ChatServiceStub {
                       .build())
               .build();
 
+  private static final ApiMethodDescriptor<GetSpaceReadStateRequest, SpaceReadState>
+      getSpaceReadStateMethodDescriptor =
+          ApiMethodDescriptor.<GetSpaceReadStateRequest, SpaceReadState>newBuilder()
+              .setFullMethodName("google.chat.v1.ChatService/GetSpaceReadState")
+              .setHttpMethod("GET")
+              .setType(ApiMethodDescriptor.MethodType.UNARY)
+              .setRequestFormatter(
+                  ProtoMessageRequestFormatter.<GetSpaceReadStateRequest>newBuilder()
+                      .setPath(
+                          "/v1/{name=users/*/spaces/*/spaceReadState}",
+                          request -> {
+                            Map<String, String> fields = new HashMap<>();
+                            ProtoRestSerializer<GetSpaceReadStateRequest> serializer =
+                                ProtoRestSerializer.create();
+                            serializer.putPathParam(fields, "name", request.getName());
+                            return fields;
+                          })
+                      .setQueryParamsExtractor(
+                          request -> {
+                            Map<String, List<String>> fields = new HashMap<>();
+                            ProtoRestSerializer<GetSpaceReadStateRequest> serializer =
+                                ProtoRestSerializer.create();
+                            serializer.putQueryParam(fields, "$alt", "json;enum-encoding=int");
+                            return fields;
+                          })
+                      .setRequestBodyExtractor(request -> null)
+                      .build())
+              .setResponseParser(
+                  ProtoMessageResponseParser.<SpaceReadState>newBuilder()
+                      .setDefaultInstance(SpaceReadState.getDefaultInstance())
+                      .setDefaultTypeRegistry(typeRegistry)
+                      .build())
+              .build();
+
+  private static final ApiMethodDescriptor<UpdateSpaceReadStateRequest, SpaceReadState>
+      updateSpaceReadStateMethodDescriptor =
+          ApiMethodDescriptor.<UpdateSpaceReadStateRequest, SpaceReadState>newBuilder()
+              .setFullMethodName("google.chat.v1.ChatService/UpdateSpaceReadState")
+              .setHttpMethod("PATCH")
+              .setType(ApiMethodDescriptor.MethodType.UNARY)
+              .setRequestFormatter(
+                  ProtoMessageRequestFormatter.<UpdateSpaceReadStateRequest>newBuilder()
+                      .setPath(
+                          "/v1/{spaceReadState.name=users/*/spaces/*/spaceReadState}",
+                          request -> {
+                            Map<String, String> fields = new HashMap<>();
+                            ProtoRestSerializer<UpdateSpaceReadStateRequest> serializer =
+                                ProtoRestSerializer.create();
+                            serializer.putPathParam(
+                                fields,
+                                "spaceReadState.name",
+                                request.getSpaceReadState().getName());
+                            return fields;
+                          })
+                      .setQueryParamsExtractor(
+                          request -> {
+                            Map<String, List<String>> fields = new HashMap<>();
+                            ProtoRestSerializer<UpdateSpaceReadStateRequest> serializer =
+                                ProtoRestSerializer.create();
+                            serializer.putQueryParam(fields, "updateMask", request.getUpdateMask());
+                            serializer.putQueryParam(fields, "$alt", "json;enum-encoding=int");
+                            return fields;
+                          })
+                      .setRequestBodyExtractor(
+                          request ->
+                              ProtoRestSerializer.create()
+                                  .toBody("spaceReadState", request.getSpaceReadState(), true))
+                      .build())
+              .setResponseParser(
+                  ProtoMessageResponseParser.<SpaceReadState>newBuilder()
+                      .setDefaultInstance(SpaceReadState.getDefaultInstance())
+                      .setDefaultTypeRegistry(typeRegistry)
+                      .build())
+              .build();
+
+  private static final ApiMethodDescriptor<GetThreadReadStateRequest, ThreadReadState>
+      getThreadReadStateMethodDescriptor =
+          ApiMethodDescriptor.<GetThreadReadStateRequest, ThreadReadState>newBuilder()
+              .setFullMethodName("google.chat.v1.ChatService/GetThreadReadState")
+              .setHttpMethod("GET")
+              .setType(ApiMethodDescriptor.MethodType.UNARY)
+              .setRequestFormatter(
+                  ProtoMessageRequestFormatter.<GetThreadReadStateRequest>newBuilder()
+                      .setPath(
+                          "/v1/{name=users/*/spaces/*/threads/*/threadReadState}",
+                          request -> {
+                            Map<String, String> fields = new HashMap<>();
+                            ProtoRestSerializer<GetThreadReadStateRequest> serializer =
+                                ProtoRestSerializer.create();
+                            serializer.putPathParam(fields, "name", request.getName());
+                            return fields;
+                          })
+                      .setQueryParamsExtractor(
+                          request -> {
+                            Map<String, List<String>> fields = new HashMap<>();
+                            ProtoRestSerializer<GetThreadReadStateRequest> serializer =
+                                ProtoRestSerializer.create();
+                            serializer.putQueryParam(fields, "$alt", "json;enum-encoding=int");
+                            return fields;
+                          })
+                      .setRequestBodyExtractor(request -> null)
+                      .build())
+              .setResponseParser(
+                  ProtoMessageResponseParser.<ThreadReadState>newBuilder()
+                      .setDefaultInstance(ThreadReadState.getDefaultInstance())
+                      .setDefaultTypeRegistry(typeRegistry)
+                      .build())
+              .build();
+
   private final UnaryCallable<CreateMessageRequest, Message> createMessageCallable;
   private final UnaryCallable<ListMessagesRequest, ListMessagesResponse> listMessagesCallable;
   private final UnaryCallable<ListMessagesRequest, ListMessagesPagedResponse>
@@ -907,12 +1061,18 @@ public class HttpJsonChatServiceStub extends ChatServiceStub {
       completeImportSpaceCallable;
   private final UnaryCallable<FindDirectMessageRequest, Space> findDirectMessageCallable;
   private final UnaryCallable<CreateMembershipRequest, Membership> createMembershipCallable;
+  private final UnaryCallable<UpdateMembershipRequest, Membership> updateMembershipCallable;
   private final UnaryCallable<DeleteMembershipRequest, Membership> deleteMembershipCallable;
   private final UnaryCallable<CreateReactionRequest, Reaction> createReactionCallable;
   private final UnaryCallable<ListReactionsRequest, ListReactionsResponse> listReactionsCallable;
   private final UnaryCallable<ListReactionsRequest, ListReactionsPagedResponse>
       listReactionsPagedCallable;
   private final UnaryCallable<DeleteReactionRequest, Empty> deleteReactionCallable;
+  private final UnaryCallable<GetSpaceReadStateRequest, SpaceReadState> getSpaceReadStateCallable;
+  private final UnaryCallable<UpdateSpaceReadStateRequest, SpaceReadState>
+      updateSpaceReadStateCallable;
+  private final UnaryCallable<GetThreadReadStateRequest, ThreadReadState>
+      getThreadReadStateCallable;
 
   private final BackgroundResource backgroundResources;
   private final HttpJsonStubCallableFactory callableFactory;
@@ -1134,6 +1294,17 @@ public class HttpJsonChatServiceStub extends ChatServiceStub {
                   return builder.build();
                 })
             .build();
+    HttpJsonCallSettings<UpdateMembershipRequest, Membership> updateMembershipTransportSettings =
+        HttpJsonCallSettings.<UpdateMembershipRequest, Membership>newBuilder()
+            .setMethodDescriptor(updateMembershipMethodDescriptor)
+            .setTypeRegistry(typeRegistry)
+            .setParamsExtractor(
+                request -> {
+                  RequestParamsBuilder builder = RequestParamsBuilder.create();
+                  builder.add("membership.name", String.valueOf(request.getMembership().getName()));
+                  return builder.build();
+                })
+            .build();
     HttpJsonCallSettings<DeleteMembershipRequest, Membership> deleteMembershipTransportSettings =
         HttpJsonCallSettings.<DeleteMembershipRequest, Membership>newBuilder()
             .setMethodDescriptor(deleteMembershipMethodDescriptor)
@@ -1179,6 +1350,44 @@ public class HttpJsonChatServiceStub extends ChatServiceStub {
                   return builder.build();
                 })
             .build();
+    HttpJsonCallSettings<GetSpaceReadStateRequest, SpaceReadState>
+        getSpaceReadStateTransportSettings =
+            HttpJsonCallSettings.<GetSpaceReadStateRequest, SpaceReadState>newBuilder()
+                .setMethodDescriptor(getSpaceReadStateMethodDescriptor)
+                .setTypeRegistry(typeRegistry)
+                .setParamsExtractor(
+                    request -> {
+                      RequestParamsBuilder builder = RequestParamsBuilder.create();
+                      builder.add("name", String.valueOf(request.getName()));
+                      return builder.build();
+                    })
+                .build();
+    HttpJsonCallSettings<UpdateSpaceReadStateRequest, SpaceReadState>
+        updateSpaceReadStateTransportSettings =
+            HttpJsonCallSettings.<UpdateSpaceReadStateRequest, SpaceReadState>newBuilder()
+                .setMethodDescriptor(updateSpaceReadStateMethodDescriptor)
+                .setTypeRegistry(typeRegistry)
+                .setParamsExtractor(
+                    request -> {
+                      RequestParamsBuilder builder = RequestParamsBuilder.create();
+                      builder.add(
+                          "space_read_state.name",
+                          String.valueOf(request.getSpaceReadState().getName()));
+                      return builder.build();
+                    })
+                .build();
+    HttpJsonCallSettings<GetThreadReadStateRequest, ThreadReadState>
+        getThreadReadStateTransportSettings =
+            HttpJsonCallSettings.<GetThreadReadStateRequest, ThreadReadState>newBuilder()
+                .setMethodDescriptor(getThreadReadStateMethodDescriptor)
+                .setTypeRegistry(typeRegistry)
+                .setParamsExtractor(
+                    request -> {
+                      RequestParamsBuilder builder = RequestParamsBuilder.create();
+                      builder.add("name", String.valueOf(request.getName()));
+                      return builder.build();
+                    })
+                .build();
 
     this.createMessageCallable =
         callableFactory.createUnaryCallable(
@@ -1247,6 +1456,9 @@ public class HttpJsonChatServiceStub extends ChatServiceStub {
     this.createMembershipCallable =
         callableFactory.createUnaryCallable(
             createMembershipTransportSettings, settings.createMembershipSettings(), clientContext);
+    this.updateMembershipCallable =
+        callableFactory.createUnaryCallable(
+            updateMembershipTransportSettings, settings.updateMembershipSettings(), clientContext);
     this.deleteMembershipCallable =
         callableFactory.createUnaryCallable(
             deleteMembershipTransportSettings, settings.deleteMembershipSettings(), clientContext);
@@ -1262,6 +1474,21 @@ public class HttpJsonChatServiceStub extends ChatServiceStub {
     this.deleteReactionCallable =
         callableFactory.createUnaryCallable(
             deleteReactionTransportSettings, settings.deleteReactionSettings(), clientContext);
+    this.getSpaceReadStateCallable =
+        callableFactory.createUnaryCallable(
+            getSpaceReadStateTransportSettings,
+            settings.getSpaceReadStateSettings(),
+            clientContext);
+    this.updateSpaceReadStateCallable =
+        callableFactory.createUnaryCallable(
+            updateSpaceReadStateTransportSettings,
+            settings.updateSpaceReadStateSettings(),
+            clientContext);
+    this.getThreadReadStateCallable =
+        callableFactory.createUnaryCallable(
+            getThreadReadStateTransportSettings,
+            settings.getThreadReadStateSettings(),
+            clientContext);
 
     this.backgroundResources =
         new BackgroundResourceAggregation(clientContext.getBackgroundResources());
@@ -1288,10 +1515,14 @@ public class HttpJsonChatServiceStub extends ChatServiceStub {
     methodDescriptors.add(completeImportSpaceMethodDescriptor);
     methodDescriptors.add(findDirectMessageMethodDescriptor);
     methodDescriptors.add(createMembershipMethodDescriptor);
+    methodDescriptors.add(updateMembershipMethodDescriptor);
     methodDescriptors.add(deleteMembershipMethodDescriptor);
     methodDescriptors.add(createReactionMethodDescriptor);
     methodDescriptors.add(listReactionsMethodDescriptor);
     methodDescriptors.add(deleteReactionMethodDescriptor);
+    methodDescriptors.add(getSpaceReadStateMethodDescriptor);
+    methodDescriptors.add(updateSpaceReadStateMethodDescriptor);
+    methodDescriptors.add(getThreadReadStateMethodDescriptor);
     return methodDescriptors;
   }
 
@@ -1404,6 +1635,11 @@ public class HttpJsonChatServiceStub extends ChatServiceStub {
   }
 
   @Override
+  public UnaryCallable<UpdateMembershipRequest, Membership> updateMembershipCallable() {
+    return updateMembershipCallable;
+  }
+
+  @Override
   public UnaryCallable<DeleteMembershipRequest, Membership> deleteMembershipCallable() {
     return deleteMembershipCallable;
   }
@@ -1427,6 +1663,21 @@ public class HttpJsonChatServiceStub extends ChatServiceStub {
   @Override
   public UnaryCallable<DeleteReactionRequest, Empty> deleteReactionCallable() {
     return deleteReactionCallable;
+  }
+
+  @Override
+  public UnaryCallable<GetSpaceReadStateRequest, SpaceReadState> getSpaceReadStateCallable() {
+    return getSpaceReadStateCallable;
+  }
+
+  @Override
+  public UnaryCallable<UpdateSpaceReadStateRequest, SpaceReadState> updateSpaceReadStateCallable() {
+    return updateSpaceReadStateCallable;
+  }
+
+  @Override
+  public UnaryCallable<GetThreadReadStateRequest, ThreadReadState> getThreadReadStateCallable() {
+    return getThreadReadStateCallable;
   }
 
   @Override

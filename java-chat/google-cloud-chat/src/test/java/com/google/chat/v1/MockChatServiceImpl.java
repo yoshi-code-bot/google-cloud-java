@@ -432,6 +432,27 @@ public class MockChatServiceImpl extends ChatServiceImplBase {
   }
 
   @Override
+  public void updateMembership(
+      UpdateMembershipRequest request, StreamObserver<Membership> responseObserver) {
+    Object response = responses.poll();
+    if (response instanceof Membership) {
+      requests.add(request);
+      responseObserver.onNext(((Membership) response));
+      responseObserver.onCompleted();
+    } else if (response instanceof Exception) {
+      responseObserver.onError(((Exception) response));
+    } else {
+      responseObserver.onError(
+          new IllegalArgumentException(
+              String.format(
+                  "Unrecognized response type %s for method UpdateMembership, expected %s or %s",
+                  response == null ? "null" : response.getClass().getName(),
+                  Membership.class.getName(),
+                  Exception.class.getName())));
+    }
+  }
+
+  @Override
   public void deleteMembership(
       DeleteMembershipRequest request, StreamObserver<Membership> responseObserver) {
     Object response = responses.poll();
@@ -511,6 +532,69 @@ public class MockChatServiceImpl extends ChatServiceImplBase {
                   "Unrecognized response type %s for method DeleteReaction, expected %s or %s",
                   response == null ? "null" : response.getClass().getName(),
                   Empty.class.getName(),
+                  Exception.class.getName())));
+    }
+  }
+
+  @Override
+  public void getSpaceReadState(
+      GetSpaceReadStateRequest request, StreamObserver<SpaceReadState> responseObserver) {
+    Object response = responses.poll();
+    if (response instanceof SpaceReadState) {
+      requests.add(request);
+      responseObserver.onNext(((SpaceReadState) response));
+      responseObserver.onCompleted();
+    } else if (response instanceof Exception) {
+      responseObserver.onError(((Exception) response));
+    } else {
+      responseObserver.onError(
+          new IllegalArgumentException(
+              String.format(
+                  "Unrecognized response type %s for method GetSpaceReadState, expected %s or %s",
+                  response == null ? "null" : response.getClass().getName(),
+                  SpaceReadState.class.getName(),
+                  Exception.class.getName())));
+    }
+  }
+
+  @Override
+  public void updateSpaceReadState(
+      UpdateSpaceReadStateRequest request, StreamObserver<SpaceReadState> responseObserver) {
+    Object response = responses.poll();
+    if (response instanceof SpaceReadState) {
+      requests.add(request);
+      responseObserver.onNext(((SpaceReadState) response));
+      responseObserver.onCompleted();
+    } else if (response instanceof Exception) {
+      responseObserver.onError(((Exception) response));
+    } else {
+      responseObserver.onError(
+          new IllegalArgumentException(
+              String.format(
+                  "Unrecognized response type %s for method UpdateSpaceReadState, expected %s or %s",
+                  response == null ? "null" : response.getClass().getName(),
+                  SpaceReadState.class.getName(),
+                  Exception.class.getName())));
+    }
+  }
+
+  @Override
+  public void getThreadReadState(
+      GetThreadReadStateRequest request, StreamObserver<ThreadReadState> responseObserver) {
+    Object response = responses.poll();
+    if (response instanceof ThreadReadState) {
+      requests.add(request);
+      responseObserver.onNext(((ThreadReadState) response));
+      responseObserver.onCompleted();
+    } else if (response instanceof Exception) {
+      responseObserver.onError(((Exception) response));
+    } else {
+      responseObserver.onError(
+          new IllegalArgumentException(
+              String.format(
+                  "Unrecognized response type %s for method GetThreadReadState, expected %s or %s",
+                  response == null ? "null" : response.getClass().getName(),
+                  ThreadReadState.class.getName(),
                   Exception.class.getName())));
     }
   }

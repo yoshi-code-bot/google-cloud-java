@@ -146,7 +146,7 @@ public final class GenerativeModelTest {
     when(mockUnaryCallable.futureCall(any(GenerateContentRequest.class))).thenReturn(mockApiFuture);
 
     vertexAi =
-        VertexAI.builder()
+        new VertexAI.Builder()
             .setProjectId(PROJECT)
             .setLocation(LOCATION)
             .setCredentials(mockGoogleCredentials)

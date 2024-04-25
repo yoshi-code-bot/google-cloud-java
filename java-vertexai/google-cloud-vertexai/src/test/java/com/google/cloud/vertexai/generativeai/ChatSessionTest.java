@@ -309,7 +309,7 @@ public final class ChatSessionTest {
     // (Arrange) Set up the return value of the generateContent
 
     VertexAI vertexAi =
-        VertexAI.builder()
+        new VertexAI.Builder()
             .setProjectId(PROJECT)
             .setLocation(LOCATION)
             .setPredictionClientSupplier(() -> mockPredictionServiceClient)

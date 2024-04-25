@@ -174,6 +174,11 @@ public class ChatServiceSettings extends ClientSettings<ChatServiceSettings> {
     return ((ChatServiceStubSettings) getStubSettings()).createMembershipSettings();
   }
 
+  /** Returns the object with the settings used for calls to updateMembership. */
+  public UnaryCallSettings<UpdateMembershipRequest, Membership> updateMembershipSettings() {
+    return ((ChatServiceStubSettings) getStubSettings()).updateMembershipSettings();
+  }
+
   /** Returns the object with the settings used for calls to deleteMembership. */
   public UnaryCallSettings<DeleteMembershipRequest, Membership> deleteMembershipSettings() {
     return ((ChatServiceStubSettings) getStubSettings()).deleteMembershipSettings();
@@ -193,6 +198,23 @@ public class ChatServiceSettings extends ClientSettings<ChatServiceSettings> {
   /** Returns the object with the settings used for calls to deleteReaction. */
   public UnaryCallSettings<DeleteReactionRequest, Empty> deleteReactionSettings() {
     return ((ChatServiceStubSettings) getStubSettings()).deleteReactionSettings();
+  }
+
+  /** Returns the object with the settings used for calls to getSpaceReadState. */
+  public UnaryCallSettings<GetSpaceReadStateRequest, SpaceReadState> getSpaceReadStateSettings() {
+    return ((ChatServiceStubSettings) getStubSettings()).getSpaceReadStateSettings();
+  }
+
+  /** Returns the object with the settings used for calls to updateSpaceReadState. */
+  public UnaryCallSettings<UpdateSpaceReadStateRequest, SpaceReadState>
+      updateSpaceReadStateSettings() {
+    return ((ChatServiceStubSettings) getStubSettings()).updateSpaceReadStateSettings();
+  }
+
+  /** Returns the object with the settings used for calls to getThreadReadState. */
+  public UnaryCallSettings<GetThreadReadStateRequest, ThreadReadState>
+      getThreadReadStateSettings() {
+    return ((ChatServiceStubSettings) getStubSettings()).getThreadReadStateSettings();
   }
 
   public static final ChatServiceSettings create(ChatServiceStubSettings stub) throws IOException {
@@ -404,6 +426,12 @@ public class ChatServiceSettings extends ClientSettings<ChatServiceSettings> {
       return getStubSettingsBuilder().createMembershipSettings();
     }
 
+    /** Returns the builder for the settings used for calls to updateMembership. */
+    public UnaryCallSettings.Builder<UpdateMembershipRequest, Membership>
+        updateMembershipSettings() {
+      return getStubSettingsBuilder().updateMembershipSettings();
+    }
+
     /** Returns the builder for the settings used for calls to deleteMembership. */
     public UnaryCallSettings.Builder<DeleteMembershipRequest, Membership>
         deleteMembershipSettings() {
@@ -425,6 +453,24 @@ public class ChatServiceSettings extends ClientSettings<ChatServiceSettings> {
     /** Returns the builder for the settings used for calls to deleteReaction. */
     public UnaryCallSettings.Builder<DeleteReactionRequest, Empty> deleteReactionSettings() {
       return getStubSettingsBuilder().deleteReactionSettings();
+    }
+
+    /** Returns the builder for the settings used for calls to getSpaceReadState. */
+    public UnaryCallSettings.Builder<GetSpaceReadStateRequest, SpaceReadState>
+        getSpaceReadStateSettings() {
+      return getStubSettingsBuilder().getSpaceReadStateSettings();
+    }
+
+    /** Returns the builder for the settings used for calls to updateSpaceReadState. */
+    public UnaryCallSettings.Builder<UpdateSpaceReadStateRequest, SpaceReadState>
+        updateSpaceReadStateSettings() {
+      return getStubSettingsBuilder().updateSpaceReadStateSettings();
+    }
+
+    /** Returns the builder for the settings used for calls to getThreadReadState. */
+    public UnaryCallSettings.Builder<GetThreadReadStateRequest, ThreadReadState>
+        getThreadReadStateSettings() {
+      return getStubSettingsBuilder().getThreadReadStateSettings();
     }
 
     @Override
