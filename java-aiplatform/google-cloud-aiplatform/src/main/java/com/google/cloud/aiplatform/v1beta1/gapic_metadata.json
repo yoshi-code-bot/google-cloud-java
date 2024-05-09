@@ -78,6 +78,9 @@
             },
             "UpdateDataset": {
               "methods": ["updateDataset", "updateDataset", "updateDatasetCallable"]
+            },
+            "UpdateDatasetVersion": {
+              "methods": ["updateDatasetVersion", "updateDatasetVersion", "updateDatasetVersionCallable"]
             }
           }
         }
@@ -1141,6 +1144,9 @@
             "CreateNotebookRuntimeTemplate": {
               "methods": ["createNotebookRuntimeTemplateAsync", "createNotebookRuntimeTemplateAsync", "createNotebookRuntimeTemplateAsync", "createNotebookRuntimeTemplateOperationCallable", "createNotebookRuntimeTemplateCallable"]
             },
+            "DeleteNotebookExecutionJob": {
+              "methods": ["deleteNotebookExecutionJobAsync", "deleteNotebookExecutionJobAsync", "deleteNotebookExecutionJobAsync", "deleteNotebookExecutionJobOperationCallable", "deleteNotebookExecutionJobCallable"]
+            },
             "DeleteNotebookRuntime": {
               "methods": ["deleteNotebookRuntimeAsync", "deleteNotebookRuntimeAsync", "deleteNotebookRuntimeAsync", "deleteNotebookRuntimeOperationCallable", "deleteNotebookRuntimeCallable"]
             },
@@ -1153,6 +1159,9 @@
             "GetLocation": {
               "methods": ["getLocation", "getLocationCallable"]
             },
+            "GetNotebookExecutionJob": {
+              "methods": ["getNotebookExecutionJob", "getNotebookExecutionJob", "getNotebookExecutionJob", "getNotebookExecutionJobCallable"]
+            },
             "GetNotebookRuntime": {
               "methods": ["getNotebookRuntime", "getNotebookRuntime", "getNotebookRuntime", "getNotebookRuntimeCallable"]
             },
@@ -1161,6 +1170,9 @@
             },
             "ListLocations": {
               "methods": ["listLocations", "listLocationsPagedCallable", "listLocationsCallable"]
+            },
+            "ListNotebookExecutionJobs": {
+              "methods": ["listNotebookExecutionJobs", "listNotebookExecutionJobs", "listNotebookExecutionJobs", "listNotebookExecutionJobsPagedCallable", "listNotebookExecutionJobsCallable"]
             },
             "ListNotebookRuntimeTemplates": {
               "methods": ["listNotebookRuntimeTemplates", "listNotebookRuntimeTemplates", "listNotebookRuntimeTemplates", "listNotebookRuntimeTemplatesPagedCallable", "listNotebookRuntimeTemplatesCallable"]
@@ -1291,9 +1303,6 @@
         "grpc": {
           "libraryClient": "PredictionServiceClient",
           "rpcs": {
-            "ChatCompletions": {
-              "methods": ["chatCompletionsCallable"]
-            },
             "CountTokens": {
               "methods": ["countTokens", "countTokens", "countTokens", "countTokensCallable"]
             },

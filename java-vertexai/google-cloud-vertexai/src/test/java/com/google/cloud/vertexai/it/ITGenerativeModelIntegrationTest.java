@@ -58,6 +58,7 @@ public class ITGenerativeModelIntegrationTest {
 
   // Tested content
   private static final String TEXT = "What do you think about Google Pixel?";
+  private static final String PIRATE_INSTRUCTION = "Speak like a pirate when answering questions.";
   private static final String IMAGE_INQUIRY = "Please describe this image: ";
   private static final String IMAGE_URL = "https://picsum.photos/id/1/200/300";
   private static final String VIDEO_INQUIRY = "Please summarize this video: ";
@@ -78,9 +79,18 @@ public class ITGenerativeModelIntegrationTest {
   @Before
   public void setUp() throws IOException {
     vertexAi = new VertexAI(PROJECT_ID, LOCATION);
-    textModel = new GenerativeModel(MODEL_NAME_TEXT, vertexAi);
-    multiModalModel = new GenerativeModel(MODEL_NAME_MULTIMODAL, vertexAi);
-    latestGemini = new GenerativeModel(MODEL_NAME_LATEST_GEMINI, vertexAi);
+    // Set temperature to 0 to reduce randomness on model responses
+    GenerationConfig defaultGenerationConfig =
+        GenerationConfig.newBuilder().setTemperature(0).build();
+    textModel =
+        new GenerativeModel(MODEL_NAME_TEXT, vertexAi)
+            .withGenerationConfig(defaultGenerationConfig);
+    multiModalModel =
+        new GenerativeModel(MODEL_NAME_MULTIMODAL, vertexAi)
+            .withGenerationConfig(defaultGenerationConfig);
+    latestGemini =
+        new GenerativeModel(MODEL_NAME_LATEST_GEMINI, vertexAi)
+            .withGenerationConfig(defaultGenerationConfig);
   }
 
   @After
@@ -249,5 +259,16 @@ public class ITGenerativeModelIntegrationTest {
     // For the same reason, we don't do assertions much.
     logger.info(String.format("Print number of tokens:\n%s", tokens));
     assertThat(tokens.getTotalTokens()).isGreaterThan(0);
+  }
+
+  @Test
+  public void generateContent_withSystemInstruction() throws Exception {
+    GenerativeModel pirateModel =
+        textModel.withSystemInstruction(ContentMaker.fromString(PIRATE_INSTRUCTION));
+
+    // GenAI output is flaky so we always print out the response.
+    // For the same reason, we don't do assertions much.
+    GenerateContentResponse pirateResponse = pirateModel.generateContent(TEXT);
+    assertNonEmptyAndLogResponse(name.getMethodName(), TEXT, pirateResponse);
   }
 }
