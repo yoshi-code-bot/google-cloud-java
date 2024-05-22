@@ -20,7 +20,7 @@ on:
   pull_request:
 name: generation diff
 env:
-  library_generation_image_tag: 2.40.0
+  library_generation_image_tag: 2.40.1
 jobs:
   root-pom:
     # root pom.xml does not have diff from generated one
@@ -107,17 +107,6 @@ jobs:
           echo "There are gitignore matching files. Please adjust .gitignore."
           exit 1
         fi
-
-  consolidate-config:
-    # Parent handles config for child modules
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Apply consolidate_config.sh
-        run: |
-          bash generation/consolidate_config.sh
-      - name: Fail if there's any difference (To fix, run generation/consolidate_config.sh)
-        run: git --no-pager diff --exit-code
 
   generate-readme:
     # Ensure generate-readme.py runs fine
