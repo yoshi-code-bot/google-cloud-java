@@ -1,6 +1,6 @@
 gapic_generator_version: 2.40.1
 protoc_version: '25.3'
-googleapis_commitish: a07bf82eb48d79bc113620b3fb517a3ebe92989c
+googleapis_commitish: 30717c0b0c9966906880703208a4c820411565c4
 libraries_bom_version: 26.39.0
 template_excludes:
 - .github/*
@@ -750,6 +750,21 @@ libraries:
   GAPICs:
   - proto_path: google/cloud/deploy/v1
 
+- api_shortname: developerconnect
+  name_pretty: Developer Connect API
+  product_documentation: https://cloud.google.com/developer-connect/docs/overview
+  api_description: Connect third-party source code management to Google
+  client_documentation: 
+    https://cloud.google.com/java/docs/reference/google-cloud-developerconnect/latest/overview
+  release_level: preview
+  distribution_name: com.google.cloud:google-cloud-developerconnect
+  api_id: developerconnect.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.cloud
+  cloud_api: true
+  GAPICs:
+  - proto_path: google/cloud/developerconnect/v1
+  requires_billing: true
 - api_shortname: dialogflow
   name_pretty: Dialogflow API
   product_documentation: https://cloud.google.com/dialogflow-enterprise/
@@ -988,15 +1003,16 @@ libraries:
   - proto_path: google/cloud/gkehub/v1alpha
   - proto_path: google/cloud/gkehub/v1beta
   - proto_path: google/cloud/gkehub/v1beta1
+  - proto_path: google/cloud/gkehub/servicemesh/v1beta
 
 - api_shortname: containeranalysis
   name_pretty: Grafeas
   product_documentation: https://grafeas.io
   api_description: n/a
-  client_documentation: "https://cloud.google.com/java/docs/reference/grafeas/latest/overview"
+  client_documentation: https://cloud.google.com/java/docs/reference/grafeas/latest/overview
   release_level: stable
-  distribution_name: "io.grafeas:grafeas"
-  codeowner_team: "@googleapis/aap-dpes"
+  distribution_name: io.grafeas:grafeas
+  codeowner_team: '@googleapis/aap-dpes'
   library_name: grafeas
   GAPICs:
   - proto_path: grafeas/v1
@@ -1514,8 +1530,8 @@ libraries:
 - api_shortname: publicca
   name_pretty: Public Certificate Authority API
   product_documentation: https://cloud.google.com/certificate-manager/docs/public-ca
-  api_description: The Public Certificate Authority API may be used to create and manage ACME
-    external account binding keys associated with Google Trust Services'
+  api_description: The Public Certificate Authority API may be used to create and
+    manage ACME external account binding keys associated with Google Trust Services'
     publicly trusted certificate authority.
   rpc_documentation: https://cloud.google.com/certificate-manager/docs/reference/public-ca/rpc
   GAPICs:
@@ -2077,6 +2093,23 @@ libraries:
   - proto_path: google/cloud/vision/v1p3beta1
   - proto_path: google/cloud/vision/v1p4beta1
 
+- api_shortname: visionai
+  name_pretty: Vision AI API
+  product_documentation: https://cloud.google.com/vision-ai/docs
+  api_description: Vertex AI Vision is an AI-powered platform to ingest, analyze and
+    store video data.
+  client_documentation: 
+    https://cloud.google.com/java/docs/reference/google-cloud-visionai/latest/overview
+  release_level: preview
+  distribution_name: com.google.cloud:google-cloud-visionai
+  api_id: visionai.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.cloud
+  cloud_api: true
+  GAPICs:
+  - proto_path: google/cloud/visionai/v1
+  requires_billing: true
+  rpc_documentation: https://cloud.google.com/vision-ai/docs/reference/rpc
 - api_shortname: vmmigration
   name_pretty: VM Migration
   product_documentation: n/a
