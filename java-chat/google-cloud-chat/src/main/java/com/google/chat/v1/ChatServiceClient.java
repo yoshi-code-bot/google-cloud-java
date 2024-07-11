@@ -246,7 +246,8 @@ import javax.annotation.Generated;
  *      <td><p> ListSpaces</td>
  *      <td><p> Lists spaces the caller is a member of. Group chats and DMs aren't listed until the first message is sent. For an example, see [List spaces](https://developers.google.com/workspace/chat/list-spaces).
  * <p>  Requires [authentication](https://developers.google.com/workspace/chat/authenticate-authorize). Supports [app authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-app) and [user authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user).
- * <p>  Lists spaces visible to the caller or authenticated user. Group chats and DMs aren't listed until the first message is sent.</td>
+ * <p>  Lists spaces visible to the caller or authenticated user. Group chats and DMs aren't listed until the first message is sent.
+ * <p>  To list all named spaces by Google Workspace organization, use the [`spaces.search()`](https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces/search) method using Workspace administrator privileges instead.</td>
  *      <td>
  *      <p>Request object method variants only take one parameter, a request object, which must be constructed before the call.</p>
  *      <ul>
@@ -307,6 +308,7 @@ import javax.annotation.Generated;
  *      <td><p> SetUpSpace</td>
  *      <td><p> Creates a space and adds specified users to it. The calling user is automatically added to the space, and shouldn't be specified as a membership in the request. For an example, see [Set up a space with initial members](https://developers.google.com/workspace/chat/set-up-spaces).
  * <p>  To specify the human members to add, add memberships with the appropriate `membership.member.name`. To add a human user, use `users/{user}`, where `{user}` can be the email address for the user. For users in the same Workspace organization `{user}` can also be the `id` for the person from the People API, or the `id` for the user in the Directory API. For example, if the People API Person profile ID for `user{@literal @}example.com` is `123456789`, you can add the user to the space by setting the `membership.member.name` to `users/user{@literal @}example.com` or `users/123456789`.
+ * <p>  To specify the Google groups to add, add memberships with the appropriate `membership.group_member.name`. To add or invite a Google group, use `groups/{group}`, where `{group}` is the `id` for the group from the Cloud Identity Groups API. For example, you can use [Cloud Identity Groups lookup API](https://cloud.google.com/identity/docs/reference/rest/v1/groups/lookup) to retrieve the ID `123456789` for group email `group{@literal @}example.com`, then you can add the group to the space by setting the `membership.group_member.name` to `groups/123456789`. Group email is not supported, and Google groups can only be added as members in named spaces.
  * <p>  For a named space or group chat, if the caller blocks, or is blocked by some members, or doesn't have permission to add some members, then those members aren't added to the created space.
  * <p>  To create a direct message (DM) between the calling user and another human user, specify exactly one membership to represent the human user. If one user blocks the other, the request fails and the DM isn't created.
  * <p>  To create a DM between the calling user and the calling app, set `Space.singleUserBotDm` to `true` and don't specify any memberships. You can only use this method to set up a DM with the calling app. To add the calling app as a member of a space or an existing DM between two human users, see [Invite or add a user or app to a space](https://developers.google.com/workspace/chat/create-members).
@@ -397,9 +399,10 @@ import javax.annotation.Generated;
  *    <tr>
  *      <td><p> CreateMembership</td>
  *      <td><p> Creates a human membership or app membership for the calling app. Creating memberships for other apps isn't supported. For an example, see [Invite or add a user or a Google Chat app to a space](https://developers.google.com/workspace/chat/create-members). When creating a membership, if the specified member has their auto-accept policy turned off, then they're invited, and must accept the space invitation before joining. Otherwise, creating a membership adds the member directly to the specified space. Requires [user authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user).
- * <p>  To specify the member to add, set the `membership.member.name` for the human or app member.
+ * <p>  To specify the member to add, set the `membership.member.name` for the human or app member, or set the `membership.group_member.name` for the group member.
  * <p>  - To add the calling app to a space or a direct message between two human   users, use `users/app`. Unable to add other   apps to the space.
- * <p>  - To add a human user, use `users/{user}`, where `{user}` can be the email address for the user. For users in the same Workspace organization `{user}` can also be the `id` for the person from the People API, or the `id` for the user in the Directory API. For example, if the People API Person profile ID for `user{@literal @}example.com` is `123456789`, you can add the user to the space by setting the `membership.member.name` to `users/user{@literal @}example.com` or `users/123456789`.</td>
+ * <p>  - To add a human user, use `users/{user}`, where `{user}` can be the email address for the user. For users in the same Workspace organization `{user}` can also be the `id` for the person from the People API, or the `id` for the user in the Directory API. For example, if the People API Person profile ID for `user{@literal @}example.com` is `123456789`, you can add the user to the space by setting the `membership.member.name` to `users/user{@literal @}example.com` or `users/123456789`.
+ * <p>  - To add or invite a Google group in a named space, use `groups/{group}`, where `{group}` is the `id` for the group from the Cloud Identity Groups API. For example, you can use [Cloud Identity Groups lookup API](https://cloud.google.com/identity/docs/reference/rest/v1/groups/lookup) to retrieve the ID `123456789` for group email `group{@literal @}example.com`, then you can add or invite the group to a named space by setting the `membership.group_member.name` to `groups/123456789`. Group email is not supported, and Google groups can only be added as members in named spaces.</td>
  *      <td>
  *      <p>Request object method variants only take one parameter, a request object, which must be constructed before the call.</p>
  *      <ul>
@@ -1929,7 +1932,7 @@ public class ChatServiceClient implements BackgroundResource {
    * }</pre>
    *
    * @param name Required. Resource name of the attachment, in the form
-   *     `spaces/&#42;/messages/&#42;/attachments/&#42;`.
+   *     `spaces/{space}/messages/{message}/attachments/{attachment}`.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Attachment getAttachment(AttachmentName name) {
@@ -1961,7 +1964,7 @@ public class ChatServiceClient implements BackgroundResource {
    * }</pre>
    *
    * @param name Required. Resource name of the attachment, in the form
-   *     `spaces/&#42;/messages/&#42;/attachments/&#42;`.
+   *     `spaces/{space}/messages/{message}/attachments/{attachment}`.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Attachment getAttachment(String name) {
@@ -2121,6 +2124,10 @@ public class ChatServiceClient implements BackgroundResource {
    * <p>Lists spaces visible to the caller or authenticated user. Group chats and DMs aren't listed
    * until the first message is sent.
    *
+   * <p>To list all named spaces by Google Workspace organization, use the
+   * [`spaces.search()`](https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces/search)
+   * method using Workspace administrator privileges instead.
+   *
    * <p>Sample code:
    *
    * <pre>{@code
@@ -2159,6 +2166,10 @@ public class ChatServiceClient implements BackgroundResource {
    *
    * <p>Lists spaces visible to the caller or authenticated user. Group chats and DMs aren't listed
    * until the first message is sent.
+   *
+   * <p>To list all named spaces by Google Workspace organization, use the
+   * [`spaces.search()`](https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces/search)
+   * method using Workspace administrator privileges instead.
    *
    * <p>Sample code:
    *
@@ -2204,6 +2215,10 @@ public class ChatServiceClient implements BackgroundResource {
    * <p>Lists spaces visible to the caller or authenticated user. Group chats and DMs aren't listed
    * until the first message is sent.
    *
+   * <p>To list all named spaces by Google Workspace organization, use the
+   * [`spaces.search()`](https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces/search)
+   * method using Workspace administrator privileges instead.
+   *
    * <p>Sample code:
    *
    * <pre>{@code
@@ -2246,6 +2261,10 @@ public class ChatServiceClient implements BackgroundResource {
    *
    * <p>Lists spaces visible to the caller or authenticated user. Group chats and DMs aren't listed
    * until the first message is sent.
+   *
+   * <p>To list all named spaces by Google Workspace organization, use the
+   * [`spaces.search()`](https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces/search)
+   * method using Workspace administrator privileges instead.
    *
    * <p>Sample code:
    *
@@ -2307,7 +2326,7 @@ public class ChatServiceClient implements BackgroundResource {
    * }
    * }</pre>
    *
-   * @param name Required. Resource name of the space, in the form "spaces/&#42;".
+   * @param name Required. Resource name of the space, in the form `spaces/{space}`.
    *     <p>Format: `spaces/{space}`
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -2343,7 +2362,7 @@ public class ChatServiceClient implements BackgroundResource {
    * }
    * }</pre>
    *
-   * @param name Required. Resource name of the space, in the form "spaces/&#42;".
+   * @param name Required. Resource name of the space, in the form `spaces/{space}`.
    *     <p>Format: `spaces/{space}`
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -2546,6 +2565,15 @@ public class ChatServiceClient implements BackgroundResource {
    * you can add the user to the space by setting the `membership.member.name` to
    * `users/user{@literal @}example.com` or `users/123456789`.
    *
+   * <p>To specify the Google groups to add, add memberships with the appropriate
+   * `membership.group_member.name`. To add or invite a Google group, use `groups/{group}`, where
+   * `{group}` is the `id` for the group from the Cloud Identity Groups API. For example, you can
+   * use [Cloud Identity Groups lookup
+   * API](https://cloud.google.com/identity/docs/reference/rest/v1/groups/lookup) to retrieve the ID
+   * `123456789` for group email `group{@literal @}example.com`, then you can add the group to the
+   * space by setting the `membership.group_member.name` to `groups/123456789`. Group email is not
+   * supported, and Google groups can only be added as members in named spaces.
+   *
    * <p>For a named space or group chat, if the caller blocks, or is blocked by some members, or
    * doesn't have permission to add some members, then those members aren't added to the created
    * space.
@@ -2609,6 +2637,15 @@ public class ChatServiceClient implements BackgroundResource {
    * example, if the People API Person profile ID for `user{@literal @}example.com` is `123456789`,
    * you can add the user to the space by setting the `membership.member.name` to
    * `users/user{@literal @}example.com` or `users/123456789`.
+   *
+   * <p>To specify the Google groups to add, add memberships with the appropriate
+   * `membership.group_member.name`. To add or invite a Google group, use `groups/{group}`, where
+   * `{group}` is the `id` for the group from the Cloud Identity Groups API. For example, you can
+   * use [Cloud Identity Groups lookup
+   * API](https://cloud.google.com/identity/docs/reference/rest/v1/groups/lookup) to retrieve the ID
+   * `123456789` for group email `group{@literal @}example.com`, then you can add the group to the
+   * space by setting the `membership.group_member.name` to `groups/123456789`. Group email is not
+   * supported, and Google groups can only be added as members in named spaces.
    *
    * <p>For a named space or group chat, if the caller blocks, or is blocked by some members, or
    * doesn't have permission to add some members, then those members aren't added to the created
@@ -2701,16 +2738,28 @@ public class ChatServiceClient implements BackgroundResource {
    *     space has a non-empty display name and the `SPACE` space type. Including the `space_type`
    *     mask and the `SPACE` type in the specified space when updating the display name is optional
    *     if the existing space already has the `SPACE` type. Trying to update the space type in
-   *     other ways results in an invalid argument error).
+   *     other ways results in an invalid argument error). `space_type` is not supported with admin
+   *     access.
    *     <p>- `space_details`
    *     <p>- `space_history_state` (Supports [turning history on or off for the
    *     space](https://support.google.com/chat/answer/7664687) if [the organization allows users to
    *     change their history setting](https://support.google.com/a/answer/7664184). Warning:
-   *     mutually exclusive with all other field paths.)
-   *     <p>- Developer Preview: `access_settings.audience` (Supports changing the [access
-   *     setting](https://support.google.com/chat/answer/11971020) of a space. If no audience is
-   *     specified in the access setting, the space's access setting is updated to restricted.
-   *     Warning: mutually exclusive with all other field paths.)
+   *     mutually exclusive with all other field paths.) `space_history_state` is not supported with
+   *     admin access.
+   *     <p>- `access_settings.audience` (Supports changing the [access
+   *     setting](https://support.google.com/chat/answer/11971020) of who can discover the space,
+   *     join the space, and preview the messages in space. If no audience is specified in the
+   *     access setting, the space's access setting is updated to private. Warning: mutually
+   *     exclusive with all other field paths.) `access_settings.audience` is not supported with
+   *     admin access.
+   *     <p>- Developer Preview: Supports changing the [permission
+   *     settings](https://support.google.com/chat/answer/13340792) of a space, supported field
+   *     paths include: `permission_settings.manage_members_and_groups`,
+   *     `permission_settings.modify_space_details`, `permission_settings.toggle_history`,
+   *     `permission_settings.use_at_mention_all`, `permission_settings.manage_apps`,
+   *     `permission_settings.manage_webhooks`, `permission_settings.reply_messages` (Warning:
+   *     mutually exclusive with all other non-permission settings field paths).
+   *     `permission_settings` is not supported with admin access.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Space updateSpace(Space space, FieldMask updateMask) {
@@ -3072,7 +3121,8 @@ public class ChatServiceClient implements BackgroundResource {
    * adds the member directly to the specified space. Requires [user
    * authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user).
    *
-   * <p>To specify the member to add, set the `membership.member.name` for the human or app member.
+   * <p>To specify the member to add, set the `membership.member.name` for the human or app member,
+   * or set the `membership.group_member.name` for the group member.
    *
    * <p>- To add the calling app to a space or a direct message between two human users, use
    * `users/app`. Unable to add other apps to the space.
@@ -3083,6 +3133,14 @@ public class ChatServiceClient implements BackgroundResource {
    * API Person profile ID for `user{@literal @}example.com` is `123456789`, you can add the user to
    * the space by setting the `membership.member.name` to `users/user{@literal @}example.com` or
    * `users/123456789`.
+   *
+   * <p>- To add or invite a Google group in a named space, use `groups/{group}`, where `{group}` is
+   * the `id` for the group from the Cloud Identity Groups API. For example, you can use [Cloud
+   * Identity Groups lookup
+   * API](https://cloud.google.com/identity/docs/reference/rest/v1/groups/lookup) to retrieve the ID
+   * `123456789` for group email `group{@literal @}example.com`, then you can add or invite the
+   * group to a named space by setting the `membership.group_member.name` to `groups/123456789`.
+   * Group email is not supported, and Google groups can only be added as members in named spaces.
    *
    * <p>Sample code:
    *
@@ -3136,7 +3194,8 @@ public class ChatServiceClient implements BackgroundResource {
    * adds the member directly to the specified space. Requires [user
    * authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user).
    *
-   * <p>To specify the member to add, set the `membership.member.name` for the human or app member.
+   * <p>To specify the member to add, set the `membership.member.name` for the human or app member,
+   * or set the `membership.group_member.name` for the group member.
    *
    * <p>- To add the calling app to a space or a direct message between two human users, use
    * `users/app`. Unable to add other apps to the space.
@@ -3147,6 +3206,14 @@ public class ChatServiceClient implements BackgroundResource {
    * API Person profile ID for `user{@literal @}example.com` is `123456789`, you can add the user to
    * the space by setting the `membership.member.name` to `users/user{@literal @}example.com` or
    * `users/123456789`.
+   *
+   * <p>- To add or invite a Google group in a named space, use `groups/{group}`, where `{group}` is
+   * the `id` for the group from the Cloud Identity Groups API. For example, you can use [Cloud
+   * Identity Groups lookup
+   * API](https://cloud.google.com/identity/docs/reference/rest/v1/groups/lookup) to retrieve the ID
+   * `123456789` for group email `group{@literal @}example.com`, then you can add or invite the
+   * group to a named space by setting the `membership.group_member.name` to `groups/123456789`.
+   * Group email is not supported, and Google groups can only be added as members in named spaces.
    *
    * <p>Sample code:
    *
@@ -3197,7 +3264,8 @@ public class ChatServiceClient implements BackgroundResource {
    * adds the member directly to the specified space. Requires [user
    * authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user).
    *
-   * <p>To specify the member to add, set the `membership.member.name` for the human or app member.
+   * <p>To specify the member to add, set the `membership.member.name` for the human or app member,
+   * or set the `membership.group_member.name` for the group member.
    *
    * <p>- To add the calling app to a space or a direct message between two human users, use
    * `users/app`. Unable to add other apps to the space.
@@ -3208,6 +3276,14 @@ public class ChatServiceClient implements BackgroundResource {
    * API Person profile ID for `user{@literal @}example.com` is `123456789`, you can add the user to
    * the space by setting the `membership.member.name` to `users/user{@literal @}example.com` or
    * `users/123456789`.
+   *
+   * <p>- To add or invite a Google group in a named space, use `groups/{group}`, where `{group}` is
+   * the `id` for the group from the Cloud Identity Groups API. For example, you can use [Cloud
+   * Identity Groups lookup
+   * API](https://cloud.google.com/identity/docs/reference/rest/v1/groups/lookup) to retrieve the ID
+   * `123456789` for group email `group{@literal @}example.com`, then you can add or invite the
+   * group to a named space by setting the `membership.group_member.name` to `groups/123456789`.
+   * Group email is not supported, and Google groups can only be added as members in named spaces.
    *
    * <p>Sample code:
    *
@@ -3244,7 +3320,8 @@ public class ChatServiceClient implements BackgroundResource {
    * adds the member directly to the specified space. Requires [user
    * authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user).
    *
-   * <p>To specify the member to add, set the `membership.member.name` for the human or app member.
+   * <p>To specify the member to add, set the `membership.member.name` for the human or app member,
+   * or set the `membership.group_member.name` for the group member.
    *
    * <p>- To add the calling app to a space or a direct message between two human users, use
    * `users/app`. Unable to add other apps to the space.
@@ -3255,6 +3332,14 @@ public class ChatServiceClient implements BackgroundResource {
    * API Person profile ID for `user{@literal @}example.com` is `123456789`, you can add the user to
    * the space by setting the `membership.member.name` to `users/user{@literal @}example.com` or
    * `users/123456789`.
+   *
+   * <p>- To add or invite a Google group in a named space, use `groups/{group}`, where `{group}` is
+   * the `id` for the group from the Cloud Identity Groups API. For example, you can use [Cloud
+   * Identity Groups lookup
+   * API](https://cloud.google.com/identity/docs/reference/rest/v1/groups/lookup) to retrieve the ID
+   * `123456789` for group email `group{@literal @}example.com`, then you can add or invite the
+   * group to a named space by setting the `membership.group_member.name` to `groups/123456789`.
+   * Group email is not supported, and Google groups can only be added as members in named spaces.
    *
    * <p>Sample code:
    *
