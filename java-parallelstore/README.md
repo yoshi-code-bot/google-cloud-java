@@ -23,7 +23,7 @@ If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file:
     <dependency>
       <groupId>com.google.cloud</groupId>
       <artifactId>libraries-bom</artifactId>
-      <version>26.42.0</version>
+      <version>26.43.0</version>
       <type>pom</type>
       <scope>import</scope>
     </dependency>
@@ -45,20 +45,20 @@ If you are using Maven without the BOM, add this to your dependencies:
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-parallelstore</artifactId>
-  <version>0.9.0</version>
+  <version>0.10.0</version>
 </dependency>
 ```
 
 If you are using Gradle without BOM, add this to your dependencies:
 
 ```Groovy
-implementation 'com.google.cloud:google-cloud-parallelstore:0.9.0'
+implementation 'com.google.cloud:google-cloud-parallelstore:0.10.0'
 ```
 
 If you are using SBT, add this to your dependencies:
 
 ```Scala
-libraryDependencies += "com.google.cloud" % "google-cloud-parallelstore" % "0.9.0"
+libraryDependencies += "com.google.cloud" % "google-cloud-parallelstore" % "0.10.0"
 ```
 <!-- {x-version-update-end} -->
 
