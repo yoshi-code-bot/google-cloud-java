@@ -1,5 +1,5 @@
 gapic_generator_version: 2.44.0
-googleapis_commitish: f17f11412a8770c52e7280fa0e66ab17cb2f3af9
+googleapis_commitish: a8f277295c12490d49c196b791e2101500864c30
 libraries_bom_version: 26.44.0
 
 # the libraries are ordered with respect to library name, which is
@@ -573,6 +573,23 @@ libraries:
   - proto_path: google/cloud/confidentialcomputing/v1
   - proto_path: google/cloud/confidentialcomputing/v1alpha1
 
+- api_shortname: connectgateway
+  name_pretty: Connect Gateway API
+  product_documentation: 
+    https://cloud.google.com/kubernetes-engine/enterprise/multicluster-management/gateway
+  api_description: The Connect Gateway service allows connectivity from external parties
+    to     connected Kubernetes clusters.
+  client_documentation: 
+    https://cloud.google.com/java/docs/reference/google-cloud-connectgateway/latest/overview
+  release_level: preview
+  distribution_name: com.google.cloud:google-cloud-connectgateway
+  api_id: connectgateway.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.cloud
+  cloud_api: true
+  GAPICs:
+  - proto_path: google/cloud/gkeconnect/gateway/v1
+  requires_billing: true
 - api_shortname: contactcenterinsights
   name_pretty: CCAI Insights
   product_documentation: https://cloud.google.com/dialogflow/priv/docs/insights/
