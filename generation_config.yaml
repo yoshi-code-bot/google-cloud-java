@@ -1,5 +1,5 @@
-gapic_generator_version: 2.45.0
-googleapis_commitish: 07b069bfb0f49d0e95097ac1811c99fc7ad6d3f4
+gapic_generator_version: 2.46.0
+googleapis_commitish: 005df4681b89bd204a90b76168a6dc9d9e7bf4fe
 libraries_bom_version: 26.47.0
 
 # the libraries are ordered with respect to library name, which is
@@ -1352,6 +1352,24 @@ libraries:
   - proto_path: google/maps/solar/v1
   requires_billing: true
   rpc_documentation: https://developers.google.com/maps/documentation/solar/reference/rest
+- api_shortname: marketingplatformadminapi
+  name_pretty: Google Marketing Platform Admin API
+  product_documentation: https://developers.google.com/analytics/devguides/config/gmp/v1
+  api_description: The Google Marketing Platform Admin API allows for programmatic
+    access to the Google Marketing Platform configuration data. You can use the Google
+    Marketing Platform Admin API to manage links between your Google Marketing Platform
+    organization and Google Analytics accounts, and to set the service level of your
+    GA4 properties.
+  client_documentation: https://cloud.google.com/java/docs/reference/admin/latest/overview
+  release_level: preview
+  distribution_name: com.google.ads-marketingplatform:admin
+  api_id: marketingplatformadminapi.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.ads-marketingplatform
+  cloud_api: false
+  GAPICs:
+  - proto_path: google/marketingplatform/admin/v1alpha
+  requires_billing: true
 - api_shortname: mediatranslation
   name_pretty: Media Translation API
   product_documentation: https://cloud.google.com/
