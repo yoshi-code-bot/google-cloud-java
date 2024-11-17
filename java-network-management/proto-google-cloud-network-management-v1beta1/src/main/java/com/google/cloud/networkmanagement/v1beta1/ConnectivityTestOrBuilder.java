@@ -28,11 +28,11 @@ public interface ConnectivityTestOrBuilder
    *
    *
    * <pre>
-   * Required. Unique name of the resource using the form:
+   * Identifier. Unique name of the resource using the form:
    *     `projects/{project_id}/locations/global/connectivityTests/{test}`
    * </pre>
    *
-   * <code>string name = 1 [(.google.api.field_behavior) = REQUIRED];</code>
+   * <code>string name = 1 [(.google.api.field_behavior) = IDENTIFIER];</code>
    *
    * @return The name.
    */
@@ -41,11 +41,11 @@ public interface ConnectivityTestOrBuilder
    *
    *
    * <pre>
-   * Required. Unique name of the resource using the form:
+   * Identifier. Unique name of the resource using the form:
    *     `projects/{project_id}/locations/global/connectivityTests/{test}`
    * </pre>
    *
-   * <code>string name = 1 [(.google.api.field_behavior) = REQUIRED];</code>
+   * <code>string name = 1 [(.google.api.field_behavior) = IDENTIFIER];</code>
    *
    * @return The bytes for name.
    */
@@ -610,6 +610,71 @@ public interface ConnectivityTestOrBuilder
    * </code>
    */
   com.google.cloud.networkmanagement.v1beta1.ProbingDetailsOrBuilder getProbingDetailsOrBuilder();
+
+  /**
+   *
+   *
+   * <pre>
+   * Whether run analysis for the return path from destination to source.
+   * Default value is false.
+   * </pre>
+   *
+   * <code>bool round_trip = 15;</code>
+   *
+   * @return The roundTrip.
+   */
+  boolean getRoundTrip();
+
+  /**
+   *
+   *
+   * <pre>
+   * Output only. The reachability details of this test from the latest run for
+   * the return path. The details are updated when creating a new test,
+   * updating an existing test, or triggering a one-time rerun of an existing
+   * test.
+   * </pre>
+   *
+   * <code>
+   * .google.cloud.networkmanagement.v1beta1.ReachabilityDetails return_reachability_details = 16 [(.google.api.field_behavior) = OUTPUT_ONLY];
+   * </code>
+   *
+   * @return Whether the returnReachabilityDetails field is set.
+   */
+  boolean hasReturnReachabilityDetails();
+  /**
+   *
+   *
+   * <pre>
+   * Output only. The reachability details of this test from the latest run for
+   * the return path. The details are updated when creating a new test,
+   * updating an existing test, or triggering a one-time rerun of an existing
+   * test.
+   * </pre>
+   *
+   * <code>
+   * .google.cloud.networkmanagement.v1beta1.ReachabilityDetails return_reachability_details = 16 [(.google.api.field_behavior) = OUTPUT_ONLY];
+   * </code>
+   *
+   * @return The returnReachabilityDetails.
+   */
+  com.google.cloud.networkmanagement.v1beta1.ReachabilityDetails getReturnReachabilityDetails();
+  /**
+   *
+   *
+   * <pre>
+   * Output only. The reachability details of this test from the latest run for
+   * the return path. The details are updated when creating a new test,
+   * updating an existing test, or triggering a one-time rerun of an existing
+   * test.
+   * </pre>
+   *
+   * <code>
+   * .google.cloud.networkmanagement.v1beta1.ReachabilityDetails return_reachability_details = 16 [(.google.api.field_behavior) = OUTPUT_ONLY];
+   * </code>
+   */
+  com.google.cloud.networkmanagement.v1beta1.ReachabilityDetailsOrBuilder
+      getReturnReachabilityDetailsOrBuilder();
 
   /**
    *
