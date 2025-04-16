@@ -1,6 +1,6 @@
 gapic_generator_version: 2.55.1
-googleapis_commitish: c8280d7c3c36cb97aac54d661dcdfc4076ac4d32
-libraries_bom_version: 26.56.0
+googleapis_commitish: 1c153adc542b4c915eeab5290bc42581c821cc93
+libraries_bom_version: 26.59.0
 
 # the libraries are ordered with respect to library name, which is
 # java-{library.library_name} or java-{library.api-shortname} when
@@ -794,6 +794,21 @@ libraries:
   cloud_api: true
   GAPICs:
   - proto_path: google/cloud/developerconnect/v1
+  requires_billing: true
+- api_shortname: devicestreaming
+  name_pretty: Device Streaming API
+  product_documentation: https://cloud.google.com/device-streaming/docs
+  api_description: The Cloud API for device streaming usage.
+  client_documentation: 
+    https://cloud.google.com/java/docs/reference/google-cloud-devicestreaming/latest/overview
+  release_level: preview
+  distribution_name: com.google.cloud:google-cloud-devicestreaming
+  api_id: devicestreaming.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.cloud
+  cloud_api: true
+  GAPICs:
+  - proto_path: google/cloud/devicestreaming/v1
   requires_billing: true
 - api_shortname: dialogflow
   name_pretty: Dialogflow API
