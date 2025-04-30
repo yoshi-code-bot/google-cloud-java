@@ -1,5 +1,5 @@
-gapic_generator_version: 2.55.1
-googleapis_commitish: 1c153adc542b4c915eeab5290bc42581c821cc93
+gapic_generator_version: 2.56.2
+googleapis_commitish: ce291b3bc967923f89e0e54ed33d18802672b171
 libraries_bom_version: 26.59.0
 
 # the libraries are ordered with respect to library name, which is
@@ -1203,6 +1203,40 @@ libraries:
   issue_tracker: https://issuetracker.google.com/issues?q=status:open%20componentid:310170
   GAPICs:
   - proto_path: google/cloud/iot/v1
+- api_shortname: merchantapi
+  name_pretty: Merchant Issue Resolution API
+  product_documentation: https://developers.google.com/merchant/api
+  api_description: Programatically manage your Merchant Issues
+  client_documentation: 
+    https://cloud.google.com/java/docs/reference/google-shopping-merchant-issue-resolution/latest/overview
+  release_level: preview
+  distribution_name: com.google.shopping:google-shopping-merchant-issue-resolution
+  api_id: merchantapi.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.shopping
+  cloud_api: false
+  GAPICs:
+  - proto_path: google/shopping/merchant/issueresolution/v1beta
+  library_name: java-shopping-merchant-issue-resolution
+  requires_billing: true
+  
+- api_shortname: merchantapi
+  name_pretty: Merchant Order Tracking API
+  product_documentation: https://developers.google.com/merchant/api
+  api_description: Programmatically manage your Merchant Center Accounts
+  client_documentation: 
+    https://cloud.google.com/java/docs/reference/google-shopping-merchant-order-tracking/latest/overview
+  release_level: preview
+  distribution_name: com.google.shopping:google-shopping-merchant-order-tracking
+  api_id: merchantapi.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.shopping
+  cloud_api: false
+  GAPICs:
+  - proto_path: google/shopping/merchant/ordertracking/v1beta
+  library_name: java-shopping-merchant-order-tracking
+  requires_billing: true
+  
 - api_shortname: cloudkms
   name_pretty: Cloud Key Management Service
   product_documentation: https://cloud.google.com/kms
@@ -1255,6 +1289,21 @@ libraries:
   GAPICs:
   - proto_path: google/cloud/lifesciences/v2beta
 
+- api_shortname: lustre
+  name_pretty: Google Cloud Managed Lustre API
+  product_documentation: https://cloud.google.com/managed-lustre/docs
+  api_description: Google Cloud Managed Lustre delivers a high-performance, fully
+    managed parallel file system optimized for AI and HPC applications.
+  client_documentation: https://cloud.google.com/java/docs/reference/google-cloud-lustre/latest/overview
+  release_level: preview
+  distribution_name: com.google.cloud:google-cloud-lustre
+  api_id: lustre.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.cloud
+  cloud_api: true
+  GAPICs:
+  - proto_path: google/cloud/lustre/v1
+  requires_billing: true
 - api_shortname: managedidentities
   name_pretty: Managed Service for Microsoft Active Directory
   product_documentation: https://cloud.google.com/managed-microsoft-ad/
