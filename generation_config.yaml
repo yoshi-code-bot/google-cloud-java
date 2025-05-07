@@ -1,5 +1,5 @@
 gapic_generator_version: 2.56.3
-googleapis_commitish: 7ab5d0f5e87ed25778eeb8318e89cdad4d67ed6c
+googleapis_commitish: 9b69927306837031baf07585ec02bc9af5c1da7e
 libraries_bom_version: 26.59.0
 
 # the libraries are ordered with respect to library name, which is
@@ -1120,6 +1120,8 @@ libraries:
   - proto_path: google/iam/v1beta
   - proto_path: google/iam/v2
   - proto_path: google/iam/v2beta
+  - proto_path: google/iam/v3
+  - proto_path: google/iam/v3beta
 
 - api_shortname: iam-admin
   name_pretty: IAM Admin API
