@@ -39,7 +39,7 @@
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-pubsub-bom</artifactId>
-        <version>1.137.1</version>
+        <version>1.140.0</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -66,7 +66,7 @@
       <dependency>
         <groupId>com.google.apis</groupId>
         <artifactId>google-api-services-storage</artifactId>
-        <version>v1-rev20241206-2.0.0</version>
+        <version>v1-rev20250524-2.0.0</version>
       </dependency>
 
       <!-- Test dependencies -->
