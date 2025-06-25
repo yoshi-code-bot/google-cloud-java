@@ -1,5 +1,5 @@
 gapic_generator_version: 2.59.0
-googleapis_commitish: f01a17a560b4fbc888fd552c978f4e1f8614100b
+googleapis_commitish: fc1e32c211bbb46c7213ffa68fe3273da16ab358
 libraries_bom_version: 26.61.0
 
 # the libraries are ordered with respect to library name, which is
@@ -592,6 +592,25 @@ libraries:
   - proto_path: google/cloud/confidentialcomputing/v1
   - proto_path: google/cloud/confidentialcomputing/v1alpha1
 
+- api_shortname: configdelivery
+  name_pretty: Config Delivery API
+  product_documentation: 
+    https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/concepts/fleet-packages
+  api_description: ConfigDelivery service manages the deployment of kubernetes configuration
+    to a fleet of kubernetes clusters.
+  client_documentation: 
+    https://cloud.google.com/java/docs/reference/google-cloud-configdelivery/latest/overview
+  release_level: preview
+  distribution_name: com.google.cloud:google-cloud-configdelivery
+  api_id: configdelivery.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.cloud
+  cloud_api: true
+  GAPICs:
+  - proto_path: google/cloud/configdelivery/v1beta
+  requires_billing: true
+  rest_documentation: 
+    https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/reference/rest
 - api_shortname: connectgateway
   name_pretty: Connect Gateway API
   product_documentation: 
@@ -1308,6 +1327,23 @@ libraries:
   GAPICs:
   - proto_path: google/cloud/lustre/v1
   requires_billing: true
+- api_shortname: maintenance
+  name_pretty: Maintenance API
+  product_documentation: https://cloud.google.com/unified-maintenance/docs/overview
+  api_description: The Maintenance API provides a centralized view of planned disruptive
+    maintenance events across supported Google Cloud products.
+  client_documentation: 
+    https://cloud.google.com/java/docs/reference/google-cloud-maintenance/latest/overview
+  release_level: preview
+  distribution_name: com.google.cloud:google-cloud-maintenance
+  api_id: maintenance.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.cloud
+  cloud_api: true
+  GAPICs:
+  - proto_path: google/cloud/maintenance/api/v1beta
+  requires_billing: true
+  rpc_documentation: https://cloud.google.com/unified-maintenance/docs/reference/rpc
 - api_shortname: managedidentities
   name_pretty: Managed Service for Microsoft Active Directory
   product_documentation: https://cloud.google.com/managed-microsoft-ad/
@@ -2697,6 +2733,7 @@ libraries:
   rest_documentation: https://developers.google.com/workspace/events/reference/rest
   GAPICs:
   - proto_path: google/apps/events/subscriptions/v1
+  - proto_path: google/apps/events/subscriptions/v1beta
 
 - api_shortname: workstations
   name_pretty: Cloud Workstations
