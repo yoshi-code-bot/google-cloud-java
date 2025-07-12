@@ -1,5 +1,5 @@
-gapic_generator_version: 2.60.0
-googleapis_commitish: 8a883235bc76e941ef745a5b5465878dadc9c440
+gapic_generator_version: 2.60.1
+googleapis_commitish: d4be887ef681aa9c3c1c6b10aed839d154effa53
 libraries_bom_version: 26.61.0
 
 # the libraries are ordered with respect to library name, which is
@@ -396,6 +396,7 @@ libraries:
   GAPICs:
   - proto_path: google/cloud/bigquery/datapolicies/v1
   - proto_path: google/cloud/bigquery/datapolicies/v1beta1
+  - proto_path: google/cloud/bigquery/datapolicies/v2beta1
 
 - api_shortname: bigquerydatatransfer
   name_pretty: BigQuery Data Transfer Service
@@ -1301,6 +1302,22 @@ libraries:
   - proto_path: google/cloud/language/v1beta2
   - proto_path: google/cloud/language/v2
 
+- api_shortname: licensemanager
+  name_pretty: License Manager API
+  product_documentation: https://cloud.google.com/compute/docs/instances/windows/ms-licensing
+  api_description: License Manager is a tool to manage and track third-party licenses
+    on Google Cloud.
+  client_documentation: 
+    https://cloud.google.com/java/docs/reference/google-cloud-licensemanager/latest/overview
+  release_level: preview
+  distribution_name: com.google.cloud:google-cloud-licensemanager
+  api_id: licensemanager.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.cloud
+  cloud_api: true
+  GAPICs:
+  - proto_path: google/cloud/licensemanager/v1
+  requires_billing: true
 - api_shortname: lifesciences
   name_pretty: Cloud Life Sciences
   product_documentation: https://cloud.google.com/life-sciences/docs
@@ -2346,6 +2363,7 @@ libraries:
   distribution_name: com.google.shopping:google-shopping-merchant-reports
   GAPICs:
   - proto_path: google/shopping/merchant/reports/v1beta
+  - proto_path: google/shopping/merchant/reports/v1alpha
 
 - api_shortname: merchantapi
   name_pretty: Merchant API
