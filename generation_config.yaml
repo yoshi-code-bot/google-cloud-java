@@ -1,5 +1,5 @@
 gapic_generator_version: 2.61.0
-googleapis_commitish: 09f2446e4a30d6d79dff93e14bbc992b855ebaaf
+googleapis_commitish: b0316578aaf7434e3c5bb93badd252f67aacf8d5
 libraries_bom_version: 26.65.0
 
 # the libraries are ordered with respect to library name, which is
@@ -1242,6 +1242,7 @@ libraries:
   group_id: com.google.shopping
   cloud_api: false
   GAPICs:
+  - proto_path: google/shopping/merchant/issueresolution/v1
   - proto_path: google/shopping/merchant/issueresolution/v1beta
   library_name: java-shopping-merchant-issue-resolution
   requires_billing: true
@@ -1259,6 +1260,7 @@ libraries:
   group_id: com.google.shopping
   cloud_api: false
   GAPICs:
+  - proto_path: google/shopping/merchant/ordertracking/v1
   - proto_path: google/shopping/merchant/ordertracking/v1beta
   library_name: java-shopping-merchant-order-tracking
   requires_billing: true
@@ -2028,6 +2030,22 @@ libraries:
   GAPICs:
   - proto_path: google/cloud/run/v2
 
+- api_shortname: saasservicemgmt
+  name_pretty: SaaS Runtime API
+  product_documentation: https://cloud.google.com/saas-runtime/docs/overview
+  api_description: "Model, deploy, and operate your SaaS at scale.\t"
+  client_documentation: 
+    https://cloud.google.com/java/docs/reference/google-cloud-saasservicemgmt/latest/overview
+  release_level: preview
+  distribution_name: com.google.cloud:google-cloud-saasservicemgmt
+  api_id: saasservicemgmt.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.cloud
+  cloud_api: true
+  GAPICs:
+  - proto_path: google/cloud/saasplatform/saasservicemgmt/v1beta1
+  requires_billing: true
+  rpc_documentation: https://cloud.google.com/saas-runtime/docs/apis
 - api_shortname: cloudscheduler
   name_pretty: Google Cloud Scheduler
   product_documentation: https://cloud.google.com/scheduler/docs
@@ -2232,6 +2250,7 @@ libraries:
   group_id: com.google.shopping
   cloud_api: false
   GAPICs:
+  - proto_path: google/shopping/merchant/accounts/v1
   - proto_path: google/shopping/merchant/accounts/v1beta
   library_name: shopping-merchant-accounts
   requires_billing: true
@@ -2265,6 +2284,7 @@ libraries:
   group_id: com.google.shopping
   cloud_api: false
   GAPICs:
+  - proto_path: google/shopping/merchant/datasources/v1
   - proto_path: google/shopping/merchant/datasources/v1beta
   library_name: shopping-merchant-datasources
   requires_billing: true
@@ -2278,7 +2298,22 @@ libraries:
   GAPICs:
   - proto_path: google/shopping/merchant/inventories/v1
   - proto_path: google/shopping/merchant/inventories/v1beta
-
+- api_shortname: shopping-merchant-notifications
+  name_pretty: Merchant Notifications API
+  product_documentation: https://developers.google.com/merchant/api
+  api_description: Programmatically manage your Merchant Center accounts.
+  client_documentation:
+    https://cloud.google.com/java/docs/reference/google-shopping-merchant-notifications/latest/overview
+  release_level: preview
+  distribution_name: com.google.shopping:google-shopping-merchant-notifications
+  api_id: shopping-merchant-notifications.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.shopping
+  cloud_api: false
+  GAPICs:
+    - proto_path: google/shopping/merchant/notifications/v1
+    - proto_path: google/shopping/merchant/notifications/v1beta
+  requires_billing: true
 - api_shortname: shopping-merchant-lfp
   name_pretty: Merchant LFP API
   product_documentation: https://developers.google.com/merchant/api
@@ -2292,6 +2327,7 @@ libraries:
   group_id: com.google.shopping
   cloud_api: false
   GAPICs:
+  - proto_path: google/shopping/merchant/lfp/v1
   - proto_path: google/shopping/merchant/lfp/v1beta
   requires_billing: true
 
@@ -2324,6 +2360,7 @@ libraries:
   group_id: com.google.shopping
   cloud_api: false
   GAPICs:
+  - proto_path: google/shopping/merchant/products/v1
   - proto_path: google/shopping/merchant/products/v1beta
   library_name: shopping-merchant-products
 - api_shortname: merchantapi
@@ -2339,6 +2376,7 @@ libraries:
   group_id: com.google.shopping
   cloud_api: false
   GAPICs:
+  - proto_path: google/shopping/merchant/promotions/v1
   - proto_path: google/shopping/merchant/promotions/v1beta
   library_name: shopping-merchant-promotions
   requires_billing: true
@@ -2355,6 +2393,7 @@ libraries:
   group_id: com.google.shopping
   cloud_api: false
   GAPICs:
+  - proto_path: google/shopping/merchant/quota/v1
   - proto_path: google/shopping/merchant/quota/v1beta
   requires_billing: true
 
@@ -2366,6 +2405,7 @@ libraries:
   cloud_api: false
   distribution_name: com.google.shopping:google-shopping-merchant-reports
   GAPICs:
+  - proto_path: google/shopping/merchant/reports/v1
   - proto_path: google/shopping/merchant/reports/v1beta
   - proto_path: google/shopping/merchant/reports/v1alpha
 
