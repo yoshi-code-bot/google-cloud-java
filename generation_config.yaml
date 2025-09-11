@@ -1,6 +1,6 @@
-gapic_generator_version: 2.62.0
-googleapis_commitish: b738e78ed63effb7d199ed2d61c9e03291b6077f
-libraries_bom_version: 26.66.0
+gapic_generator_version: 2.62.1
+googleapis_commitish: 6d1dca2b8e3d50914609414e219df2778b2b20ba
+libraries_bom_version: 26.67.0
 
 # the libraries are ordered with respect to library name, which is
 # java-{library.library_name} or java-{library.api-shortname} when
@@ -562,6 +562,24 @@ libraries:
   - proto_path: google/api/cloudquotas/v1
   - proto_path: google/api/cloudquotas/v1beta
 
+- api_shortname: cloudsecuritycompliance
+  name_pretty: Cloud Security Compliance API
+  product_documentation: 
+    https://cloud.google.com/security-command-center/docs/compliance-manager-overview
+  api_description: Compliance Manager uses software-defined controls that let you
+    assess support for multiple compliance programs and security requirements within
+    a Google Cloud organization
+  client_documentation: 
+    https://cloud.google.com/java/docs/reference/google-cloud-cloudsecuritycompliance/latest/overview
+  release_level: preview
+  distribution_name: com.google.cloud:google-cloud-cloudsecuritycompliance
+  api_id: cloudsecuritycompliance.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.cloud
+  cloud_api: true
+  GAPICs:
+  - proto_path: google/cloud/cloudsecuritycompliance/v1
+  requires_billing: true
 - api_shortname: cloudsupport
   name_pretty: Google Cloud Support API
   product_documentation: https://cloud.google.com/support/docs/reference/support-api/
