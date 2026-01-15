@@ -1,5 +1,5 @@
-gapic_generator_version: 2.64.2
-googleapis_commitish: 1496716325adf01af70ffca9161dd62d7bebbd50
+gapic_generator_version: 2.65.1
+googleapis_commitish: e006e1c8b69c0594e6f872316a3543b3b37ad81b
 libraries_bom_version: 26.73.0
 
 # the libraries are ordered with respect to library name, which is
@@ -531,6 +531,23 @@ libraries:
   cloud_api: true
   GAPICs:
   - proto_path: google/cloud/chronicle/v1
+  requires_billing: true
+- api_shortname: cloudapiregistry
+  name_pretty: Cloud API Registry API
+  product_documentation: https://docs.cloud.google.com/api-registry/docs/overview
+  api_description: Cloud API Registry lets you discover, govern, use, and monitor
+    Model Context Protocol (MCP) servers and tools provided by Google, or by your
+    organization through Apigee API hub.
+  client_documentation: 
+    https://cloud.google.com/java/docs/reference/google-cloud-cloudapiregistry/latest/overview
+  release_level: preview
+  distribution_name: com.google.cloud:google-cloud-cloudapiregistry
+  api_id: cloudapiregistry.googleapis.com
+  library_type: GAPIC_AUTO
+  group_id: com.google.cloud
+  cloud_api: true
+  GAPICs:
+  - proto_path: google/cloud/apiregistry/v1beta
   requires_billing: true
 - api_shortname: cloudbuild
   name_pretty: Cloud Build
