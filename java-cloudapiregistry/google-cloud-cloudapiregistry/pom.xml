@@ -3,14 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-cloudapiregistry</artifactId>
-  <version>0.2.0-SNAPSHOT</version><!-- {x-version-update:google-cloud-cloudapiregistry:current} -->
+  <version>0.2.0</version><!-- {x-version-update:google-cloud-cloudapiregistry:current} -->
   <packaging>jar</packaging>
   <name>Google Cloud API Registry API</name>
   <description>Cloud API Registry API Cloud API Registry lets you discover, govern, use, and monitor Model Context Protocol (MCP) servers and tools provided by Google, or by your organization through Apigee API hub.</description>
   <parent>
     <groupId>com.google.cloud</groupId>
     <artifactId>google-cloud-cloudapiregistry-parent</artifactId>
-    <version>0.2.0-SNAPSHOT</version><!-- {x-version-update:google-cloud-cloudapiregistry:current} -->
+    <version>0.2.0</version><!-- {x-version-update:google-cloud-cloudapiregistry:current} -->
   </parent>
   <properties>
     <site.installationModule>google-cloud-cloudapiregistry</site.installationModule>
@@ -41,6 +41,10 @@
       <artifactId>proto-google-common-protos</artifactId>
     </dependency>
 
+    <dependency>
+      <groupId>com.google.api.grpc</groupId>
+      <artifactId>proto-google-cloud-cloudapiregistry-v1</artifactId>
+    </dependency>
     <dependency>
       <groupId>com.google.api.grpc</groupId>
       <artifactId>proto-google-cloud-cloudapiregistry-v1beta</artifactId>
@@ -74,6 +78,11 @@
     <dependency>
       <groupId>com.google.api.grpc</groupId>
       <artifactId>grpc-google-common-protos</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.api.grpc</groupId>
+      <artifactId>grpc-google-cloud-cloudapiregistry-v1</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
