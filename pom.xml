@@ -57,6 +57,7 @@
     <module>java-binary-authorization</module>
     <module>java-capacityplanner</module>
     <module>java-certificate-manager</module>
+    <module>java-ces</module>
     <module>java-channel</module>
     <module>java-chat</module>
     <module>java-chronicle</module>
@@ -244,6 +245,7 @@
     <module>java-websecurityscanner</module>
     <module>java-workflow-executions</module>
     <module>java-workflows</module>
+    <module>java-workloadmanager</module>
     <module>java-workspaceevents</module>
     <module>java-workstations</module>
   </modules>
