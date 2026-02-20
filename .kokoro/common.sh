@@ -20,6 +20,7 @@ excluded_modules=(
   'java-vertexai'
   'java-logging'
   'java-bigquerystorage'
+  'java-datastore'
 )
 
 function retry_with_backoff {
