@@ -969,3 +969,4 @@ datastore-v1-proto-client:2.34.0:2.34.1-SNAPSHOT
 proto-google-cloud-datastore-admin-v1:2.34.0:2.34.1-SNAPSHOT
 grpc-google-cloud-datastore-admin-v1:2.34.0:2.34.1-SNAPSHOT
 grpc-google-cloud-datastore-v1:2.34.0:2.34.1-SNAPSHOT
+google-cloud-logging-logback:0.134.0-alpha:0.134.1-alpha-SNAPSHOT

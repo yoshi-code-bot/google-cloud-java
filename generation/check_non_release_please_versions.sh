@@ -10,6 +10,7 @@ for pomFile in $(find . -mindepth 2 -name pom.xml | sort ); do
       [[ "${pomFile}" =~ .*java-shared-dependencies*. ]] || \
       [[ "${pomFile}" =~ .*java-bigquerystorage.* ]] || \
       [[ "${pomFile}" =~ .*java-datastore.* ]] || \
+      [[ "${pomFile}" =~ .*java-logging-logback.* ]] || \
       [[ "${pomFile}" =~ .*.github*. ]]; then
     continue
   fi
